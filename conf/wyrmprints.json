@@ -179,6 +179,15 @@
         "union": 0,
         "a": [["cc", 0.08]]
     },
+    "Blessed_Days": {
+        "name": "Blessed Days",
+        "icon": "400451_02",
+        "att": 25,
+        "hp": 71,
+        "rarity": 4,
+        "union": 0,
+        "a": [["dbt", 0.14]]
+    },
     "Blossoms_Ablaze": {
         "name": "Blossoms Ablaze",
         "icon": "400137_02",
@@ -548,6 +557,15 @@
         "union": 11,
         "a": []
     },
+    "Guardian_of_the_Bond": {
+        "name": "Guardian of the Bond",
+        "icon": "400452_02",
+        "att": 31,
+        "hp": 89,
+        "rarity": 5,
+        "union": 5,
+        "a": [["dcd", 3]]
+    },
     "Halidom_Grooms": {
         "name": "Halidom Grooms",
         "icon": "400282_02",
@@ -625,6 +643,8 @@
         "icon": "HDT",
         "hp": 176,
         "att": 39,
+        "rarity": 5,
+        "union": 0,
         "a": []
     },
     "His_Clever_Brother": {
@@ -996,6 +1016,15 @@
         "union": 0,
         "a": [["cd", 0.2]]
     },
+    "Second_Anniversary": {
+        "name": "Second Anniversary",
+        "icon": "400450_02",
+        "att": 26,
+        "hp": 76,
+        "rarity": 5,
+        "union": 0,
+        "a": [["a", 0.08]]
+    },
     "Secret_Friend": {
         "name": "Secret Friend",
         "icon": "400113_02",
@@ -1057,7 +1086,7 @@
         "hp": 97,
         "rarity": 5,
         "union": 11,
-        "a": []
+        "a": [["hp", 0.08]]
     },
     "Such_High_Spirits": {
         "name": "Such High Spirits!",
@@ -1301,6 +1330,15 @@
         "rarity": 3,
         "union": 7,
         "a": [["prep", 20.0]]
+    },
+    "To_My_Dear_Child": {
+        "name": "To My Dear Child",
+        "icon": "400453_02",
+        "att": 25,
+        "hp": 71,
+        "rarity": 4,
+        "union": 0,
+        "a": [["k_stun", 0.15]]
     },
     "To_the_Extreme": {
         "name": "To the Extreme!",

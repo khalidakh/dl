@@ -183,7 +183,7 @@ class Buff(object):
         self.mod_order = morder or ('chance' if self.mod_type == 'crit' else 'buff')
         self.bufftype = 'misc' if hidden else 'self'
 
-        self.bufftime = self._bufftime if self.duration > 0 else self._no_bufftime
+        self.bufftime = self._bufftime
         self.buff_end_timer = Timer(self.buff_end_proc)
         if modifier:
             self.modifier = modifier
@@ -232,7 +232,7 @@ class Buff(object):
             self.logwrapper(self.name, f'{self.mod_type}({self.mod_order}): {newvalue:.02f}', 'buff value change')
             return self.set(newvalue)
         else:
-            return self.get()
+            return self.__value
 
     def get(self):
         if self.__active:
@@ -336,7 +336,7 @@ class Buff(object):
             mod_val = min(value, max(Buff.MAXHP_CAP-max_hp, 0))
             self._static.adv.set_hp((self._static.adv.hp*max_hp+value*100)/(max_hp+mod_val))
 
-        d = (duration or self.duration) * self.bufftime()
+        d = max(-1, (duration or self.duration) * self.bufftime())
         if self.__active == 0:
             self.__active = 1
             if self.__stored == 0:
@@ -776,6 +776,7 @@ bufftype_dict['mode'] = init_mode
 class ActiveBuffDict(defaultdict):
     def __init__(self):
         super().__init__(lambda: defaultdict(lambda: {}))
+        self.overwrite_buffs = {}
 
     def __call__(self, k, group=None, *args):
         if self.get(k, False):
@@ -810,7 +811,17 @@ class ActiveBuffDict(defaultdict):
     def off(self, k, group='default', seq=0):
         return self[k][group][seq].off()
 
-    def off_all(self, k):
-        for g, seq in self[k].items():
-            for b in seq.values():
-                b.off()
+    def off_all(self, k, seq=None):
+        for g, gbuffs in self[k].items():
+            try:
+                gbuffs[seq].off()
+            except KeyError:
+                pass
+
+    def get_overwrite(self, overwrite_group):
+        # print(self.overwrite_buffs[overwrite_group], overwrite_group)
+        return self.overwrite_buffs[overwrite_group]
+
+    def add_overwrite(self, k, group, seq, buff, overwrite_group):
+        self[k][group][seq] = buff
+        self.overwrite_buffs[overwrite_group] = buff

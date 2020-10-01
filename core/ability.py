@@ -53,10 +53,8 @@ ability_dict = {}
 class Strength(Ability):
     def __init__(self, name, value, cond=None):
         super().__init__(name, [('att', 'passive', value, cond)])
-
 ability_dict['a'] = Strength
 ability_dict['att'] = Strength
-
 
 class Strength_Chain(Ability):
     def __init__(self, name, value, cond=None):
@@ -77,7 +75,6 @@ ability_dict['res'] = Resist
 class Skill_Damage(Ability):
     def __init__(self, name, value, cond=None):
         super().__init__(name, [('s','passive',value, cond)])
-
 ability_dict['s'] = Skill_Damage
 ability_dict['sd'] = Skill_Damage
 
@@ -85,21 +82,24 @@ ability_dict['sd'] = Skill_Damage
 class Force_Strike(Ability):
     def __init__(self, name, value, cond=None):
         super().__init__(name, [('fs','passive',value, cond)])
-
 ability_dict['fs'] = Force_Strike
+
+
+class Health_Points(Ability):
+    def __init__(self, name, value, cond=None):
+        super().__init__(name, [('maxhp','passive',value, cond)])
+ability_dict['hp'] = Health_Points
 
 
 class Buff_Time(Ability):
     def __init__(self, name, value, cond=None):
         super().__init__(name, [('buff','passive',value, cond)])
-
 ability_dict['bt'] = Buff_Time
 
 
 class Debuff_Time(Ability):
     def __init__(self, name, value, cond=None):
         super().__init__(name, [('debuff','passive',value, cond)])
-
 ability_dict['dbt'] = Debuff_Time
 
 class ConditionalModifierAbility(Ability):
@@ -254,10 +254,12 @@ class BuffingAbility(Ability):
         super().__init__(name)
 
 class Last_Buff(BuffingAbility):
+    HEAL_TO = 30
     def __init__(self, name, value, duration=15, chances=1):
         super().__init__(name, value, duration)
         self.proc_chances = chances
         self.auto_proc = 'regen' not in self.buff_args
+        Last_Buff.HEAL_TO = 30
 
     def oninit(self, adv, afrom=None):
         def l_lo_buff(e):
@@ -275,7 +277,7 @@ class Last_Buff(BuffingAbility):
                         adv.set_hp(30)
                     adv.Timer(lo_healed).on(10)
             def lo_healed(t):
-                next_hp = adv.condition.hp_threshold_list(30)
+                next_hp = adv.condition.hp_threshold_list(Last_Buff.HEAL_TO)
                 try:
                     adv.set_hp(next_hp[0])
                 except:
@@ -527,6 +529,8 @@ class Force_Charge(Ability):
             adv.fs_prep_v += self.value
         else:
             def l_fs_charge(e):
+                if not e.is_hit:
+                    return
                 adv.charge_p(self.name, adv.fs_prep_v)
                 self.charge -= 1
                 adv.fs_prep_c = self.charge

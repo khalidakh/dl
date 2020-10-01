@@ -500,6 +500,13 @@
                 "hp60"
             ],
             "axe"
+        ],
+        "Meene": [
+            [
+                "ctime",
+                2.5
+            ],
+            "bow"
         ]
     },
     "light": {
@@ -654,6 +661,14 @@
                 2.2
             ],
             "dagger"
+        ],
+        "Gala_Zena": [
+            [
+                "cc",
+                0.13,
+                "hit10"
+            ],
+            "staff"
         ]
     },
     "shadow": {
@@ -786,7 +801,7 @@
         ]
     },
     "all": {
-        "Euden": [
+        "The_Prince": [
             [
                 "dh",
                 0.14
@@ -840,7 +855,7 @@
             null,
             "axe2"
         ],
-        "Gala_Euden": [
+        "Gala_Prince": [
             null,
             "geuden"
         ],

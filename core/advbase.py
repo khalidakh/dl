@@ -34,7 +34,7 @@ class Skill(object):
     def __init__(self, name=None, acts=None):
         self.charged = 0
         self.name = name
-        
+
         self.act_dict = acts or {}
         self.act_base = None
 
@@ -270,7 +270,7 @@ class Action(object):
 
     def act(self, action):
         self.act_event()
-    
+
     def add_delayed(self, mt):
         self.delayed.add(mt)
 
@@ -477,11 +477,11 @@ class Adv(object):
 
     def dmg_proc(self, name, amount):
         pass
-    
+
     """
     New before/proc system:
     x/fs/s events will try to call <name>_before before everything, and <name>_proc at each hitattr
-    
+
     Examples:
     Albert FS:
         fs_proc is called when he uses base fs
@@ -547,6 +547,8 @@ class Adv(object):
     def damage_sources_check(self, name, conf):
         if conf['attr'] and any(('dmg' in attr for attr in conf['attr'] if isinstance(attr, dict))):
             self.damage_sources.add(name)
+        if conf.get('energizable'):
+            self.energy.extra_tensionable.add(name)
 
     def doconfig(self):
         # set act
@@ -646,6 +648,7 @@ class Adv(object):
         self.extra_actmods = []
 
         self.disable_echo()
+        self.bleed = None
 
     @property
     def ctime(self):
@@ -784,15 +787,32 @@ class Adv(object):
         #             if afflic_slots[s]:
         #                 self.slots.__dict__[s] = afflic_slots[s]
 
-    def pre_conf(self):
-        tmpconf = Conf(self.conf_default)
-        tmpconf.update(globalconf.get_adv(self.name))
-        tmpconf.update(self.conf)
-        tmpconf.update(self.conf_init)
-        self.conf = tmpconf
+    def pre_conf(self, equip_key=None):
+        self.conf = Conf(self.conf_default)
+        self.conf.update(globalconf.get_adv(self.name))
+        self.conf.update(self.conf_base)
+        equip = globalconf.load_equip_json(self.name)
+        equip_d = equip.get(str(int(self.duration)))
+        if not equip_d:
+            equip_d = equip.get('180')
+        if equip_d:
+            if equip_key is None:
+                equip_key = equip_d.get('pref', 'base')
+                self.equip_key = equip_key
+            elif equip_key == 'affliction':
+                from core.simulate import ELE_AFFLICT
+                self.equip_key = 'affliction'
+                equip_key = ELE_AFFLICT[self.conf.c.ele]
+            if equip_key in equip_d:
+                self.conf.update(equip_d[equip_key])
+                self.equip_key = self.equip_key or equip_key
+            elif 'base' in equip_d:
+                self.conf.update(equip_d['base'])
+        self.conf.update(self.conf_init)
+        return equip_d
 
     def default_slot(self):
-        self.slots = Slots(self.name, self.conf.c, self.sim_afflict)
+        self.slots = Slots(self.name, self.conf.c, self.sim_afflict, bool(self.conf['flask_env']))
         # from conf import slot_common
         # self.cmnslots = slot.Slots()
         # self.cmnslots.c.att = self.conf.c.att
@@ -803,7 +823,7 @@ class Adv(object):
         # self.slot_common(self.cmnslots)
         # self.slots = self.cmnslots
 
-    def __init__(self, conf={}, cond=None):
+    def __init__(self, conf=None, duration=180, cond=None, equip_key=None):
         if not self.name:
             self.name = self.__class__.__name__
 
@@ -815,21 +835,28 @@ class Adv(object):
         self.Modifier = Modifier
         self.Conf = Conf
 
-        self.conf_init = conf or {}
+        self.conf_base = Conf(self.conf or {})
+        self.conf_init = Conf(conf or {})
         self.ctx = Ctx().on()
         self.condition = Condition(cond)
-        self.duration = 180
+        self.duration = duration
 
         self.damage_sources = set()
         self.Modifier._static.damage_sources = self.damage_sources
 
-        self.pre_conf()
+        self.equip_key = None
+        equip = self.pre_conf(equip_key=equip_key)
 
         # set afflic
         self.afflics = Afflics()
         self.sim_afflict = set()
         self.afflic_condition()
         self.sim_affliction()
+
+        if equip and not self.conf['flask_env'] and self.sim_afflict:
+            aff_equip = equip.get(next(iter(self.sim_afflict)))
+            if aff_equip:
+                self.conf.update(aff_equip)
 
         self.default_slot()
 
@@ -892,11 +919,14 @@ class Adv(object):
     #         mod_sum = min(mod_sum, 2.00)
     #     return mod_sum
 
-    def speed(self):
-        return min(self.mod('spd'), 1.50)
+    def speed(self, target=None):
+        if target is None:
+            return min(1+self.sub_mod('spd', 'passive'), 1.50)
+        else:
+            return min(1+self.sub_mod('spd', 'passive')+self.sub_mod('spd', target), 1.50)
 
     def c_speed(self):
-        return min(self.mod('cspd'), 1.50)
+        return min(1+self.sub_mod('cspd', 'passive'), 1.50)
 
     def enable_echo(self, mod=None, fixed_att=None):
         self.echo = 2
@@ -992,7 +1022,7 @@ class Adv(object):
         for dkey in debuff_rates.keys():
             debuff_rates[dkey] = 1 - debuff_rates[dkey]
         rates.update(debuff_rates)
-        
+
         return rates if not as_list else list(rates.items())
 
     def killer_mod(self, name=None):
@@ -1129,7 +1159,7 @@ class Adv(object):
 
     def l_dodge(self, e):
         log('dodge', '-')
-        self.think_pin('dodge')
+        self.think_pin('dodge')        
 
     def add_combo(self, name='#'):
         # real combo count
@@ -1169,24 +1199,19 @@ class Adv(object):
 
     def config_coabs(self):
         if not self.conf['flask_env']:
-            self.coab_list = self.load_aff_conf('coabs')
             self.d_coabs()
+            coab_list = self.load_aff_conf('coabs')
         else:
-            self.coab_list = self.conf['coabs']
+            coab_list = self.conf['coabs']
         try:
             self_coab = list(self.slots.c.coabs.keys())[0]
         except:
             self_coab = self.__class__.__name__
-        for name in self.coab_list:
+        for name in coab_list:
             try:
                 self.slots.c.coabs[name] = self.slots.c.valid_coabs[name]
             except KeyError:
                 raise ValueError(f'No such coability: {name}')
-        self.coab_list = list(self.slots.c.coabs.keys())
-        try:
-            self.coab_list.remove(self_coab)
-        except:
-            pass
 
     def rebind_function(self, owner, src, dst=None):
         dst = dst or src
@@ -1277,13 +1302,14 @@ class Adv(object):
                         dst_sn = src_sn.replace(src_key, dst_key)
                         self.conf[dst_sn] = src_snconf
                         self.conf[dst_sn].owner = owner
+                        self.conf[dst_sn].sp = shared_sp
                     owner_module = load_adv_module(owner)
                     preruns[dst_key] = owner_module.prerun_skillshare
                     for sfn in ('before', 'proc'):
                         self.rebind_function(owner_module, f'{src_key}_{sfn}', f'{dst_key}_{sfn}')
                 except:
                     pass
-                self.conf[dst_key].sp = shared_sp
+                # self.conf[dst_key].sp = shared_sp
 
         for sn, snconf in self.conf.find(r'^s\d(_[A-Za-z0-9]+)?$'):
             s = S(sn, snconf)
@@ -1304,8 +1330,7 @@ class Adv(object):
 
         return preruns
 
-    def run(self, d=300):
-        self.duration = d
+    def run(self):
         global loglevel
         if not loglevel:
             loglevel = 0
@@ -1329,9 +1354,9 @@ class Adv(object):
         self.l_set_hp = Listener('set_hp', self.l_set_hp)
 
         self.ctx.on()
-        
+
         self.config_slots()
-        
+
         preruns_ss = self.config_skills()
 
         # if self.conf.c.a:
@@ -1345,6 +1370,7 @@ class Adv(object):
 
         self.slots.oninit(self)
         self.base_att = int(self.slots.att)
+        self.base_hp = int(self.slots.hp)
 
         self.hp = self.condition.prev_hp
         if 'hp' in self.conf:
@@ -1420,7 +1446,7 @@ class Adv(object):
             latency = self.conf.latency.default
 
         doing = self.action.getdoing()
-        
+
         t = Timer(self.cb_think)
         t.pin = pin
         t.dname = doing.name
@@ -1475,7 +1501,11 @@ class Adv(object):
             if no_autocharge and hasattr(s, 'autocharge_timer'):
                 continue
             s.charge(self.sp_convert(percent, s.sp))
-        log('sp', name if not target else f'{name}->{target}', f'{percent*100:.0f}%', ', '.join([f'{s.charged}/{s.sp}' for s in self.skills]))
+        if isinstance(target, list):
+            t_str = ','.join(target)
+        else:
+            t_str = target
+        log('sp', name if not target else f'{name}->{t_str}', f'{percent*100:.0f}%', ', '.join([f'{s.charged}/{s.sp}' for s in self.skills]))
 
         if percent == 1:
             self.think_pin('prep')
@@ -1488,8 +1518,13 @@ class Adv(object):
             return
         for s in targets:
             s.charge(sp)
+        if isinstance(target, list):
+            t_str = ','.join(target)
+        else:
+            t_str = target
+        log('sp', name if not target else f'{name}_{t_str}', sp, ', '.join([f'{s.charged}/{s.sp}' for s in self.skills]))
+
         self.think_pin('sp')
-        log('sp', name if not target else f'{name}_{target}', sp, ', '.join([f'{s.charged}/{s.sp}' for s in self.skills]))
 
     def l_dmg_formula(self, e):
         name = e.dname
@@ -1508,7 +1543,7 @@ class Adv(object):
         dmg_mod = self.dmg_mod(name)
         att = 1.0 * self.att_mod(name) * self.base_att
         armor = 10 * self.def_mod()
-        ele = self.mod(self.slots.c.ele) + 0.5
+        ele = (self.mod(self.slots.c.ele) + 0.5) * (self.mod(f'{self.slots.c.ele}_resist'))
         return 5.0 / 3 * dmg_coef * dmg_mod * att / armor * ele  # true formula
 
     def l_true_dmg(self, e):
@@ -1573,11 +1608,11 @@ class Adv(object):
                 m.on()
             if 'extra' in attr:
                 for _ in range(min(attr['extra'], self.buffcount)):
-                    self.dmg_make(name, attr['dmg'], attenuation=attenuation)
                     self.add_combo(name)
+                    self.dmg_make(name, attr['dmg'], attenuation=attenuation)
             else:
-                self.dmg_make(name, attr['dmg'], attenuation=attenuation)
                 self.add_combo(name)
+                self.dmg_make(name, attr['dmg'], attenuation=attenuation)
 
         if onhit:
             onhit(name, base, group, aseq)
@@ -1628,11 +1663,21 @@ class Adv(object):
             rate, mod = attr['bleed']
             if self.conf.mbleed or (rate < 100 and base[0] == 's' and self.a_s_dict[base].owner is not None):
                 from module.bleed import mBleed
-                mBleed(name, mod).on()
+                bleed = mBleed(name, mod)
+                if self.bleed is None:
+                    self.bleed = bleed
+                    self.bleed.reset()
+                self.bleed = mBleed(name, mod)
+                self.bleed.on()
             else:
                 from module.bleed import Bleed
+                bleed = Bleed(name, mod)
+                if self.bleed is None:
+                    self.bleed = bleed
+                    self.bleed.reset()
                 if rate == 100 or rate > random.uniform(0, 100):
-                    Bleed(name, mod).on()
+                    self.bleed = Bleed(name, mod)
+                    self.bleed.on()
 
 
         if 'buff' in attr:
@@ -1657,27 +1702,30 @@ class Adv(object):
                     except:
                         pass
                     return
-                if bctrl.startswith('-refresh'):
-                    try:
-                        return self.buff.on(base, group, aseq)
-                    except KeyError:
-                        bctrl_parts = bctrl.split('_')
-                        if len(bctrl_parts) > 1:
-                            bctrl = bctrl_parts[0]
-                            bctrl_args = bctrl_parts[1:]
-                            tgroup, tseq = bctrl_args
-                            tgroup = tgroup if not tgroup.isdigit() else int(tgroup)-1
-                            tseq = int(tseq)
-                            try:
-                                return self.buff.on(base, tgroup, tseq)
-                            except:
-                                pass
-                if bctrl == '-replace':
-                    self.buff.off_all(base)
+                if bctrl == '-refresh':
                     try:
                         return self.buff.on(base, group, aseq)
                     except KeyError:
                         pass
+                if bctrl == '-replace':
+                    self.buff.off_all(base, aseq)
+                    try:
+                        return self.buff.on(base, group, aseq)
+                    except KeyError:
+                        pass
+                if bctrl.startswith('-overwrite'):
+                    # does not support multi buffs
+                    try:
+                        ow_buff = self.buff.get_overwrite(bctrl)
+                        if abs(ow_buff.value()) >= abs(blist[1]):
+                            ow_buff.on()
+                            return
+                    except:
+                        pass
+                    buff = self.hitattr_buff(name, base, group, aseq, 0, blist)
+                    if buff:
+                        self.buff.add_overwrite(base, group, aseq, buff.on(), bctrl)
+                    return
             if isinstance(blist[0], list):
                 buff_objs = []
                 for bseq, attrbuff in enumerate(blist):
@@ -1705,8 +1753,10 @@ class Adv(object):
     def l_hitattr_make(self, t):
         self.hitattr_make(t.name, t.base, t.group, t.aseq, t.attr, t.onhit)
         if t.pin is not None:
-            self.think_pin(t.pin+'-h')
-            Event(t.pin+'-h')()
+            self.think_pin(f'{t.pin}-h')
+            p = Event(f'{t.pin}-h')
+            p.is_hit = t.name in self.damage_sources
+            p()
         if t.proc is not None:
             t.proc(t)
         if t.actmod:
@@ -1715,7 +1765,8 @@ class Adv(object):
     ATTR_COND = {
         'hp>=': lambda s, v: s.hp >= v,
         'hp<=': lambda s, v: s.hp <= v,
-        'rng': lambda s, v: random.random() <= v
+        'rng': lambda s, v: random.random() <= v,
+        'hits': lambda s, v: s.hits >= v
     }
     def do_hitattr_make(self, e, aseq, attr, pin=None):
         if 'cond' in attr:
@@ -1758,7 +1809,9 @@ class Adv(object):
             e.attr = attr
             self.hitattr_make(e.name, e.base, e.group, aseq, attr, onhit)
             if pin is not None:
-                Event(f'{pin}-h-{aseq}')()
+                p = Event(f'{pin}-h')
+                p.is_hit = e.name in self.damage_sources
+                p()
         return None
 
     def schedule_hits(self, e, conf, pin=None):
@@ -1823,10 +1876,17 @@ class Adv(object):
     def dgauge(self):
         return self.dragonform.dragon_gauge
 
+    @property
+    def bleed_stack(self):
+        try:
+            return self.bleed._static['stacks']
+        except AttributeError:
+            return 0
+
+
     def stop(self):
         doing = self.action.getdoing()
         if doing.status == Action.RECOVERY or doing.status == Action.OFF:
             Timeline.stop()
             return True
         return False
-

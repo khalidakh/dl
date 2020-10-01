@@ -3,6 +3,8 @@ import re
 from itertools import islice
 from collections import deque
 
+CHAR_LIMIT = 1000
+
 def pairs(iterator):
     "s -> (s0,s1), (s2,s3), (s4, s5), ..."
     a = islice(iterator, 0, None, 2)
@@ -234,7 +236,9 @@ def _pre_parse(acl):
 
 def build_acl(acl):
     if isinstance(acl, list):
-        acl = ';'.join(acl)
+        acl = '\n'.join(acl)
+    if len(acl) > CHAR_LIMIT:
+        raise ValueError(f'ACL cannot be longer than {CHAR_LIMIT} characters.')
     acl = _pre_parse(acl)
     tree = PARSER.parse(acl)
     interpreter = AclInterpreter()

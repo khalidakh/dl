@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta charset="utf-8" />
     <title>Dragalia Lost Damage Simulator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" type="image/png" href="/ui/favicon.png" />
@@ -36,85 +37,104 @@
     <form id="test-params" method="POST">
         <div class="form-group">
             <div class="form-row">
-                <div class="col-md-3">
+                <div class="col-md">
                     <label for="input-adv">Adventurer</label><select id="input-adv" class="form-control"></select>
                 </div>
-                <div class="col-md-3">
-                    <label for="input-t">Simulation Time (s)</label><input id="input-t" class="form-control"
-                        type="text" />
+                <div class="col-md">
+                    <label for="input-equip">Setup</label><select id="input-equip" class="form-control">
+                        <option id="equip-base" value="base">Personal DPS</option>
+                        <option id="equip-buffer" value="buffer">Team Buff</option>
+                        <option id="equip-affliction" value="affliction">Affliction</option>
+                    </select>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md">
                     <label for="input-teamdps">Team DPS</label><input id="input-teamdps" class="form-control"
                         type="number" step="5000" min="0" />
                 </div>
-                <div class="col-md-3">
+                <div class="col-md">
+                    <label for="input-t">Simulation Time (s)</label><input id="input-t" class="form-control"
+                        type="text" />
+                </div>
+                <div class="col-md">
                     <label for="input-hp">HP</label><input id="input-hp" class="form-control" type="text" />
                 </div>
             </div>
-            <div class="form-row">
-                <div class="col-sm-3">
-                    <label for="input-wep">Weapon</label><select id="input-wep" class="form-control"></select>
-                </div>
-                <div class="col-sm-3">
-                    <label for="input-dra">Dragon</label><select id="input-dra" class="form-control"></select>
-                </div>
-                <div class="col-sm-3">
-                    <label for="input-wp1">Wyrmprint 1</label><select id="input-wp1" class="form-control"></select>
-                </div>
-                <div class="col-sm-3">
-                    <label for="input-wp2">Wyrmprint 2</label><select id="input-wp2" class="form-control"></select>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="col-sm-6">
-                    <label for="input-ss3">Skill 3</label><select id="input-ss3" class="form-control"></select>
-                </div>
-                <div class="col-sm-6">
-                    <label for="input-ss4">Skill 4</label><select id="input-ss4" class="form-control"></select>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="col-sm-4">
-                    <label for="input-acl">ACL</label>
-                    &nbsp;
-                    <div class="custom-control custom-checkbox custom-control-inline">
-                        <input id="input-edit-acl" class="custom-control-input" type="checkbox" />
-                        <label for="input-edit-acl" class="custom-control-label">Edit</label>
+            <div class="collapse" id="basic-inputs">
+                <div class="form-row">
+                    <div class="col-sm-3">
+                        <label for="input-wep">Weapon</label><select id="input-wep" class="form-control"></select>
                     </div>
-                    <textarea id="input-acl" class="form-control" disabled></textarea>
+                    <div class="col-sm-3">
+                        <label for="input-dra">Dragon</label><select id="input-dra" class="form-control"></select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="input-ss3">Skill 3</label><select id="input-ss3" class="form-control"></select>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="input-ss4">Skill 4</label><select id="input-ss4" class="form-control"></select>
+                    </div>
                 </div>
-                <div class="col-sm-8">
-                    <label class="coab-label">Co-Abilities:</label>
-                    <br />
-                    <div id="input-coabs">
-                        <div id="input-coabs-blade"></div>
-                        <div id="input-coabs-wand"></div>
-                        <div id="input-coabs-bow"></div>
-                        <div id="input-coabs-dagger"></div>
-                        <div id="input-coabs-sword"></div>
-                        <div id="input-coabs-axe"></div>
-                        <div id="input-coabs-lance"></div>
-                        <div id="input-coabs-staff"></div>
-                        <div id="input-coabs-other"></div>
+                <div class="form-row input-wp">
+                    <div class="col-sm">
+                        <label for="input-wp1">Wyrmprint 1</label><select id="input-wp1" class="form-control"></select>
+                    </div>
+                    <div class="col-sm">
+                        <label for="input-wp2">Wyrmprint 2</label><select id="input-wp2" class="form-control"></select>
+                    </div>
+                    <div class="col-sm">
+                        <label for="input-wp3">Wyrmprint 3</label><select id="input-wp3" class="form-control"></select>
+                    </div>
+                    <div class="col-sm">
+                        <label for="input-wp4">Wyrmprint 4</label><select id="input-wp4" class="form-control"></select>
+                    </div>
+                    <div class="col-sm">
+                        <label for="input-wp5">Wyrmprint 5</label><select id="input-wp5" class="form-control"></select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-sm-4">
+                        <label for="input-acl">ACL</label>
+                        &nbsp;
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input id="input-edit-acl" class="custom-control-input" type="checkbox" />
+                            <label for="input-edit-acl" class="custom-control-label">Edit</label>
+                        </div>
+                        <textarea id="input-acl" class="form-control" disabled></textarea>
+                    </div>
+                    <div class="col-sm-8">
+                        <label class="coab-label">Co-Abilities:</label>
+                        <br />
+                        <div id="input-coabs">
+                            <div id="input-coabs-blade"></div>
+                            <div id="input-coabs-wand"></div>
+                            <div id="input-coabs-dagger"></div>
+                            <div id="input-coabs-bow"></div>
+                            <div id="input-coabs-axe"></div>
+                            <div id="input-coabs-lance"></div>
+                            <div id="input-coabs-staff"></div>
+                            <div id="input-coabs-gun"></div>
+                            <div id="input-coabs-sword"></div>
+                            <div id="input-coabs-other"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="collapse" id="advanced-inputs">
                 <div class="form-row" id="affliction-sim">
                     <div class="col-sm col-4">
-                        <label for="input-res-poison">Poison (%)</label><input id="input-sim-poison"
+                        <label for="input-sim-poison">Poison (%)</label><input id="input-sim-poison"
                             class="form-control" type="text" placeholder="0" />
                     </div>
                     <div class="col-sm col-4">
-                        <label for="input-res-paralysis">Paralysis (%)</label><input id="input-sim-paralysis"
+                        <label for="input-sim-paralysis">Paralysis (%)</label><input id="input-sim-paralysis"
                             class="form-control" type="text" placeholder="0" />
                     </div>
                     <div class="col-sm col-4">
-                        <label for="input-res-burn">Burn (%)</label><input id="input-sim-burn" class="form-control"
+                        <label for="input-sim-burn">Burn (%)</label><input id="input-sim-burn" class="form-control"
                             type="text" placeholder="0" />
                     </div>
                     <div class="col-sm col-4">
-                        <label for="input-res-frostbite">Frostbite (%)</label><input id="input-sim-frostbite"
+                        <label for="input-sim-frostbite">Frostbite (%)</label><input id="input-sim-frostbite"
                             class="form-control" type="text" placeholder="0" />
                     </div>
                 </div>
@@ -147,7 +167,7 @@
                         <label for="input-sim-buff-echo">Bonus Attack</label>
                         <select id="input-sim-buff-echo" class="form-control">
                             <option value="">Off</option>
-                            <option value="4000">Yukata Cassandra</option>
+                            <option value="8000">Yukata Cassandra</option>
                         </select>
                     </div>
                     <div class="col-sm col-4">
@@ -206,9 +226,13 @@
             <div class="form-row">
                 <div class="col">
                     <button type="button" id="run-test" class="btn btn-primary">Run Test</button>
-                    <button type="button" id="toggle-coab" class="btn btn-info" data-toggle="collapse"
+                    <button type="button" id="toggle-basic" class="btn btn-success" data-toggle="collapse"
+                        data-target="#basic-inputs" aria-expanded="true" aria-controls="basic-inputs">
+                        Settings
+                    </button>
+                    <button type="button" id="toggle-advanced" class="btn btn-info" data-toggle="collapse"
                         data-target="#advanced-inputs" aria-expanded="false" aria-controls="advanced-inputs">
-                        Advanced
+                        Conditions
                     </button>
                     <!-- <button type="button" id="toggle-coab" class="btn btn-info" data-toggle="collapse" data-target="#coability" aria-expanded="false" aria-controls="coability">
                     Co-Abilities
@@ -401,9 +425,7 @@ end</code></pre>This forces 2 s1 uses before an s2 use, even if s2 was fully cha
         </div>
     </form>
     <div id="qc-warning">
-        Currently undergoing backend overhauls, sim accuracy not guaranteed. 后端优化中，模拟结果可能不准确 <a
-            href="https://imxtrabored.pythonanywhere.com/ui/dl_simc.html">Alternative <code>master</code> branch
-            mirror</a>
+        2.0 update in progress, setups generally not optimal; 2.0更新正在做, 角色配置非最佳; 2.0更新中　ほぼ最適な編成ではない
     </div>
     <div id="test-warning"></div>
     <div id="test-error"></div>

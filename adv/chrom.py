@@ -45,9 +45,8 @@ class Chrom(Adv):
     conf['share.base'] = ['Kleimann']
     conf['share.burn'] = ['Nadine']
 
-    def __init__(self, conf=None, cond=None):
-        super().__init__(conf=conf, cond=cond)
-        del self.slots.c.coabs['Sword']
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
         self.a_s_dict['s2'] = Skill_Reservoir('s2')
         self.a_s_dict['s2'].flames = 0
 

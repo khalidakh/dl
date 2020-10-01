@@ -28,15 +28,15 @@ S_ALT = '†'
 
 
 def run_once(classname, conf, duration, cond):
-    adv = classname(conf=conf,cond=cond)
-    real_d = adv.run(duration)
+    adv = classname(conf=conf, duration=duration, cond=cond)
+    real_d = adv.run()
     return adv, real_d
 
 # Using starmap
 import multiprocessing
 def run_once_mass(classname, conf, duration, cond, idx):
-    adv = classname(conf=conf,cond=cond)
-    real_d = adv.run(duration)
+    adv = classname(conf=conf, duration=duration, cond=cond)
+    real_d = adv.run()
     return adv.logs, real_d
 
 def sum_logs(log, other):
@@ -73,8 +73,7 @@ def run_mass(mass, base_log, base_d, classname, conf, duration, cond):
     base_d /= mass
     return base_log, base_d
 
-def test(classname, conf={}, duration=180, verbose=0, mass=None, output=None, team_dps=None, cond=True, special=False):
-    team_dps = team_dps if team_dps is not None else 20000
+def test(classname, conf={}, duration=180, verbose=0, mass=None, output=None, cond=True, special=False):
     output = output or sys.stdout
     # ex_set = parse_ex(ex)
     # if len(ex_set) > 0:
@@ -109,21 +108,13 @@ def test(classname, conf={}, duration=180, verbose=0, mass=None, output=None, te
     if mass:
         adv.logs, real_d = run_mass(mass, adv.logs, real_d, classname, conf, duration, cond)
 
-    run_results.append((adv, real_d, True))
-    no_cond_dps = None
-    # if adv.condition.exist():
-    #     adv_2, real_d_2 = run_once(classname, conf, duration, False)
-    #     # if mass:
-    #     #     adv_2.logs, real_d_2 = run_mass(mass, adv_2.logs, real_d, classname, conf, duration, False)
-    #     run_results.append((adv_2, real_d_2, False))
-    #     no_cond_dps = {
-    #         'dps': round(dps_sum(real_d_2, adv_2.logs.damage)['dps']),
-    #         'team_buff': adv_2.logs.team_buff / real_d,
-    #         'team_tension': adv_2.logs.team_tension
-    #     }
+    aff_name = ELE_AFFLICT[adv.slots.c.ele]
+    if aff_name in adv.sim_afflict and not -10 <= verbose <= -5:
+        run_results.append((adv, real_d, 'affliction'))
+    else:
+        run_results.append((adv, real_d, True))
 
     if -10 <= verbose <= -5:
-        aff_name = ELE_AFFLICT[adv.slots.c.ele]
         conf[f'sim_afflict.{aff_name}'] = 1
         if verbose < -5:
             for aff_name in DOT_AFFLICT[:(-verbose-6)]:
@@ -132,26 +123,24 @@ def test(classname, conf={}, duration=180, verbose=0, mass=None, output=None, te
         if mass:
             adv.logs, real_d = run_mass(mass, adv.logs, real_d, classname, conf, duration, cond)
         run_results.append((adv, real_d, 'affliction'))
-        # if adv.condition.exist():
-        #     adv, real_d = run_once(classname, conf, duration, False)
-        #     run_results.append((adv, real_d, False))
 
     for a, d, c in run_results:
         if verbose == -2:
-            report(d, a, output, team_dps, cond=c, web=False)
+            report(d, a, output, cond=c, web=False)
         elif abs(verbose) == 5:
-            page = 'sp' if special else duration
+            page = 'sp' if special else int(duration)
             if c:
                 output.write('-,{},{}\n'.format(page, c if isinstance(c, str) else '_'))
-            report(d, a, output, team_dps, cond=c, web=True)
+            report(d, a, output, cond=c, web=True)
         else:
             if c == 'affliction':
                 output.write('-'*BR+'\n')
                 output.write(' & '.join(adv.sim_afflict))
                 output.write('\n')
-            summation(d, a, output, cond=c, no_cond_dps=no_cond_dps)
+            summation(d, a, output, cond=c)
 
-    return run_results
+    adv.real_duration = real_d
+    return run_results, adv
 
 # def brute_force_slots(classname, conf, output, team_dps, duration):
 #     #from app.app import is_amulet, is_dragon
@@ -293,7 +282,7 @@ def test(classname, conf={}, duration=180, verbose=0, mass=None, output=None, te
 def slots(adv):
     slots = f'[{adv.slots.d}][{adv.slots.w}][{adv.slots.a}]\n'
     slots += '-'*(len(adv.name)) + ' '
-    slots += f'[{"|".join((map(get_fullname, adv.coab_list)))}][S3:{get_fullname(adv.skillshare_list[0])}'
+    slots += f'[{"|".join((map(get_fullname, adv.slots.c.coab_list)))}][S3:{get_fullname(adv.skillshare_list[0])}'
     try:
         slots += f'|S4:{get_fullname(adv.skillshare_list[1])}]'
     except:
@@ -301,7 +290,7 @@ def slots(adv):
     return slots
 
 def slots_csv(adv, web):
-    padded_coab = adv.coab_list.copy()
+    padded_coab = adv.slots.c.coab_list.copy()
     if len(padded_coab) < 3:
         padded_coab.extend(['']*(3-len(padded_coab)))
     padded_share = adv.skillshare_list.copy()
@@ -525,7 +514,7 @@ def compile_stats(real_d, adv, do_buffs=True):
         stat_str.append(f'{k}:{int(v)}')
     return ';'.join(stat_str)
 
-def summation(real_d, adv, output, cond=True, no_cond_dps=None):
+def summation(real_d, adv, output, cond=True):
     res = dps_sum(real_d, adv.logs.damage)
     if cond:
         output.write('='*BR+'\n')
@@ -565,7 +554,7 @@ def summation(real_d, adv, output, cond=True, no_cond_dps=None):
     damage_counts(real_d, adv.logs.damage, adv.logs.counts, output, res=res)
     output.write('\n')
 
-def report(real_d, adv, output, team_dps, cond=True, web=False):
+def report(real_d, adv, output, cond=True, web=False):
     name = adv.__class__.__name__
     dmg = adv.logs.damage
     res = dps_sum(real_d, dmg)

@@ -88,8 +88,7 @@
             "att": 119,
             "hp": 376,
             "ele": "water",
-            "a": [["sp", 0.35]],
-            "skipped": [[330000294, "(Water) HP +{ability_val0}%"]]
+            "a": [["hp", 0.3], ["sp", 0.35]]
         },
         "dx1": {
             "startup": 0.30303,
@@ -120,7 +119,8 @@
             "uses": 1,
             "attr": [
                 {"buff": ["zone", 0.3, 10.0, "s", "buff"]}
-            ]
+            ],
+            "energizable": true
         }
     },
     "Kamuy": {
@@ -245,7 +245,8 @@
             "sp": 30,
             "startup": 0.1,
             "recovery": 2.66667,
-            "uses": 1
+            "uses": 1,
+            "energizable": true
         }
     },
     "Poseidon": {
@@ -255,7 +256,7 @@
             "att": 119,
             "hp": 376,
             "ele": "water",
-            "a": [["a", 0.35]]
+            "a": [["a", 0.35], ["hp", 0.35]]
         },
         "dx1": {
             "startup": 0.3,
