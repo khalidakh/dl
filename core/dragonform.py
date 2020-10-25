@@ -60,9 +60,24 @@ class DragonForm(Action):
         self.is_dragondrive = False
         self.can_end = True
 
-        self.allow_end_cd = self.conf.allow_end + (self.conf.ds.startup + self.conf.ds.startup) / self.speed()
+        self.allow_end_cd = self.conf.allow_end + self.dstime()
         self.allow_force_end_timer = Timer(self.set_allow_end, timeout=self.allow_end_cd)
         self.allow_end = False
+
+    def set_shift_end(self, value, percent=True):
+        if self.can_end:
+            max_d = self.dtime() - self.conf.dshift.startup
+            cur_d = self.shift_end_timer.timing - now() - (self.conf.ds.uses - self.skill_use) * self.dstime()
+            delta_t = value
+            if percent:
+                delta_t *= (max_d)
+            delta_t = min(max_d, cur_d+delta_t) - cur_d
+            if cur_d + delta_t > 0:
+                self.shift_end_timer.add(delta_t)
+                log('shift_time', f'{delta_t:+2.4}', f'{cur_d+delta_t:2.4}')
+            else:
+                self.d_shift_end(None)
+                self.shift_end_timer.off()
 
     def can_interrupt(self, target):
         return None
@@ -176,6 +191,9 @@ class DragonForm(Action):
     @allow_acl
     def dtime(self):
         return self.conf.dshift.startup + self.conf.duration * self.adv.mod('dt') + self.conf.exhilaration * (self.off_ele_mod is None)
+
+    def dstime(self):
+        return (self.conf.ds.startup + self.conf.ds.recovery) / self.speed()
 
     @allow_acl
     def ddamage(self):
@@ -293,7 +311,7 @@ class DragonForm(Action):
             self.skill_spc = 0
             self.act_sum.append('s')
             self.ds_event()
-            self.shift_end_timer.add(actconf.startup+actconf.recovery)
+            self.shift_end_timer.add(self.dstime())
         elif self.c_act_name.startswith('dx'):
             if len(self.act_sum) > 0 and self.act_sum[-1][0] == 'c' and int(self.act_sum[-1][1]) < int(self.c_act_name[-1]):
                 self.act_sum[-1] = 'c'+self.c_act_name[-1]
@@ -309,7 +327,7 @@ class DragonForm(Action):
         if self.repeat_act and not self.act_list:
             self.parse_act(self.conf.act)
         if self.act_list:
-            if self.act_list[0] != 'ds' or self.ds_check():
+            if self.act_list[0] not in ('ds', 'dsf') or self.ds_check():
                 if self.act_list[0] == 'end' and not self.allow_end:
                     nact = None
                 else:
@@ -328,11 +346,16 @@ class DragonForm(Action):
             else:
                 nact = 'dx1'
             # print('CHOSE BY DEFAULT', nact, self.c_act_name)
-        if nact == 'ds' or nact == 'dodge' or (nact == 'end' and self.c_act_name != 'ds'): # cancel
+        if self.has_delayed and nact == 'dsf':
+            nact = 'ds'
             count = self.clear_delayed()
             if count > 0:
                 log('cancel', self.c_act_name, f'by {nact}', f'lost {count} hit{"s" if count > 1 else ""}')
-            self.act_timer(self.d_act_start_t, self.conf.latency, nact)
+            return self.act_timer(self.d_act_start_t, self.conf.latency, nact)
+        if nact in ('ds', 'dsf', 'dodge') or (nact == 'end' and self.c_act_name != 'ds'): # cancel
+            if nact == 'dsf':
+                nact = 'ds'
+            self.act_timer(self.d_act_start_t, self.max_delayed+self.conf.latency, nact)
         else: # regular recovery
             self.act_timer(self.d_act_start_t, self.c_act_conf.recovery, nact)
 
@@ -360,8 +383,11 @@ class DragonForm(Action):
                         self.act_list.pop()
                 except IndexError:
                     pass
-                if (a == 's' or a == 'ds') and (self.skill_use <= -1 or skill_usage < self.skill_use):
-                    self.act_list.append('ds')
+                if (a in ('s', 'ds', 'sf', 'dsf')) and (self.skill_use <= -1 or skill_usage < self.skill_use):
+                    if a[-1] == 'f':
+                        self.act_list.append('dsf')
+                    else:
+                        self.act_list.append('ds')
                     skill_usage += 1
                 elif a == 'end' and self.can_end:
                     self.act_list.append('end')

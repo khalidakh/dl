@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 37146.42034781355,
-      "team": 0.02218825221353003,
+      "dps": 37191.64364991705,
+      "team": 0.022188252213530005,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -32,8 +32,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 52363.77269481937,
-      "team": 0.022139406083864433,
+      "dps": 53969.38525496062,
+      "team": 0.02221715341981229,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -58,13 +58,13 @@
       ],
       "share": [
         "Weapon",
-        "Rodrigo"
+        "Kleimann"
       ]
     },
     "buffer": {
-      "dps": 33440.49010407819,
-      "team": 0.02221686836836886,
-      "tdps": 129504829.16406743,
+      "dps": 33680.401571088514,
+      "team": 0.022220419899274754,
+      "tdps": 109154326.69575025,
       "slots.a": [
         "Seaside_Princess",
         "Spirit_of_the_Season",
@@ -94,8 +94,8 @@
   },
   "60": {
     "base": {
-      "dps": 34899.74051161328,
-      "team": 0.03324512478252831,
+      "dps": 34854.67776318079,
+      "team": 0.0332021984835725,
       "tdps": null,
       "slots.a": [
         "Seaside_Princess",
@@ -125,8 +125,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 54527.1035993103,
-      "team": 0.033315659376034264,
+      "dps": 54639.98983362315,
+      "team": 0.033277854527910995,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -151,7 +151,7 @@
       ],
       "share": [
         "Weapon",
-        "Rodrigo"
+        "Kleimann"
       ]
     }
   }

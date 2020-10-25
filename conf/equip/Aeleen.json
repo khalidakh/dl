@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 42695.23647340574,
+      "dps": 42249.85977137598,
       "team": 0.06224921864780719,
       "tdps": null,
       "slots.a": [
@@ -34,7 +34,7 @@
     "buffer": {
       "dps": 4057.0479695791464,
       "team": 0.7174020698937517,
-      "tdps": 58975.83812746289,
+      "tdps": 58296.03233682524,
       "slots.a": [
         "A_Dogs_Day",
         "Sisters_Day_Out",
@@ -61,15 +61,15 @@
       ]
     },
     "affliction": {
-      "dps": 45964.8816321766,
-      "team": 0.06224921864780719,
+      "dps": 46991.95176822341,
+      "team": 0.0624349497196086,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
         "Dragon_and_Tamer",
         "Memory_of_a_Friend",
-        "The_Plaguebringer",
-        "The_Queen_of_the_Knife"
+        "His_Clever_Brother",
+        "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
       "acl": [
@@ -87,7 +87,7 @@
       ],
       "share": [
         "Weapon",
-        "Rodrigo"
+        "Karina"
       ]
     }
   }

@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 59736.385918947504,
+      "dps": 61549.53806734685,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -15,8 +15,8 @@
       "acl": [
         "`dragon(c3-s-end), cancel",
         "`s3, not buff(s3)",
-        "`s1",
-        "`s2",
+        "`s1, fs",
+        "`s2, fs",
         "`s4, cancel",
         "`dodge, fsc",
         "`fs, x=4"
@@ -24,18 +24,18 @@
       "coabs": [
         "Blade",
         "Dragonyule_Xainfried",
-        "Lin_You"
+        "Akasha"
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Xander"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 35641.89743773233,
-      "team": 0.06239113440281532,
-      "tdps": 386184.49098319234,
+      "dps": 36145.21723270085,
+      "team": 0.06248269923483398,
+      "tdps": 406581.68014103884,
       "slots.a": [
         "Dear_Diary",
         "Forest_Bonds",
@@ -64,7 +64,7 @@
       ]
     },
     "affliction": {
-      "dps": 61854.20007600981,
+      "dps": 64461.28264468295,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -78,8 +78,8 @@
       "acl": [
         "`dragon(c3-s-end), cancel",
         "`s3, not buff(s3)",
-        "`s1",
-        "`s2",
+        "`s1, fs",
+        "`s2, fs",
         "`s4, cancel",
         "`dodge, fsc",
         "`fs, x=4"
@@ -91,7 +91,7 @@
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Xander"
       ]
     }
   }

@@ -1,21 +1,20 @@
 {
   "180": {
     "base": {
-      "dps": 66341.54700310159,
+      "dps": 68688.0023075024,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Howling_to_the_Heavens",
         "Memory_of_a_Friend",
         "The_Shining_Overlord",
-        "From_Whence_He_Comes",
-        "Bellathorna"
+        "Luck_of_the_Draw",
+        "Snipers_Allure"
       ],
       "slots.d": "Gala_Cat_Sith",
       "acl": [
-        "`dragon(c3-s-end), fsc and self.energy() < 5 and self.trickery <= 1",
         "`s3, not buff(s3)",
-        "`s2, self.energy() < 5 and cancel",
+        "`s2, self.energy() < 5",
         "`s1",
         "`s4, fsc and self.energy() < 5",
         "`fs, x=4"
@@ -32,9 +31,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 23473.46794228438,
-      "team": 0.18829297699844463,
-      "tdps": 227666.9036953583,
+      "dps": 25416.250742000746,
+      "team": 0.18704043570822418,
+      "tdps": 231349.71537921298,
       "slots.a": [
         "Howling_to_the_Heavens",
         "Memory_of_a_Friend",
@@ -62,7 +61,7 @@
       ]
     },
     "affliction": {
-      "dps": 82531.47713229626,
+      "dps": 82645.32245455883,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -74,9 +73,8 @@
       ],
       "slots.d": "Gala_Cat_Sith",
       "acl": [
-        "`dragon(c3-s-end), fsc and self.energy() < 5 and self.trickery <= 1",
         "`s3, not buff(s3)",
-        "`s2, self.energy() < 5 and cancel",
+        "`s2, self.energy() < 5",
         "`s1",
         "`s4, fsc and self.energy() < 5",
         "`fs, x=4"
@@ -94,7 +92,7 @@
   },
   "120": {
     "base": {
-      "dps": 55772.12521107797,
+      "dps": 61899.186519790164,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -125,7 +123,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 77921.5290823046,
+      "dps": 79833.89536905815,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -157,7 +155,7 @@
   },
   "60": {
     "base": {
-      "dps": 44980.8379733036,
+      "dps": 55102.43344718549,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -188,7 +186,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 69540.37643238642,
+      "dps": 69654.63780790086,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -200,9 +198,8 @@
       ],
       "slots.d": "Gala_Cat_Sith",
       "acl": [
-        "`dragon(c3-s-end), fsc and self.energy() < 5 and self.trickery <= 1",
         "`s3, not buff(s3)",
-        "`s2, self.energy() < 5 and cancel",
+        "`s2, self.energy() < 5",
         "`s1",
         "`s4, fsc and self.energy() < 5",
         "`fs, x=4"

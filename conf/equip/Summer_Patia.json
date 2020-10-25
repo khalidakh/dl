@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 70389.70707832555,
-      "team": 0.09632421219560902,
+      "dps": 69898.08069545467,
+      "team": 0.10238790632102175,
       "tdps": null,
       "slots.a": [
         "Kung_Fu_Masters",
@@ -11,9 +11,8 @@
         "His_Clever_Brother",
         "The_Plaguebringer"
       ],
-      "slots.d": "Shinobi",
+      "slots.d": "Fatalis",
       "acl": [
-        "`dragon(c3-s-end), s",
         "`s3, not buff(s3)",
         "`s1, fsc",
         "`s2, fsc",
@@ -28,13 +27,13 @@
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Karina"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 74732.5292295193,
-      "team": 0.09670577948936626,
+      "dps": 73633.63075842286,
+      "team": 0.10238790632102178,
       "tdps": null,
       "slots.a": [
         "Kung_Fu_Masters",
@@ -43,9 +42,8 @@
         "His_Clever_Brother",
         "The_Plaguebringer"
       ],
-      "slots.d": "Shinobi",
+      "slots.d": "Fatalis",
       "acl": [
-        "`dragon(c3-s-end), s",
         "`s3, not buff(s3)",
         "`s1, fsc",
         "`s2, fsc",
@@ -64,9 +62,9 @@
       ]
     },
     "buffer": {
-      "dps": 52775.20500398765,
-      "team": 0.23619397309214973,
-      "tdps": 125935.02670936177,
+      "dps": 53394.988859429024,
+      "team": 0.23787670223438775,
+      "tdps": 121804.10730476951,
       "slots.a": [
         "Kung_Fu_Masters",
         "Summer_Paladyns",
@@ -97,8 +95,8 @@
   },
   "60": {
     "base": {
-      "dps": 79481.05227655474,
-      "team": 0.07554031748099792,
+      "dps": 80649.61661964217,
+      "team": 0.07370523259064342,
       "tdps": null,
       "slots.a": [
         "Kung_Fu_Masters",
@@ -129,8 +127,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 80268.09765967126,
-      "team": 0.07554031748099792,
+      "dps": 81458.44314403381,
+      "team": 0.07370523259064342,
       "tdps": null,
       "slots.a": [
         "Kung_Fu_Masters",
@@ -158,13 +156,11 @@
         "Weapon",
         "Karina"
       ]
-    }
-  },
-  "120": {
-    "base": {
-      "dps": 43999.40869748528,
-      "team": 0.09326664944397321,
-      "tdps": null,
+    },
+    "buffer": {
+      "dps": 62355.48971329361,
+      "team": 0.12758688279112776,
+      "tdps": 339524.25061740435,
       "slots.a": [
         "Kung_Fu_Masters",
         "Summer_Paladyns",
@@ -174,25 +170,28 @@
       ],
       "slots.d": "Gala_Cat_Sith",
       "acl": [
+        "`dragon(c3-s-end), s",
+        "`s3, not buff(s3)",
         "`s1, fsc",
         "`s2, fsc",
-        "`s3, fsc",
+        "`s4, fsc",
+        "`dodge, fsc",
         "`fs3"
       ],
       "coabs": [
-        "Blade",
         "Wand",
-        "Grace"
+        "Curran"
       ],
       "share": [
         "Weapon",
-        "Karina"
+        "Patia"
       ]
-    },
-    "pref": "base",
-    "affliction": {
-      "dps": 83992.69419748502,
-      "team": 0.09086377174060122,
+    }
+  },
+  "120": {
+    "base": {
+      "dps": 80456.1558784979,
+      "team": 0.08927769384953807,
       "tdps": null,
       "slots.a": [
         "Kung_Fu_Masters",
@@ -219,6 +218,69 @@
       "share": [
         "Weapon",
         "Karina"
+      ]
+    },
+    "pref": "base",
+    "affliction": {
+      "dps": 82275.00281954304,
+      "team": 0.08927769384953807,
+      "tdps": null,
+      "slots.a": [
+        "Kung_Fu_Masters",
+        "Summer_Paladyns",
+        "The_Lurker_in_the_Woods",
+        "His_Clever_Brother",
+        "The_Plaguebringer"
+      ],
+      "slots.d": "Gala_Cat_Sith",
+      "acl": [
+        "`dragon(c3-s-end), s",
+        "`s3, not buff(s3)",
+        "`s1, fsc",
+        "`s2, fsc",
+        "`s4, fsc",
+        "`dodge, fsc",
+        "`fs3"
+      ],
+      "coabs": [
+        "Ieyasu",
+        "Wand",
+        "Curran"
+      ],
+      "share": [
+        "Weapon",
+        "Karina"
+      ]
+    },
+    "buffer": {
+      "dps": 60113.147102836534,
+      "team": 0.1893085208968321,
+      "tdps": 203367.39559339345,
+      "slots.a": [
+        "Kung_Fu_Masters",
+        "Summer_Paladyns",
+        "The_Lurker_in_the_Woods",
+        "Chariot_Drift",
+        "The_Plaguebringer"
+      ],
+      "slots.d": "Gala_Cat_Sith",
+      "acl": [
+        "`dragon(c3-s-end), s",
+        "`s3, not buff(s3)",
+        "`s1, fsc",
+        "`s2, fsc",
+        "`s4, fsc",
+        "`dodge, fsc",
+        "`fs3"
+      ],
+      "coabs": [
+        "Blade",
+        "Wand",
+        "Bow"
+      ],
+      "share": [
+        "Weapon",
+        "Elisanne"
       ]
     }
   }

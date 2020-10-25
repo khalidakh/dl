@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 69497.2058966927,
+      "dps": 70896.78264378959,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -13,15 +13,18 @@
       ],
       "slots.d": "Gala_Mars",
       "acl": [
-        "`dragon(s), s=1",
-        "`s3, not buff(s3) and fsc",
-        "`s2",
+        "queue prep and not buff(s3)",
+        "`s2;s4; s3; s1",
+        "end",
+        "`dragon(s), s=4",
+        "`s3, not buff(s3)",
+        "`s2, cancel",
         "`s1",
         "`s4, cancel",
         "`fs, x=4"
       ],
       "coabs": [
-        "Nobunaga",
+        "Blade",
         "Wand",
         "Gala_Sarisse"
       ],
@@ -32,7 +35,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 74626.61575281389,
+      "dps": 83666.08587598475,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -44,12 +47,12 @@
       ],
       "slots.d": "Gala_Mars",
       "acl": [
-        "`dragon, s=1",
+        "`dragon(s), s=4",
         "`s3, not buff(s3)",
-        "`s2, fsc",
-        "`s1, (cancel and naveed_bauble < 5) or (naveed_bauble=5)",
-        "`s4",
-        "`fs, x=5"
+        "`s2, cancel",
+        "`s1",
+        "`s4, cancel",
+        "`fs, x=4"
       ],
       "coabs": [
         "Blade",
@@ -62,9 +65,9 @@
       ]
     },
     "buffer": {
-      "dps": 58260.35516527484,
-      "team": 0.07479167787484026,
-      "tdps": 150241.99283538078,
+      "dps": 61610.516774938755,
+      "team": 0.07471018869572182,
+      "tdps": 124297.18129439815,
       "slots.a": [
         "Brothers_in_Arms",
         "Memory_of_a_Friend",
@@ -94,7 +97,7 @@
   },
   "120": {
     "base": {
-      "dps": 63691.557909124036,
+      "dps": 67099.71869743415,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -125,7 +128,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 76279.76470697063,
+      "dps": 84102.36169536918,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -157,7 +160,7 @@
   },
   "60": {
     "base": {
-      "dps": 59428.78068591838,
+      "dps": 63890.62422100364,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -188,7 +191,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 76533.28057847482,
+      "dps": 80609.19899801051,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

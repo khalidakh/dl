@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 70575.76098632757,
+      "dps": 71338.82020190122,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -13,7 +13,7 @@
       ],
       "slots.d": "Gala_Cat_Sith",
       "acl": [
-        "`dragon(c3-s-end), fsc and ((self.dragonform.shift_count<3) or ((self.dragonform.shift_count<=3) and self.trickery <= 1))",
+        "`dragon(c3-s-end), fsc",
         "`s3, not buff(s3)",
         "`s2",
         "`s1, cancel",
@@ -32,7 +32,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 77263.04217981383,
+      "dps": 78422.9416874666,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -44,7 +44,7 @@
       ],
       "slots.d": "Gala_Cat_Sith",
       "acl": [
-        "`dragon(c3-s-end), fsc and ((self.dragonform.shift_count<3) or ((self.dragonform.shift_count<=3) and self.trickery <= 1))",
+        "`dragon(c3-s-end), fsc",
         "`s3, not buff(s3)",
         "`s2",
         "`s1, cancel",
@@ -62,9 +62,9 @@
       ]
     },
     "buffer": {
-      "dps": 16981.599726255066,
-      "team": 0.1178539651494698,
-      "tdps": 454750.59911731456,
+      "dps": 17533.835156289915,
+      "team": 0.11892811827347283,
+      "tdps": 452416.01251848467,
       "slots.a": [
         "An_Ancient_Oath",
         "Memory_of_a_Friend",
@@ -94,7 +94,7 @@
   },
   "120": {
     "base": {
-      "dps": 61751.353817902374,
+      "dps": 63195.91173826715,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -125,7 +125,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 65909.8979792146,
+      "dps": 71710.34864764364,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -141,11 +141,11 @@
         "`s3, not buff(s3)",
         "`s2",
         "`s1, cancel",
-        "`s4, fsc",
+        "`s4",
         "`fs, x=4"
       ],
       "coabs": [
-        "Delphi",
+        "Ieyasu",
         "Forte",
         "Cleo"
       ],
@@ -157,7 +157,7 @@
   },
   "60": {
     "base": {
-      "dps": 47763.27175569687,
+      "dps": 52192.188106718175,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -188,9 +188,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 39003.521299633794,
-      "team": 0.017492088449493428,
-      "tdps": 500783.56745999417,
+      "dps": 40864.9778337119,
+      "team": 0.017521268444411913,
+      "tdps": 646483.4614538928,
       "slots.a": [
         "Castle_Cheer_Corps",
         "Jewels_of_the_Sun",
@@ -218,7 +218,7 @@
       ]
     },
     "affliction": {
-      "dps": 58788.60090966184,
+      "dps": 61301.654658789295,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -234,8 +234,8 @@
         "`s3, not buff(s3)",
         "`s2",
         "`s1, cancel",
-        "`s4, fsc",
-        "`fs, x=3"
+        "`s4",
+        "`fs, x=4"
       ],
       "coabs": [
         "Ieyasu",

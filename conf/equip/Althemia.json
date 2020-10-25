@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 83203.30085065201,
+      "dps": 81570.37659233523,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -31,9 +31,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 45850.98283777077,
-      "team": 0.06243702745496338,
-      "tdps": 598239.8511816397,
+      "dps": 68551.71157965444,
+      "team": 0.12332441822000953,
+      "tdps": 105564.3740354455,
       "slots.a": [
         "Candy_Couriers",
         "Howling_to_the_Heavens",
@@ -41,7 +41,7 @@
         "His_Clever_Brother",
         "The_Plaguebringer"
       ],
-      "slots.d": "Shinobi",
+      "slots.d": "Gala_Cat_Sith",
       "acl": [
         "`dragon(c3-s-c3-end), x=5",
         "`s3, not buff(s3)",
@@ -56,11 +56,11 @@
       ],
       "share": [
         "Weapon",
-        "Patia"
+        "Akasha"
       ]
     },
     "affliction": {
-      "dps": 85345.29621569393,
+      "dps": 83505.10958415638,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -91,7 +91,7 @@
   },
   "60": {
     "base": {
-      "dps": 71960.16664599557,
+      "dps": 71781.14154822016,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -121,7 +121,68 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 72816.1822538376,
+      "dps": 72635.33386870056,
+      "team": 0.0,
+      "tdps": null,
+      "slots.a": [
+        "Candy_Couriers",
+        "Howling_to_the_Heavens",
+        "Memory_of_a_Friend",
+        "His_Clever_Brother",
+        "The_Plaguebringer"
+      ],
+      "slots.d": "Gala_Cat_Sith",
+      "acl": [
+        "`dragon(c3-s-c3-end), x=5",
+        "`s3, not buff(s3)",
+        "`s2",
+        "`s4",
+        "`s1,buff(s3) and cancel"
+      ],
+      "coabs": [
+        "Delphi",
+        "Bow",
+        "Heinwald"
+      ],
+      "share": [
+        "Weapon",
+        "Fjorm"
+      ]
+    }
+  },
+  "120": {
+    "base": {
+      "dps": 80511.94776621928,
+      "team": 0.0,
+      "tdps": null,
+      "slots.a": [
+        "Candy_Couriers",
+        "Howling_to_the_Heavens",
+        "Memory_of_a_Friend",
+        "His_Clever_Brother",
+        "The_Plaguebringer"
+      ],
+      "slots.d": "Gala_Cat_Sith",
+      "acl": [
+        "`dragon(c3-s-c3-end), x=5",
+        "`s3, not buff(s3)",
+        "`s2",
+        "`s4",
+        "`s1,buff(s3) and cancel"
+      ],
+      "coabs": [
+        "Delphi",
+        "Bow",
+        "Heinwald"
+      ],
+      "share": [
+        "Weapon",
+        "Fjorm"
+      ]
+    },
+    "pref": "base",
+    "affliction": {
+      "dps": 81010.84226605293,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

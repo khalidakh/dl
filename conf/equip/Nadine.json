@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 62632.97553454507,
+      "dps": 70281.76009716114,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -21,7 +21,7 @@
         "`fs, x=5"
       ],
       "coabs": [
-        "Nobunaga",
+        "Blade",
         "Wand",
         "Joe"
       ],
@@ -32,7 +32,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 74051.66498861305,
+      "dps": 68147.56670280115,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -52,9 +52,9 @@
         "`fs, x=5"
       ],
       "coabs": [
-        "Nobunaga",
+        "Blade",
         "Wand",
-        "Serena"
+        "Joe"
       ],
       "share": [
         "Weapon",
@@ -62,9 +62,9 @@
       ]
     },
     "buffer": {
-      "dps": 55173.18521737264,
-      "team": 0.12157514213385646,
-      "tdps": 61359.503153688,
+      "dps": 55201.02751250083,
+      "team": 0.12219442902469799,
+      "tdps": 123415.8766895354,
       "slots.a": [
         "Dragon_and_Tamer",
         "Me_and_My_Bestie",
@@ -94,7 +94,7 @@
   },
   "60": {
     "base": {
-      "dps": 70014.6572974725,
+      "dps": 83406.97904232086,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -125,7 +125,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 80134.20014079275,
+      "dps": 86498.78504725113,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

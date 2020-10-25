@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 55506.49259345475,
+      "dps": 55420.37699097857,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -26,27 +26,27 @@
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Jurota"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 62559.881362649954,
-      "team": 0.0,
+      "dps": 64286.77294275476,
+      "team": 0.017533233535531823,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
-        "Moonlight_Party",
+        "The_Red_Impulse",
         "Valiant_Crown",
-        "His_Clever_Brother",
+        "A_Small_Courage",
         "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
       "acl": [
-        "`dragon(c3-s-end), s=1",
+        "`dragon(s-end)",
         "`s3, not buff(s3)",
         "`s1",
-        "`s4, cancel",
+        "`s4",
         "`s2, x=5"
       ],
       "coabs": [
@@ -56,13 +56,13 @@
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Curran"
       ]
     },
     "buffer": {
-      "dps": 44583.426082507074,
-      "team": 0.06400292964355989,
-      "tdps": 170665.1019223583,
+      "dps": 44906.30030479182,
+      "team": 0.06341752324832997,
+      "tdps": 165791.3483157611,
       "slots.a": [
         "Memory_of_a_Friend",
         "Moonlight_Party",
@@ -91,7 +91,7 @@
   },
   "60": {
     "base": {
-      "dps": 48747.42217340703,
+      "dps": 49185.250879179104,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -121,22 +121,22 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 55314.20315728549,
-      "team": 0.0,
+      "dps": 57293.637786860716,
+      "team": 0.015263958777293784,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
-        "Moonlight_Party",
+        "The_Red_Impulse",
         "Valiant_Crown",
-        "His_Clever_Brother",
+        "A_Small_Courage",
         "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
       "acl": [
-        "`dragon(c3-s-end), s=1",
+        "`dragon(s-end)",
         "`s3, not buff(s3)",
         "`s1",
-        "`s4, cancel",
+        "`s4",
         "`s2, x=5"
       ],
       "coabs": [
@@ -146,7 +146,7 @@
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Curran"
       ]
     }
   }

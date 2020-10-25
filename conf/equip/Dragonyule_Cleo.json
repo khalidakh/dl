@@ -1,101 +1,98 @@
 {
   "180": {
     "base": {
-      "dps": 38133.80160455382,
-      "team": 0.0621773547890769,
+      "dps": 47186.19576004868,
+      "team": 0.04275844608645285,
       "tdps": null,
       "slots.a": [
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
-        "Twinfold_Bonds",
-        "A_Passion_for_Produce",
-        "His_Clever_Brother"
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
+        "Such_High_Spirits"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-s-end), s",
-        "`s3, not buff(s3)",
+        "`dragon(c3-c3-c3-c1-s)",
+        "`s3, not buff(s3) and x=5",
         "`s4",
-        "`s1",
-        "`s2",
-        "`fs, x=4"
+        "`s1, x=5 or s",
+        "`s2, x=5"
       ],
       "coabs": [
-        "Blade",
-        "Summer_Estelle",
-        "Xander"
+        "Eugene",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Gala_Mym"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 34010.44703734885,
-      "team": 0.11059832643302613,
-      "tdps": 85156.37805711459,
+      "dps": 24714.774479626172,
+      "team": 0.17027809532110902,
+      "tdps": 176219.28397145733,
       "slots.a": [
+        "Crystalian_Envoy",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
-        "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "The_Prince_of_Dragonyule",
+        "Chariot_Drift",
         "His_Clever_Brother"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Dragonyule_Jeanne",
       "acl": [
-        "`dragon(c3-s-end)",
-        "`s3, not buff(s3)",
+        "`dragon(c3-c3-c3-c1-s)",
+        "`s3, not buff(s3) and x=5",
         "`s4",
-        "`s1",
-        "`s2",
-        "`fs, x=5"
+        "`s1, x=5 or s",
+        "`s2, x=5"
       ],
       "coabs": [
-        "Summer_Estelle",
-        "Hunter_Sarisse",
-        "Xander"
+        "Eugene",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Mikoto"
+        "Cleo"
       ]
     },
     "affliction": {
-      "dps": 42943.52114913297,
-      "team": 0.06218990678230052,
+      "dps": 51812.51745271985,
+      "team": 0.04279671750234365,
       "tdps": null,
       "slots.a": [
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
-        "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-s-end), s",
-        "`s3, not buff(s3)",
+        "`dragon(c3-c3-c3-c1-s)",
+        "`s3, not buff(s3) and x=5",
         "`s4",
-        "`s1",
-        "`s2",
-        "`fs, x=4"
+        "`s1, x=5 or s",
+        "`s2, x=5"
       ],
       "coabs": [
-        "Blade",
-        "Summer_Estelle",
-        "Xander"
+        "Eugene",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Gala_Mym"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 38044.080646237264,
-      "team": 0.04664307463509399,
+      "dps": 38938.129840625035,
+      "team": 0.04662580486609467,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -125,33 +122,32 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 41687.14197383451,
-      "team": 0.04664307463509399,
+      "dps": 53917.129650657334,
+      "team": 0.016663572796650695,
       "tdps": null,
       "slots.a": [
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
-        "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-s-end), s",
-        "`s3, not buff(s3)",
+        "`dragon(c3-c3-c3-c1-s)",
+        "`s3, not buff(s3) and x=5",
         "`s4",
-        "`s1",
-        "`s2",
-        "`fs, x=5"
+        "`s1, x=5 or s",
+        "`s2, x=5"
       ],
       "coabs": [
-        "Blade",
-        "Summer_Estelle",
-        "Xander"
+        "Eugene",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Karina"
+        "Gala_Mym"
       ]
     }
   }

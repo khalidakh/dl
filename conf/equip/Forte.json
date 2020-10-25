@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 97035.3094728851,
-      "team": 0.1041377782239407,
+      "dps": 97053.75179269662,
+      "team": 0.10407345598883629,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -21,18 +21,18 @@
         "`fs, x=5"
       ],
       "coabs": [
-        "Ieyasu",
+        "Blade",
         "Delphi",
         "Cleo"
       ],
       "share": [
         "Weapon",
-        "Rodrigo"
+        "Althemia"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 111139.76179083195,
+      "dps": 109852.42782065032,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -44,7 +44,7 @@
       ],
       "slots.d": "Gala_Cat_Sith",
       "acl": [
-        "`dragon(s-end), ((self.dragonform.shift_count<3) or (self.trickery <1))",
+        "`dragon(s-end), self.dragonform.shift_count<3 or self.trickery <= 2",
         "`s3, not buff(s3)",
         "`s2",
         "`s4, cancel",
@@ -62,9 +62,9 @@
       ]
     },
     "buffer": {
-      "dps": 64245.12869823178,
-      "team": 0.20230146576604618,
-      "tdps": 334035.74779715337,
+      "dps": 65231.381318994776,
+      "team": 0.20827771851579005,
+      "tdps": 305384.5370813942,
       "slots.a": [
         "An_Ancient_Oath",
         "Dragon_and_Tamer",
@@ -92,72 +92,102 @@
   },
   "60": {
     "affliction": {
-      "dps": 89746.36387067751,
-      "team": 0.16085680228403706,
+      "dps": 96493.67320990415,
+      "team": 0.16307830246180222,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
         "Dragon_and_Tamer",
         "Memory_of_a_Friend",
-        "His_Clever_Brother",
+        "Dueling_Dancers",
         "The_Plaguebringer"
       ],
       "slots.d": "Ramiel",
       "acl": [
         "`dragon(s-end)",
         "`s3, not buff(s3)",
-        "`s2",
+        "`s2, cancel or s",
         "`s4, cancel",
-        "`s1, cancel",
+        "`s1",
         "`fs, x=5"
       ],
       "coabs": [
-        "Ieyasu",
-        "Wand",
-        "Cleo"
+        "Blade",
+        "Cleo",
+        "Dagger2"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Rodrigo"
       ]
     },
     "pref": "base",
     "base": {
-      "dps": 74850.2272214655,
-      "team": 0.12477904830008833,
+      "dps": 92588.18033743018,
+      "team": 0.1727969361978499,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
         "Dragon_and_Tamer",
-        "The_Red_Impulse",
+        "Memory_of_a_Friend",
         "Dueling_Dancers",
         "The_Plaguebringer"
       ],
       "slots.d": "Ramiel",
       "acl": [
-        "`dragon(s-c3-end), s=2",
+        "`dragon(s-end)",
         "`s3, not buff(s3)",
-        "`s2, cancel",
+        "`s2, cancel or s",
         "`s4, cancel",
         "`s1",
         "`fs, x=5"
       ],
       "coabs": [
         "Ieyasu",
-        "Wand",
-        "Cleo"
+        "Cleo",
+        "Dagger2"
       ],
       "share": [
         "Weapon",
-        "Kleimann"
+        "Rodrigo"
+      ]
+    },
+    "buffer": {
+      "dps": 80614.17528289037,
+      "team": 0.18746017913194835,
+      "tdps": 816600.0596426735,
+      "slots.a": [
+        "An_Ancient_Oath",
+        "Dragon_and_Tamer",
+        "Sisters_Day_Out",
+        "Dueling_Dancers",
+        "The_Plaguebringer"
+      ],
+      "slots.d": "Ramiel",
+      "acl": [
+        "`dragon(s-end)",
+        "`s3, not buff(s3)",
+        "`s2, cancel or s",
+        "`s4, cancel",
+        "`s1",
+        "`fs, x=5"
+      ],
+      "coabs": [
+        "Ieyasu",
+        "Delphi",
+        "Audric"
+      ],
+      "share": [
+        "Weapon",
+        "Rodrigo"
       ]
     }
   },
   "120": {
     "pref": "base",
     "base": {
-      "dps": 97367.57886180733,
-      "team": 0.12339820745200766,
+      "dps": 95847.29017870186,
+      "team": 0.12495063168503504,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -186,8 +216,8 @@
       ]
     },
     "affliction": {
-      "dps": 105565.4705816721,
-      "team": 0.13570441861275828,
+      "dps": 105315.43817264901,
+      "team": 0.13683312519607985,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -202,7 +232,7 @@
         "`s3, not buff(s3)",
         "`s2, cancel",
         "`s4, cancel",
-        "`s1, cancel",
+        "`s1",
         "`fs, x=5"
       ],
       "coabs": [
@@ -216,9 +246,9 @@
       ]
     },
     "buffer": {
-      "dps": 90993.76841755805,
-      "team": 0.13570441861275828,
-      "tdps": 517934.42847607576,
+      "dps": 90274.39017139017,
+      "team": 0.13691534803893726,
+      "tdps": 465777.8623806757,
       "slots.a": [
         "An_Ancient_Oath",
         "Dragon_and_Tamer",

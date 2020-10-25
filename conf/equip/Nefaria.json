@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 60197.84154422912,
+      "dps": 60622.53157225448,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -27,12 +27,12 @@
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Karina"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 63688.84878743066,
+      "dps": 66010.1365932738,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -49,7 +49,8 @@
         "`fs, c_fs(enhanced) > 0 and x=4 and s1.check()",
         "`s1, fsc or x=1 or s=4 or not buff(s3)",
         "`s4",
-        "`s2"
+        "`s2",
+        "`fs, x=5"
       ],
       "coabs": [
         "Ieyasu",
@@ -58,21 +59,21 @@
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Karina"
       ]
     },
     "buffer": {
-      "dps": 54443.0117698988,
-      "team": 0.08333329772081297,
-      "tdps": 69057.98680391136,
+      "dps": 41062.54732547175,
+      "team": 0.12188994679910327,
+      "tdps": 160472.49802332858,
       "slots.a": [
+        "Crystalian_Envoy",
         "Dear_Diary",
         "Forest_Bonds",
-        "Memory_of_a_Friend",
-        "Snipers_Allure",
+        "Beautiful_Nothingness",
         "The_Plaguebringer"
       ],
-      "slots.d": "Gala_Cat_Sith",
+      "slots.d": "Ramiel",
       "acl": [
         "`dragon(c3-s-end)",
         "`s3, not buff(s3) and x=4",
@@ -88,14 +89,14 @@
       ],
       "share": [
         "Weapon",
-        "Elisanne"
+        "Patia"
       ]
     }
   },
   "120": {
     "base": {
-      "dps": 51404.33575517294,
-      "team": 0.03095675335435971,
+      "dps": 50219.33978946135,
+      "team": 0.030962219976394628,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
@@ -124,7 +125,7 @@
       ]
     },
     "affliction": {
-      "dps": 66516.31591516375,
+      "dps": 69157.47910950906,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -150,16 +151,16 @@
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Karina"
       ]
     },
     "pref": "base"
   },
   "60": {
     "base": {
-      "dps": 57361.68755560667,
+      "dps": 54189.553985060214,
       "team": 0.0,
-      "tdps": 11286.707672218421,
+      "tdps": -50393.160382519665,
       "slots.a": [
         "Dear_Diary",
         "Forest_Bonds",
@@ -188,9 +189,9 @@
     },
     "pref": "buffer",
     "buffer": {
-      "dps": 56659.3158000783,
-      "team": 0.06222999442585196,
-      "tdps": 11286.707672218421,
+      "dps": 57337.38168421676,
+      "team": 0.062465375762550096,
+      "tdps": -50393.160382519665,
       "slots.a": [
         "Dear_Diary",
         "Forest_Bonds",
@@ -218,7 +219,7 @@
       ]
     },
     "affliction": {
-      "dps": 60836.50508261029,
+      "dps": 67313.87961609752,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -244,7 +245,7 @@
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Karina"
       ]
     }
   }

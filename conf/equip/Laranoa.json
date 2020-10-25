@@ -1,72 +1,72 @@
 {
   "180": {
     "base": {
-      "dps": 34223.56623070521,
-      "team": 0.20161151619409268,
-      "tdps": 31118.720869068668,
+      "dps": 42003.65447878001,
+      "team": 0.06663953697072669,
+      "tdps": 33636.10619027149,
       "slots.a": [
-        "Dear_Diary",
-        "Forest_Bonds",
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "From_Whence_He_Comes",
-        "His_Clever_Brother"
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
+        "Such_High_Spirits"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-s-end), s",
-        "`s3, not buff(s3)",
-        "`s2",
+        "`dragon(c3-c3-c3-c3-c1-s-c3-c3-c2-end), cancel",
+        "`s3, not buff(s3) and x=5",
         "`s4",
-        "`s1",
+        "`s2",
+        "`s1, buff(s3)",
         "`dodge, fsc",
         "`fs, x=5"
       ],
       "coabs": [
-        "Summer_Estelle",
         "Dragonyule_Cleo",
-        "Xander"
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Gala_Mym"
       ]
     },
     "pref": "buffer",
     "affliction": {
-      "dps": 35835.30706785987,
-      "team": 0.20161151619409268,
+      "dps": 44634.89762245831,
+      "team": 0.06658483390579652,
       "tdps": null,
       "slots.a": [
-        "Dear_Diary",
-        "Forest_Bonds",
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "From_Whence_He_Comes",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-s-end), s",
-        "`s3, not buff(s3)",
-        "`s2",
+        "`dragon(c3-c3-c3-c1-s-c3-c3-c2-end)",
+        "`s3, not buff(s3) and x=5",
         "`s4",
-        "`s1",
+        "`s2",
+        "`s1, buff(s3)",
         "`dodge, fsc",
         "`fs, x=5"
       ],
       "coabs": [
-        "Summer_Estelle",
         "Dragonyule_Cleo",
-        "Xander"
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Gala_Mym"
       ]
     },
     "buffer": {
-      "dps": 5789.9402399103565,
-      "team": 1.115326000488891,
-      "tdps": 31118.720869068668,
+      "dps": 6520.7022322484645,
+      "team": 1.121546191320457,
+      "tdps": 33636.10619027149,
       "slots.a": [
         "Sisters_Day_Out",
         "Study_Rabbits",
@@ -76,10 +76,10 @@
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(s-end)",
+        "`dragon(c3-s-end)",
+        "`s3",
         "`s2",
         "`s4",
-        "`s3, cancel",
         "`fs, x=5"
       ],
       "coabs": [
@@ -89,14 +89,14 @@
       ],
       "share": [
         "Gala_Elisanne",
-        "Yuya"
+        "Templar_Hope"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 27230.10485428904,
-      "team": 0.12853577163810043,
+      "dps": 28048.2326393512,
+      "team": 0.12807560171239207,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
@@ -127,34 +127,34 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 33653.324809754005,
-      "team": 0.16592669111820554,
+      "dps": 47981.78215546813,
+      "team": 0.049326528464695395,
       "tdps": null,
       "slots.a": [
-        "Dear_Diary",
-        "Forest_Bonds",
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "From_Whence_He_Comes",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-s-end), s",
-        "`s3, not buff(s3)",
-        "`s2",
+        "`dragon(c3-c3-c3-c1-s-c3-c3-c2-end)",
+        "`s3, not buff(s3) and x=5",
         "`s4",
-        "`s1",
+        "`s2",
+        "`s1, buff(s3)",
         "`dodge, fsc",
         "`fs, x=5"
       ],
       "coabs": [
-        "Summer_Estelle",
         "Dragonyule_Cleo",
-        "Xander"
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Gala_Mym"
       ]
     }
   }

@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 48726.44299112324,
-      "team": 0.15070908226803878,
+      "dps": 47688.68394293861,
+      "team": 0.15089253210113768,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -30,8 +30,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 52474.78601227406,
-      "team": 0.15109165386368545,
+      "dps": 51078.875819683446,
+      "team": 0.15096019843718056,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -58,17 +58,17 @@
       ]
     },
     "buffer": {
-      "dps": 33490.23557345107,
-      "team": 0.2670837613477145,
-      "tdps": 130923.73305056096,
+      "dps": 6653.749604321748,
+      "team": 0.6376637277930216,
+      "tdps": 84300.25174412975,
       "slots.a": [
-        "An_Ancient_Oath",
-        "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
-        "Such_High_Spirits"
+        "Jewels_of_the_Sun",
+        "Study_Rabbits",
+        "Warrior_Maiden",
+        "From_Whence_He_Comes",
+        "Bellathorna"
       ],
-      "slots.d": "Daikokuten",
+      "slots.d": "PopStar_Siren",
       "acl": [
         "`dragon",
         "`s3",
@@ -76,20 +76,20 @@
         "`s1, not buff(s1)"
       ],
       "coabs": [
-        "Cleo",
-        "Raemond",
-        "Dagger2"
+        "Bow",
+        "The_Prince",
+        "Tobias"
       ],
       "share": [
-        "Weapon",
-        "Karl"
+        "Chitose",
+        "Yuya"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 50170.511522592686,
-      "team": 0.30146439929409447,
+      "dps": 49511.836471234776,
+      "team": 0.30227325590741866,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -117,8 +117,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 57381.53071778302,
-      "team": 0.20934742600242182,
+      "dps": 57684.58986469361,
+      "team": 0.2102970426108134,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -147,8 +147,8 @@
   },
   "120": {
     "affliction": {
-      "dps": 51175.85002408193,
-      "team": 0.1798855405736898,
+      "dps": 50355.52548469782,
+      "team": 0.18067932667511827,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",

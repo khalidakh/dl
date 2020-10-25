@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 27978.775868776116,
-      "team": 0.07832614055214096,
+      "dps": 28301.55821175004,
+      "team": 0.07832660998380644,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -32,13 +32,13 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 7687.520970561845,
-      "team": 0.3870079923621914,
-      "tdps": 65735.17289477917,
+      "dps": 6506.3761019485755,
+      "team": 0.39237784840321194,
+      "tdps": 69400.08330963716,
       "slots.a": [
         "Honest_Repose",
-        "Memory_of_a_Friend",
         "Sisters_Day_Out",
+        "Warrior_Maiden",
         "From_Whence_He_Comes",
         "Bellathorna"
       ],
@@ -61,8 +61,8 @@
       ]
     },
     "affliction": {
-      "dps": 27978.775868776116,
-      "team": 0.07832614055214096,
+      "dps": 28301.55821175004,
+      "team": 0.07832660998380644,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",

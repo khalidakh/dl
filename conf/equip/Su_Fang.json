@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 58131.59180506806,
+      "dps": 59009.60037438335,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -32,9 +32,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 27363.0873757142,
+      "dps": 28344.63744422261,
       "team": 0.12632091099947657,
-      "tdps": 243574.11758597402,
+      "tdps": 242754.4472845656,
       "slots.a": [
         "A_Dogs_Day",
         "Memory_of_a_Friend",
@@ -62,14 +62,14 @@
       ]
     },
     "affliction": {
-      "dps": 63884.847819681556,
+      "dps": 64887.79325973162,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
         "Moonlight_Party",
         "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "His_Clever_Brother",
         "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
@@ -88,13 +88,13 @@
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Jurota"
       ]
     }
   },
   "120": {
     "affliction": {
-      "dps": 63064.514168522895,
+      "dps": 62194.6978895058,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -127,7 +127,7 @@
   },
   "60": {
     "base": {
-      "dps": 46739.104100573204,
+      "dps": 49005.137416263366,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -158,7 +158,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 59837.33989858593,
+      "dps": 61223.84402271785,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

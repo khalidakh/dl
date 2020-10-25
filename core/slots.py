@@ -1,16 +1,11 @@
 from itertools import chain, islice
 from collections import defaultdict
 from collections import namedtuple
+import html
 
-from conf import wyrmprints, weapons, dragons, elecoabs, alias, ELEMENTS, WEAPON_TYPES
+from conf import wyrmprints, weapons, dragons, elecoabs, alias, ELEMENTS, WEAPON_TYPES, subclass_dict
 from core.config import Conf
 from core.ability import ability_dict
-
-def all_subclasses(cl):
-    return set(cl.__subclasses__()).union([s for c in cl.__subclasses__() for s in all_subclasses(c)])
-
-def subclass_dict(cl):
-    return {sub_class.__name__: sub_class for sub_class in all_subclasses(cl)}
 
 class SlotBase:
     KIND = 's'
@@ -25,6 +20,10 @@ class SlotBase:
     @property
     def name(self):
         return self.conf.name
+
+    @property
+    def escaped(self):
+        return html.escape(self.conf.name).replace(',', '&#44;')
 
     @property
     def icon(self):
@@ -56,7 +55,7 @@ class CharaBase(SlotBase):
         'water': {'tree': 0.16, 'yuletree': 0.085, 'dragonata': 0.085},
         'wind': {'tree': 0.26, 'shrine': 0.085},
         'light': {'tree': 0.16, 'retreat': 0.085, 'circus': 0.085},
-        'shadow': {'tree': 0.26, 'library': 0.07}
+        'shadow': {'tree': 0.26, 'library': 0.085}
     }
     FAC_ELEMENT_HP = FAC_ELEMENT_ATT.copy()
     FAC_ELEMENT_HP['flame']['arctos'] = 0.095
@@ -65,11 +64,11 @@ class CharaBase(SlotBase):
     FAC_ELEMENT_HP['wind']['shrine'] = 0.095
     FAC_ELEMENT_HP['light']['retreat'] = 0.095
     FAC_ELEMENT_HP['light']['circus'] = 0.095
-    FAC_ELEMENT_HP['shadow']['library'] = 0.085
+    FAC_ELEMENT_HP['shadow']['library'] = 0.095
 
     FAC_WEAPON_ATT = {
         'all': {'dojo1': 0.15, 'dojo2': 0.15, 'weap': 0.195},
-        'dagger': 0.05, 'bow': 0.05, 'blade': 0.05, 'wand': 0.05,
+        'dagger': 0.06, 'bow': 0.06, 'blade': 0.05, 'wand': 0.05,
         'sword': 0.05, 'lance': 0.05, 'staff': 0.05, 'axe': 0.05,
         'gun': -0.15 # i am the fucking smart
     }
@@ -257,10 +256,7 @@ class Nimis(DragonBase):
         super().oninit(adv)
         def add_gauge_and_time(t):
             adv.dragonform.dragon_gauge += 200
-            max_time = adv.dragonform.dtime() - adv.dragonform.conf.dshift.startup
-            cur_time = adv.dragonform.shift_end_timer.timing - now()
-            add_time = min(abs(max_time - cur_time), 5)
-            adv.dragonform.shift_end_timer.add(add_time)
+            adv.dragonform.set_shift_end(5, percent=False)
         adv.Event('ds').listener(add_gauge_and_time)
 
 class Styx(DragonBase):
@@ -676,6 +672,10 @@ class AmuletQuint:
     def name_icon_lst(self):
         return chain(*((a.name, a.icon) for a in self.an))
 
+    @property
+    def escaped_icon_lst(self):
+        return chain(*((a.escaped, a.icon) for a in self.an))
+
     @staticmethod
     def sort_ab(a):
         if len(a) <= 2:
@@ -800,11 +800,11 @@ class Slots:
 
     def full_slot_icons(self):
         return ','.join([
-            self.c.name, self.c.icon,
+            self.c.escaped, self.c.icon,
             self.c.ele, self.c.wt, str(round(self.att)),
-            self.d.name, self.d.icon,
-            self.w.name, self.w.icon,
-            *self.a.name_icon_lst
+            self.d.escaped, self.d.icon,
+            self.w.escaped, self.w.icon,
+            *self.a.escaped_icon_lst
         ])
 
     @staticmethod

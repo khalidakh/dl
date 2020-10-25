@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 57748.028348940396,
-      "team": 0.0344643207207983,
+      "dps": 57959.997285920464,
+      "team": 0.032184287985436544,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -22,7 +22,7 @@
       "coabs": [
         "Blade",
         "Summer_Estelle",
-        "Renee"
+        "Dragonyule_Cleo"
       ],
       "share": [
         "Weapon",
@@ -31,9 +31,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 6564.129747018542,
-      "team": 0.909065909947443,
-      "tdps": 58522.53098142729,
+      "dps": 7035.8431301956425,
+      "team": 0.8547788738738434,
+      "tdps": 61906.74608042361,
       "slots.a": [
         "Once_in_a_Lifetime",
         "Study_Rabbits",
@@ -60,8 +60,8 @@
       ]
     },
     "affliction": {
-      "dps": 61866.81608940835,
-      "team": 0.0344643207207983,
+      "dps": 62981.67052998505,
+      "team": 0.03449746635274894,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -91,8 +91,8 @@
   },
   "60": {
     "base": {
-      "dps": 62459.15456365418,
-      "team": 0.10301320334074472,
+      "dps": 61657.389235639544,
+      "team": 0.10349494681815205,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -121,8 +121,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 63995.166362767166,
-      "team": 0.10301320334074472,
+      "dps": 63200.50561752478,
+      "team": 0.10349494681815205,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -152,7 +152,7 @@
     "buffer": {
       "dps": 55718.45857587311,
       "team": 0.13011021492477418,
-      "tdps": 248761.60114106178,
+      "tdps": 223139.99002282348,
       "slots.a": [
         "Dragon_and_Tamer",
         "Memory_of_a_Friend",

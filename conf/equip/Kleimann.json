@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 83531.17406158341,
+      "dps": 80536.64923726073,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -31,37 +31,8 @@
       ]
     },
     "pref": "base",
-    "buffer": {
-      "dps": 55700.049120847296,
-      "team": 0.033322000720250836,
-      "tdps": 835217.7041945222,
-      "slots.a": [
-        "Candy_Couriers",
-        "Castle_Cheer_Corps",
-        "Jewels_of_the_Sun",
-        "Seaside_Memory",
-        "The_Plaguebringer"
-      ],
-      "slots.d": "Gala_Cat_Sith",
-      "acl": [
-        "`dragon(c3-s-end), x=5",
-        "`s3, not buff(s3)",
-        "`s1",
-        "`s2",
-        "`s4",
-        "`fs, self.madness_status<5 and self.madness>0"
-      ],
-      "coabs": [
-        "Bow",
-        "Summer_Verica"
-      ],
-      "share": [
-        "Weapon",
-        "Durant"
-      ]
-    },
     "affliction": {
-      "dps": 86383.38297408549,
+      "dps": 82392.45524637385,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -89,12 +60,41 @@
         "Weapon",
         "Xander"
       ]
+    },
+    "buffer": {
+      "dps": 51598.601611293394,
+      "team": 0.02844965431538935,
+      "tdps": 1017166.9330376994,
+      "slots.a": [
+        "Candy_Couriers",
+        "Castle_Cheer_Corps",
+        "Jewels_of_the_Sun",
+        "Seaside_Memory",
+        "The_Plaguebringer"
+      ],
+      "slots.d": "Gala_Cat_Sith",
+      "acl": [
+        "`dragon(c3-s-end), x=5",
+        "`s3, not buff(s3)",
+        "`s1",
+        "`s2",
+        "`s4",
+        "`fs, self.madness_status<5 and self.madness>0"
+      ],
+      "coabs": [
+        "Bow",
+        "Summer_Verica"
+      ],
+      "share": [
+        "Weapon",
+        "Durant"
+      ]
     }
   },
   "60": {
     "base": {
-      "dps": 61204.70934892598,
-      "team": 0.017543692309288504,
+      "dps": 61175.29304534361,
+      "team": 0.017534096304626656,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -124,7 +124,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 66072.77223883568,
+      "dps": 64552.039351645195,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -154,8 +154,8 @@
       ]
     },
     "buffer": {
-      "dps": 61204.70934892598,
-      "team": 0.017543692309288504,
+      "dps": 61175.29304534361,
+      "team": 0.017534096304626656,
       "tdps": 99999999,
       "slots.a": [
         "Candy_Couriers",

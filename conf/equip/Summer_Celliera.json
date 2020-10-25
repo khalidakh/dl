@@ -1,39 +1,39 @@
 {
   "180": {
     "base": {
-      "dps": 53776.288322900065,
-      "team": 0.2832397667730428,
+      "dps": 58895.21765391798,
+      "team": 0.2833151756225203,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
         "Memory_of_a_Friend",
         "The_Shining_Overlord",
         "From_Whence_He_Comes",
-        "His_Clever_Brother"
+        "Bellathorna"
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
         "`dragon(s-end), s=2",
         "`s3, not buff(s3)",
         "`s2",
-        "`s4, fsc",
-        "`s1, fsc",
+        "`s4, cancel",
+        "`s1, cancel",
         "`fs, x=4"
       ],
       "coabs": [
-        "Summer_Estelle",
+        "Yurius",
         "Renee",
-        "Tobias"
+        "Hunter_Sarisse"
       ],
       "share": [
         "Weapon",
-        "Karina"
+        "Summer_Luca"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 66903.53794039549,
-      "team": 0.261887502115647,
+      "dps": 67895.65210494144,
+      "team": 0.2473270670853442,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
@@ -48,13 +48,13 @@
         "`s3, not buff(s3)",
         "`s2",
         "`s4, cancel",
-        "`s1",
+        "`s1, cancel",
         "`fs, x=4"
       ],
       "coabs": [
+        "Blade",
         "Summer_Estelle",
-        "Renee",
-        "Hunter_Sarisse"
+        "Renee"
       ],
       "share": [
         "Weapon",
@@ -62,11 +62,11 @@
       ]
     },
     "buffer": {
-      "dps": 32417.960502944345,
-      "team": 0.7829232820770777,
-      "tdps": 42743.71110073571,
+      "dps": 36225.45931415857,
+      "team": 0.8244297509840829,
+      "tdps": 41894.562393947526,
       "slots.a": [
-        "Brothers_in_Arms",
+        "Once_in_a_Lifetime",
         "Sisters_Day_Out",
         "The_Shining_Overlord",
         "From_Whence_He_Comes",
@@ -75,15 +75,15 @@
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
         "`dragon(s-end), s=2",
+        "`s3",
         "`s2",
-        "`s3, fsc",
-        "`s4, fsc",
-        "`s1, fsc",
-        "`fs, x=2"
+        "`s4, cancel",
+        "`s1, cancel",
+        "`fs,x=2"
       ],
       "coabs": [
         "Summer_Estelle",
-        "Hunter_Sarisse",
+        "Renee",
         "Tobias"
       ],
       "share": [
@@ -94,8 +94,8 @@
   },
   "60": {
     "base": {
-      "dps": 40500.60453223786,
-      "team": 0.16235255707843485,
+      "dps": 44593.014841893164,
+      "team": 0.16243037037905764,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
@@ -125,8 +125,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 47637.176910674156,
-      "team": 0.23369090689961347,
+      "dps": 49959.86389327065,
+      "team": 0.21778955291176016,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
@@ -157,8 +157,8 @@
   },
   "120": {
     "affliction": {
-      "dps": 60629.18488043158,
-      "team": 0.2419245124276626,
+      "dps": 62791.50156566565,
+      "team": 0.22691701811809484,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
@@ -173,24 +173,24 @@
         "`s3, not buff(s3)",
         "`s2",
         "`s4, cancel",
-        "`s1",
+        "`s1, cancel",
         "`fs, x=4"
       ],
       "coabs": [
+        "Blade",
         "Summer_Estelle",
-        "Renee",
-        "Hunter_Sarisse"
+        "Renee"
       ],
       "share": [
         "Weapon",
         "Summer_Luca"
       ]
     },
-    "pref": "buffer",
+    "pref": "base",
     "base": {
-      "dps": 47930.247225378276,
-      "team": 0.25383233903370916,
-      "tdps": 29241.840611320775,
+      "dps": 53130.67179447321,
+      "team": 0.2702290186738478,
+      "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
         "Memory_of_a_Friend",
@@ -218,9 +218,9 @@
       ]
     },
     "buffer": {
-      "dps": 46471.93655067828,
-      "team": 0.3037030258377205,
-      "tdps": 29241.840611320775,
+      "dps": 48046.059638992425,
+      "team": 0.29134445553825455,
+      "tdps": 240800.70841686736,
       "slots.a": [
         "Brothers_in_Arms",
         "Memory_of_a_Friend",

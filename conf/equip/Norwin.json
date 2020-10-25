@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 43005.40993738196,
-      "team": 0.0010051598706649423,
+      "dps": 42196.901281607985,
+      "team": 0.000991785856837478,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
@@ -32,8 +32,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 50937.00342303398,
-      "team": 0.0010521109774070394,
+      "dps": 51039.97726389949,
+      "team": 0.001033122765014876,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
@@ -62,15 +62,15 @@
       ]
     },
     "buffer": {
-      "dps": 25948.340279901273,
-      "team": 0.0214920458901538,
-      "tdps": 832584.7882032712,
+      "dps": 17559.166337791044,
+      "team": 0.0244374452099761,
+      "tdps": 1050844.1913585484,
       "slots.a": [
-        "Forest_Bonds",
-        "Memory_of_a_Friend",
+        "Castle_Cheer_Corps",
+        "Jewels_of_the_Sun",
         "The_Red_Impulse",
-        "A_Small_Courage",
-        "Dueling_Dancers"
+        "Dueling_Dancers",
+        "Seaside_Memory"
       ],
       "slots.d": "Gala_Cat_Sith",
       "acl": [
@@ -79,7 +79,7 @@
         "`s4",
         "`s1, cancel and buff(s3)",
         "`s2",
-        "`fs,x=5"
+        "`fs,x=4"
       ],
       "coabs": [
         "Ieyasu",

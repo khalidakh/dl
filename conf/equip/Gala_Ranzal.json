@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 70131.72335158617,
+      "dps": 68193.22497886559,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -15,7 +15,7 @@
       "acl": [
         "`dragon(s-end)",
         "`s3, not buff(s3)",
-        "`s2, xf=5 or fsc",
+        "`s2, fsc",
         "`s4, fsc",
         "`s1, gauges['x'] >= 1000 and cancel",
         "`fs, x=4"
@@ -32,9 +32,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 35282.03482889534,
-      "team": 0.11110076020428575,
-      "tdps": 313676.41822262254,
+      "dps": 34550.159584552945,
+      "team": 0.16870406661022622,
+      "tdps": 199420.59530812356,
       "slots.a": [
         "Brothers_in_Arms",
         "Memory_of_a_Friend",
@@ -46,21 +46,23 @@
       "acl": [
         "`dragon(s-end)",
         "`s3, not buff(s3)",
-        "`s2, (x=5 or fsc) and not c_fs('enhanced')",
+        "`s2, fsc",
         "`s4, fsc",
         "`s1, gauges['x'] >= 1000 and cancel",
-        "`fs, x=5"
+        "`fs, x=4"
       ],
       "coabs": [
-        "Bow"
+        "Blade",
+        "Sylas",
+        "Lowen"
       ],
       "share": [
-        "Patia",
-        "Halloween_Lowen"
+        "Elisanne",
+        "Cleo"
       ]
     },
     "affliction": {
-      "dps": 80406.34607187117,
+      "dps": 78653.55951539335,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -73,7 +75,7 @@
       "slots.d": "Midgardsormr_Zero",
       "acl": [
         "`dragon(s-end)",
-        "`s3, not buff(s3) and fsc",
+        "`s3, not buff(s3)",
         "`s2, fsc",
         "`s4, fsc",
         "`s1, gauges['x'] >= 1000 and cancel",
@@ -82,7 +84,7 @@
       "coabs": [
         "Blade",
         "Dragonyule_Xainfried",
-        "Akasha"
+        "Bow"
       ],
       "share": [
         "Weapon",
@@ -92,25 +94,24 @@
   },
   "60": {
     "base": {
-      "dps": 56435.107101345275,
+      "dps": 66599.63450764219,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "Levins_Champion",
+        "Brothers_in_Arms",
         "Memory_of_a_Friend",
         "The_Shining_Overlord",
         "His_Clever_Brother",
-        "Seaside_Memory"
+        "The_Queen_of_the_Knife"
       ],
       "slots.d": "Midgardsormr_Zero",
       "acl": [
-        "`dragon(c3-s-end), s1.check()",
+        "`dragon(s-end)",
         "`s3, not buff(s3)",
-        "`s2, not c_fs('enhanced')",
+        "`s2, fsc",
         "`s4, fsc",
-        "#`fs, x=2 and not c_fs('enhanced')",
-        "`fs, x=5",
-        "`s1, gauges['x'] >= 1000 and cancel"
+        "`s1, gauges['x'] >= 1000 and cancel",
+        "`fs, x=4"
       ],
       "coabs": [
         "Blade",
@@ -119,12 +120,12 @@
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Pinon"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 78529.0815420408,
+      "dps": 78516.3577021978,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -139,18 +140,18 @@
         "`dragon(s-end)",
         "`s3, not buff(s3) and fsc",
         "`s2, fsc",
-        "`s4, fsc",
+        "`s4",
         "`s1, gauges['x'] >= 1000 and cancel",
         "`fs, x=4"
       ],
       "coabs": [
         "Blade",
         "Dragonyule_Xainfried",
-        "Akasha"
+        "Lin_You"
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Xander"
       ]
     }
   }

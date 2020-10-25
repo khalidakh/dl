@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 57553.376387684766,
-      "team": 0.3598912312379353,
+      "dps": 56898.02664908331,
+      "team": 0.37025177025987266,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
@@ -27,14 +27,14 @@
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Karina"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 8479.387124055214,
-      "team": 1.2158637621868733,
-      "tdps": 57331.26647092955,
+      "dps": 9244.544154903355,
+      "team": 1.1831321650512923,
+      "tdps": 58622.993984751665,
       "slots.a": [
         "Sisters_Day_Out",
         "Study_Rabbits",
@@ -61,8 +61,8 @@
       ]
     },
     "affliction": {
-      "dps": 64907.23174695771,
-      "team": 0.306818506964119,
+      "dps": 64169.55846125515,
+      "team": 0.3062767755820796,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
@@ -93,13 +93,13 @@
   },
   "120": {
     "base": {
-      "dps": 9707.331969672541,
-      "team": 0.6708440972347726,
-      "tdps": 593.7350395686302,
+      "dps": 11898.522700826923,
+      "team": 0.6623763442413924,
+      "tdps": 3188.850740853415,
       "slots.a": [
         "Castle_Cheer_Corps",
         "Jewels_of_the_Sun",
-        "Second_Anniversary",
+        "Memory_of_a_Friend",
         "Luck_of_the_Draw",
         "Seaside_Memory"
       ],
@@ -123,9 +123,9 @@
     },
     "pref": "buffer",
     "buffer": {
-      "dps": 9418.484835648202,
-      "team": 1.1573357387491379,
-      "tdps": 593.7350395686302,
+      "dps": 10444.567653620232,
+      "team": 1.118325890132517,
+      "tdps": 3188.850740853415,
       "slots.a": [
         "Sisters_Day_Out",
         "Study_Rabbits",
@@ -152,8 +152,8 @@
       ]
     },
     "affliction": {
-      "dps": 62011.96922635129,
-      "team": 0.28491925766169557,
+      "dps": 62773.25562994005,
+      "team": 0.2914430082329471,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
@@ -184,8 +184,8 @@
   },
   "60": {
     "base": {
-      "dps": 10030.378917943573,
-      "team": 0.8272536011018924,
+      "dps": 11731.93576521515,
+      "team": 0.7982316695350968,
       "tdps": null,
       "slots.a": [
         "Sisters_Day_Out",
@@ -214,8 +214,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 46166.14115779198,
-      "team": 0.24906821679410798,
+      "dps": 50028.89401297657,
+      "team": 0.24880083877816575,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",

@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 68352.13501961759,
-      "team": 0.042186390072854935,
+      "dps": 67360.81107330594,
+      "team": 0.0419993504879036,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -22,7 +22,7 @@
         "`fs,x=5"
       ],
       "coabs": [
-        "Nobunaga",
+        "Blade",
         "Gala_Sarisse",
         "Marth"
       ],
@@ -33,8 +33,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 83371.00236173348,
-      "team": 0.042186390072854935,
+      "dps": 82262.31567181154,
+      "team": 0.0419993504879036,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -54,7 +54,7 @@
         "`fs,x=5"
       ],
       "coabs": [
-        "Nobunaga",
+        "Blade",
         "Gala_Sarisse",
         "Marth"
       ],
@@ -64,9 +64,9 @@
       ]
     },
     "buffer": {
-      "dps": 52199.704757340114,
-      "team": 0.13195608466465714,
-      "tdps": 179931.88386933116,
+      "dps": 52144.76493095906,
+      "team": 0.13040641767341843,
+      "tdps": 172113.4591018304,
       "slots.a": [
         "Candy_Couriers",
         "Memory_of_a_Friend",
@@ -97,8 +97,8 @@
   },
   "60": {
     "affliction": {
-      "dps": 83080.63956275719,
-      "team": 0.03614504421826556,
+      "dps": 81475.20274071093,
+      "team": 0.036057419734815244,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -118,7 +118,7 @@
         "`fs,x=5"
       ],
       "coabs": [
-        "Nobunaga",
+        "Blade",
         "Gala_Sarisse",
         "Marth"
       ],

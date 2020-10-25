@@ -1,23 +1,24 @@
 {
   "180": {
     "base": {
-      "dps": 38863.051126550265,
-      "team": 0.24549887012388508,
+      "dps": 42777.30989885572,
+      "team": 0.20169192198338198,
       "tdps": null,
       "slots.a": [
         "Kung_Fu_Masters",
         "Memory_of_a_Friend",
         "Summer_Paladyns",
-        "Hastened_Squall",
+        "His_Clever_Brother",
         "The_Plaguebringer"
       ],
       "slots.d": "Ariel",
       "acl": [
-        "`dragon(c3-s-end), s=1",
+        "`dragon(c3-s-c3-c3-end), s=1",
         "`s3, not buff(s3)",
         "`s1",
         "`s4",
-        "`s2, cancel"
+        "`s2, cancel",
+        "`fsf, x=4"
       ],
       "coabs": [
         "Blade",
@@ -26,28 +27,29 @@
       ],
       "share": [
         "Weapon",
-        "Curran"
+        "Jurota"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 42350.61440748544,
-      "team": 0.24549887012388508,
+      "dps": 52249.82121385177,
+      "team": 0.16741761582620712,
       "tdps": null,
       "slots.a": [
         "Kung_Fu_Masters",
         "Memory_of_a_Friend",
         "Summer_Paladyns",
-        "Hastened_Squall",
+        "His_Clever_Brother",
         "The_Plaguebringer"
       ],
-      "slots.d": "Ariel",
+      "slots.d": "Midgardsormr_Zero",
       "acl": [
-        "`dragon(c3-s-end), s=1",
+        "`dragon(c3-s-c3-c3-end), s=1",
         "`s3, not buff(s3)",
         "`s1",
         "`s4",
-        "`s2, cancel"
+        "`s2, cancel",
+        "`fsf, x=4"
       ],
       "coabs": [
         "Blade",
@@ -56,19 +58,19 @@
       ],
       "share": [
         "Weapon",
-        "Curran"
+        "Pinon"
       ]
     },
     "buffer": {
-      "dps": 37985.37719508584,
-      "team": 0.24549887012388513,
-      "tdps": 1.5810767962783875e+19,
+      "dps": 29579.056616614547,
+      "team": 0.2949323869190412,
+      "tdps": 141550.7021693709,
       "slots.a": [
-        "Kung_Fu_Masters",
+        "A_Dogs_Day",
         "Memory_of_a_Friend",
         "Summer_Paladyns",
-        "FirstRate_Hospitality",
-        "The_Plaguebringer"
+        "Seaside_Memory",
+        "The_Queen_of_the_Knife"
       ],
       "slots.d": "Ariel",
       "acl": [
@@ -76,16 +78,17 @@
         "`s3, not buff(s3)",
         "`s1",
         "`s4",
-        "`s2, cancel"
+        "`s2, cancel",
+        "`fsf, x=4"
       ],
       "coabs": [
-        "Blade",
         "Dragonyule_Xainfried",
-        "Eleonora"
+        "Eleonora",
+        "Akasha"
       ],
       "share": [
         "Weapon",
-        "Curran"
+        "Sha_Wujing"
       ]
     }
   }

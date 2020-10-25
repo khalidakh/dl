@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 53574.1801575676,
+      "dps": 53489.53174592512,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -24,7 +24,7 @@
       "coabs": [
         "Blade",
         "Dragonyule_Xainfried",
-        "Akasha"
+        "Lin_You"
       ],
       "share": [
         "Weapon",
@@ -33,7 +33,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 61100.8465634476,
+      "dps": 59528.23801495889,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -64,9 +64,9 @@
       ]
     },
     "buffer": {
-      "dps": 40819.357807149056,
-      "team": 0.13044563855307056,
-      "tdps": 97778.83332779552,
+      "dps": 40844.19324224335,
+      "team": 0.1304084166414274,
+      "tdps": 96967.19605492598,
       "slots.a": [
         "Dear_Diary",
         "Forest_Bonds",
@@ -97,7 +97,7 @@
   },
   "60": {
     "affliction": {
-      "dps": 58162.06437830772,
+      "dps": 58005.28473113524,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -129,7 +129,7 @@
     },
     "pref": "base",
     "base": {
-      "dps": 55322.58574013842,
+      "dps": 54433.419014319035,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -162,7 +162,7 @@
   },
   "120": {
     "affliction": {
-      "dps": 63487.263902852785,
+      "dps": 63765.25216419611,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

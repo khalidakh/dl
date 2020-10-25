@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 43726.515444024095,
-      "team": 0.053728551975347955,
+      "dps": 47633.206531324024,
+      "team": 0.06239375969228399,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -13,16 +13,16 @@
       ],
       "slots.d": "Ramiel",
       "acl": [
-        "`dragon(c3-s-end)",
+        "`dragon(s-end)",
         "`s3, not buff(s3)",
         "`s4",
-        "`s2",
+        "`s2, cancel",
         "`s1",
         "`fs3"
       ],
       "coabs": [
         "Forte",
-        "Axe2",
+        "Gala_Alex",
         "Grace"
       ],
       "share": [
@@ -44,6 +44,7 @@
       ],
       "slots.d": "Fatalis",
       "acl": [
+        "`dragon(s), s=1",
         "`s3, not buff(s3)",
         "`s4",
         "`s2",
@@ -61,32 +62,33 @@
       ]
     },
     "buffer": {
-      "dps": 33081.3399169286,
-      "team": 0.06649520310211703,
-      "tdps": 833826.7742567766,
+      "dps": 41755.68581568454,
+      "team": 0.073564444531151,
+      "tdps": 526155.808745886,
       "slots.a": [
-        "Levins_Champion",
-        "Memory_of_a_Friend",
+        "An_Ancient_Oath",
+        "The_Fires_of_Hate",
         "The_Lurker_in_the_Woods",
-        "Flowers_Under_the_Moon",
+        "Snipers_Allure",
         "The_Plaguebringer"
       ],
-      "slots.d": "Fatalis",
+      "slots.d": "Ramiel",
       "acl": [
+        "`dragon(s-end)",
+        "`s3, not buff(s3)",
         "`s4",
-        "`s3",
-        "`s2",
+        "`s2, cancel",
         "`s1",
         "`fs3"
       ],
       "coabs": [
-        "Dagger",
-        "Axe2",
+        "Forte",
+        "Gala_Alex",
         "Grace"
       ],
       "share": [
-        "Hunter_Sarisse",
-        "Karl"
+        "Weapon",
+        "Durant"
       ]
     }
   },
@@ -104,6 +106,7 @@
       ],
       "slots.d": "Fatalis",
       "acl": [
+        "`dragon(s), s=1",
         "`s3, not buff(s3)",
         "`s4",
         "`s2",
@@ -152,31 +155,33 @@
   },
   "120": {
     "base": {
-      "dps": 26826.81555987357,
-      "team": 0.0,
+      "dps": 48773.824424288134,
+      "team": 0.08509000049564988,
       "tdps": null,
       "slots.a": [
-        "Levins_Champion",
+        "An_Ancient_Oath",
         "The_Fires_of_Hate",
         "The_Lurker_in_the_Woods",
-        "Chariot_Drift",
-        "Flowers_Under_the_Moon"
+        "Snipers_Allure",
+        "The_Plaguebringer"
       ],
-      "slots.d": "Fatalis",
+      "slots.d": "Ramiel",
       "acl": [
-        "`s3",
+        "`dragon(s-end)",
+        "`s3, not buff(s3)",
+        "`s4",
+        "`s2, cancel",
         "`s1",
-        "`s2",
         "`fs3"
       ],
       "coabs": [
-        "Wand",
-        "Dagger",
+        "Forte",
+        "Gala_Alex",
         "Grace"
       ],
       "share": [
         "Weapon",
-        "Hunter_Sarisse"
+        "Rodrigo"
       ]
     },
     "pref": "base",
@@ -193,6 +198,7 @@
       ],
       "slots.d": "Fatalis",
       "acl": [
+        "`dragon(s), s=1",
         "`s3, not buff(s3)",
         "`s4",
         "`s2",

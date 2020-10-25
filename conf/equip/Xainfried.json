@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 76668.24938231312,
-      "team": 0.088762855496623,
+      "dps": 78535.43819490993,
+      "team": 0.08885315511167483,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -13,11 +13,11 @@
       ],
       "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-c3-c3-c3-c3-s)",
+        "`dragon(c3-c3-c3-c3-c1-s-c3-c3-c3-end)",
         "`s3, not buff(s3)",
         "`s2",
         "`s4",
-        "`s1, fsc and buff(s3)",
+        "`s1, fscf and buff(s3)",
         "`fs, x=5"
       ],
       "coabs": [
@@ -32,9 +32,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 33133.94531047622,
-      "team": 1.0190330906481895,
-      "tdps": 46797.4814487577,
+      "dps": 34713.09912854454,
+      "team": 0.9935388813069617,
+      "tdps": 48439.295323761784,
       "slots.a": [
         "Once_in_a_Lifetime",
         "Sisters_Day_Out",
@@ -61,8 +61,8 @@
       ]
     },
     "affliction": {
-      "dps": 81991.07471233663,
-      "team": 0.088762855496623,
+      "dps": 84093.95684249351,
+      "team": 0.08885315511167483,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -73,11 +73,11 @@
       ],
       "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-c3-c3-c3-c3-s)",
+        "`dragon(c3-c3-c3-c3-c1-s-c3-c3-c3-end)",
         "`s3, not buff(s3)",
         "`s2",
         "`s4",
-        "`s1, fsc and buff(s3)",
+        "`s1, fscf and buff(s3)",
         "`fs, x=5"
       ],
       "coabs": [
@@ -93,8 +93,8 @@
   },
   "60": {
     "base": {
-      "dps": 59345.95309707459,
-      "team": 0.0563905671921176,
+      "dps": 66743.50384212613,
+      "team": 0.06659675117738888,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -113,9 +113,9 @@
         "`fs, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
         "Summer_Celliera",
-        "Tiki"
+        "Tiki",
+        "Dagger"
       ],
       "share": [
         "Weapon",
@@ -124,8 +124,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 62710.90231787627,
-      "team": 0.0563905671921176,
+      "dps": 68405.06422177455,
+      "team": 0.06659675117738888,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -144,9 +144,9 @@
         "`fs, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
         "Summer_Celliera",
-        "Tiki"
+        "Tiki",
+        "Dagger"
       ],
       "share": [
         "Weapon",
@@ -154,9 +154,9 @@
       ]
     },
     "buffer": {
-      "dps": 48140.696393874474,
-      "team": 0.2637861625056335,
-      "tdps": 54028.421800672026,
+      "dps": 45044.284967997424,
+      "team": 0.2395840208833817,
+      "tdps": 125438.24127063481,
       "slots.a": [
         "Dragon_and_Tamer",
         "Memory_of_a_Friend",
@@ -186,8 +186,8 @@
   },
   "120": {
     "base": {
-      "dps": 44257.32760544734,
-      "team": 0.28081272153034403,
+      "dps": 44192.7543341529,
+      "team": 0.165861501877792,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -217,8 +217,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 75110.74032702672,
-      "team": 0.06628287775730547,
+      "dps": 77181.52397407897,
+      "team": 0.06660475754452894,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -229,11 +229,11 @@
       ],
       "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-c3-c3-c3-c3-s)",
+        "`dragon(c3-c3-c3-c3-c1-s-c3-c3-c3-end)",
         "`s3, not buff(s3)",
         "`s2",
         "`s4",
-        "`s1, fsc and buff(s3)",
+        "`s1, fscf and buff(s3)",
         "`fs, x=5"
       ],
       "coabs": [

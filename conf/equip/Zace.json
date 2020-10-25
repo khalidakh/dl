@@ -1,40 +1,40 @@
 {
   "180": {
     "base": {
-      "dps": 43227.05498770937,
-      "team": 0.05026106453600742,
+      "dps": 44126.27275894453,
+      "team": 0.06404117403930848,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
-        "Dragon_and_Tamer",
         "Memory_of_a_Friend",
+        "The_Bridal_Dragon",
         "Dueling_Dancers",
         "The_Plaguebringer"
       ],
-      "slots.d": "Gala_Cat_Sith",
+      "slots.d": "Ramiel",
       "acl": [
-        "`dragon(c3-s-end), self.trickery <= 0",
+        "`dragon(s), buff(s3)",
         "`s3, not buff(s3)",
         "`s4",
         "`s1, cancel",
-        "`s2, x>=3",
+        "`s2, cancel",
         "`fs, x=5"
       ],
       "coabs": [
         "Ieyasu",
-        "Wand",
-        "Bow"
+        "Forte",
+        "Dagger2"
       ],
       "share": [
         "Weapon",
-        "Kleimann"
+        "Rodrigo"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 33745.63463588376,
-      "team": 0.07657727811099642,
-      "tdps": 360288.1670194674,
+      "dps": 34119.02253093188,
+      "team": 0.07544599888155051,
+      "tdps": 877457.5994316946,
       "slots.a": [
         "An_Ancient_Oath",
         "Dragon_and_Tamer",
@@ -62,8 +62,8 @@
       ]
     },
     "affliction": {
-      "dps": 47963.55076921294,
-      "team": 0.050335423503140145,
+      "dps": 47712.47693401789,
+      "team": 0.04916413030409315,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -88,7 +88,7 @@
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Jurota"
       ]
     }
   }

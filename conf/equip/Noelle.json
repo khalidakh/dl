@@ -1,9 +1,9 @@
 {
   "180": {
     "base": {
-      "dps": 33136.40775231557,
+      "dps": 32560.860844839815,
       "team": 0.3623007592641941,
-      "tdps": 25236.198625593915,
+      "tdps": 24695.40471903314,
       "slots.a": [
         "Candy_Couriers",
         "Memory_of_a_Friend",
@@ -32,9 +32,9 @@
     },
     "pref": "buffer",
     "buffer": {
-      "dps": 7016.812383569287,
-      "team": 1.3973059023231194,
-      "tdps": 25236.198625593915,
+      "dps": 7014.215511796717,
+      "team": 1.3967703548709385,
+      "tdps": 24695.40471903314,
       "slots.a": [
         "A_Dogs_Day",
         "Sisters_Day_Out",
@@ -51,7 +51,7 @@
         "`dodge, fsc"
       ],
       "coabs": [
-        "Meene",
+        "Bow",
         "Dagger2",
         "Tobias"
       ],
@@ -61,7 +61,7 @@
       ]
     },
     "affliction": {
-      "dps": 36445.90175370297,
+      "dps": 35771.04829260742,
       "team": 0.3623007592641941,
       "tdps": null,
       "slots.a": [
@@ -93,7 +93,38 @@
   },
   "60": {
     "base": {
-      "dps": 31943.849541753847,
+      "dps": 31025.579488422703,
+      "team": 0.24004781353170937,
+      "tdps": 28997.147409723642,
+      "slots.a": [
+        "Candy_Couriers",
+        "Memory_of_a_Friend",
+        "Moonlight_Party",
+        "The_Plaguebringer",
+        "The_Queen_of_the_Knife"
+      ],
+      "slots.d": "Midgardsormr_Zero",
+      "acl": [
+        "`dragon",
+        "`s3, not buff(s3)",
+        "`s1",
+        "`s2",
+        "`s4",
+        "`dodge, fsc"
+      ],
+      "coabs": [
+        "Blade",
+        "Eleonora",
+        "Akasha"
+      ],
+      "share": [
+        "Weapon",
+        "Kleimann"
+      ]
+    },
+    "pref": "buffer",
+    "affliction": {
+      "dps": 34945.3143648967,
       "team": 0.24004781353170937,
       "tdps": null,
       "slots.a": [
@@ -122,35 +153,33 @@
         "Kleimann"
       ]
     },
-    "pref": "base",
-    "affliction": {
-      "dps": 35935.60559888125,
-      "team": 0.24004781353170937,
-      "tdps": null,
+    "buffer": {
+      "dps": 5913.283842483698,
+      "team": 1.106074229547999,
+      "tdps": 28997.147409723642,
       "slots.a": [
-        "Candy_Couriers",
-        "Memory_of_a_Friend",
-        "Moonlight_Party",
-        "The_Plaguebringer",
-        "The_Queen_of_the_Knife"
+        "A_Dogs_Day",
+        "Sisters_Day_Out",
+        "Study_Rabbits",
+        "From_Whence_He_Comes",
+        "Bellathorna"
       ],
-      "slots.d": "Midgardsormr_Zero",
+      "slots.d": "Freyja",
       "acl": [
-        "`dragon",
-        "`s3, not buff(s3)",
+        "`fs, self.fs_prep_c>0 and x=5",
         "`s1",
-        "`s2",
+        "`s3",
         "`s4",
         "`dodge, fsc"
       ],
       "coabs": [
-        "Blade",
-        "Eleonora",
-        "Akasha"
+        "Bow",
+        "Dagger2",
+        "Tobias"
       ],
       "share": [
-        "Weapon",
-        "Kleimann"
+        "Summer_Cleo",
+        "Mikoto"
       ]
     }
   }

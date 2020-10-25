@@ -1,9 +1,9 @@
 {
   "180": {
     "base": {
-      "dps": 34480.54827576473,
-      "team": 0.49851518351925883,
-      "tdps": 18066.572455951486,
+      "dps": 36761.616881836526,
+      "team": 0.5245022099120122,
+      "tdps": 20601.326200233045,
       "slots.a": [
         "An_Ancient_Oath",
         "Memory_of_a_Friend",
@@ -34,8 +34,8 @@
     },
     "pref": "buffer",
     "affliction": {
-      "dps": 49197.22379525772,
-      "team": 0.8251584253752438,
+      "dps": 47016.40643306868,
+      "team": 0.819615039268964,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -66,13 +66,13 @@
       ]
     },
     "buffer": {
-      "dps": 9941.624414235734,
-      "team": 1.856765284436735,
-      "tdps": 18066.572455951486,
+      "dps": 9925.604620676217,
+      "team": 1.8271373898188639,
+      "tdps": 20601.326200233045,
       "slots.a": [
         "A_Dogs_Day",
+        "Jewels_of_the_Sun",
         "Sisters_Day_Out",
-        "United_by_One_Vision",
         "From_Whence_He_Comes",
         "Bellathorna"
       ],
@@ -96,9 +96,9 @@
   },
   "120": {
     "base": {
-      "dps": 8618.041400944981,
-      "team": 1.7476997865099713,
-      "tdps": -45422.6107206097,
+      "dps": 8940.863716863114,
+      "team": 1.7858178358328196,
+      "tdps": 10309.406401133821,
       "slots.a": [
         "A_Dogs_Day",
         "Jewels_of_the_Sun",
@@ -125,8 +125,8 @@
     },
     "pref": "buffer",
     "affliction": {
-      "dps": 48566.336155105004,
-      "team": 0.7345314344248924,
+      "dps": 52193.497470159105,
+      "team": 0.7540418068053493,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -157,13 +157,13 @@
       ]
     },
     "buffer": {
-      "dps": 9589.331879278046,
-      "team": 1.7690832002531263,
-      "tdps": -45422.6107206097,
+      "dps": 9449.789945505445,
+      "team": 1.7364526048156042,
+      "tdps": 10309.406401133821,
       "slots.a": [
         "A_Dogs_Day",
+        "Jewels_of_the_Sun",
         "Sisters_Day_Out",
-        "United_by_One_Vision",
         "From_Whence_He_Comes",
         "Bellathorna"
       ],

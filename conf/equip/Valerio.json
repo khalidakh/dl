@@ -1,72 +1,68 @@
 {
   "180": {
     "base": {
-      "dps": 38748.66659986608,
-      "team": 0.08625961451198005,
+      "dps": 50856.77183761941,
+      "team": 0.0670768703216581,
       "tdps": null,
       "slots.a": [
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "The_Prince_of_Dragonyule",
-        "Valiant_Crown",
-        "His_Clever_Brother",
-        "The_Plaguebringer"
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
+        "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
+        "`dragon(c3-c3-c3-c1-s)",
         "`s3, not buff(s3)",
-        "`s2(entree), self.inspiration()=0",
-        "`s2(dessert)",
         "`s4",
-        "`s1(appetizer), timeleft(s1, appetizer) < 7",
-        "`s1(dessert)",
-        "`dragon(c3-s-end)"
+        "`s2(entree)",
+        "`s1(appetizer)"
       ],
       "coabs": [
-        "Summer_Estelle",
-        "Renee",
-        "Xander"
+        "Xainfried",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Kleimann"
+        "Gala_Mym"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 40541.804799688725,
-      "team": 0.08625961451198005,
+      "dps": 53282.402814756955,
+      "team": 0.0670768703216581,
       "tdps": null,
       "slots.a": [
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "The_Prince_of_Dragonyule",
-        "Valiant_Crown",
-        "His_Clever_Brother",
-        "The_Plaguebringer"
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
+        "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
+        "`dragon(c3-c3-c3-c1-s)",
         "`s3, not buff(s3)",
-        "`s2(entree), self.inspiration()=0",
-        "`s2(dessert)",
         "`s4",
-        "`s1(appetizer), timeleft(s1, appetizer) < 7",
-        "`s1(dessert)",
-        "`dragon(c3-s-end)"
+        "`s2(entree)",
+        "`s1(appetizer)"
       ],
       "coabs": [
-        "Summer_Estelle",
-        "Renee",
-        "Xander"
+        "Xainfried",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Kleimann"
+        "Gala_Mym"
       ]
     },
     "buffer": {
-      "dps": 5939.690008143077,
-      "team": 0.5321035266240207,
-      "tdps": 73588.48175430082,
+      "dps": 6482.077227583685,
+      "team": 0.5212134810140361,
+      "tdps": 97712.21602764406,
       "slots.a": [
         "Memory_of_a_Friend",
         "Moonlight_Party",
@@ -95,9 +91,9 @@
   },
   "60": {
     "base": {
-      "dps": 31427.669535688274,
-      "team": 0.06185919050184122,
-      "tdps": -83039.15518326733,
+      "dps": 31583.881339852116,
+      "team": 0.061423840764314154,
+      "tdps": -29259.532278572813,
       "slots.a": [
         "Memory_of_a_Friend",
         "Moonlight_Party",
@@ -127,40 +123,38 @@
     },
     "pref": "buffer",
     "affliction": {
-      "dps": 36900.22476453028,
-      "team": 0.06502473573198495,
+      "dps": 55210.35454825332,
+      "team": 0.045045135882100434,
       "tdps": null,
       "slots.a": [
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "The_Prince_of_Dragonyule",
-        "Valiant_Crown",
-        "His_Clever_Brother",
-        "The_Plaguebringer"
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
+        "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
+        "`dragon(c3-c3-c3-c1-s)",
         "`s3, not buff(s3)",
-        "`s2(entree), self.inspiration()=0",
-        "`s2(dessert)",
         "`s4",
-        "`s1(appetizer), timeleft(s1, appetizer) < 7",
-        "`s1(dessert)",
-        "`dragon(c3-s-end)"
+        "`s1(appetizer)",
+        "`s2(entree), x=3"
       ],
       "coabs": [
-        "Summer_Estelle",
-        "Renee",
-        "Xander"
+        "Xainfried",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Kleimann"
+        "Gala_Mym"
       ]
     },
     "buffer": {
       "dps": 31688.538969469704,
       "team": 0.06500071371707254,
-      "tdps": -83039.15518326733,
+      "tdps": -29259.532278572813,
       "slots.a": [
         "Memory_of_a_Friend",
         "Moonlight_Party",

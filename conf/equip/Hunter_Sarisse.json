@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 79424.85208918873,
+      "dps": 79540.9137337417,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -17,8 +17,8 @@
         "`s1, fsc",
         "`s2, not buff(s2) and fsc",
         "`s4, fsc",
-        "`dodge, fsc",
-        "`fs4"
+        "`dodge, fscf",
+        "fs4"
       ],
       "coabs": [
         "Dragonyule_Cleo",
@@ -32,7 +32,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 100044.5362598447,
+      "dps": 91996.38227902079,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -62,12 +62,12 @@
       ]
     },
     "buffer": {
-      "dps": 71983.36565422922,
-      "team": 0.11974495433476262,
-      "tdps": 62144.46760032887,
+      "dps": 64893.50692023117,
+      "team": 0.14194970657652753,
+      "tdps": 103187.29898616497,
       "slots.a": [
-        "Crystalian_Envoy",
         "Dear_Diary",
+        "Memory_of_a_Friend",
         "The_Lurker_in_the_Woods",
         "Chariot_Drift",
         "From_Whence_He_Comes"
@@ -82,8 +82,8 @@
         "`fs4"
       ],
       "coabs": [
-        "Blade",
         "Dragonyule_Cleo",
+        "Renee",
         "Grace"
       ],
       "share": [
@@ -94,7 +94,7 @@
   },
   "60": {
     "base": {
-      "dps": 75573.35289027619,
+      "dps": 68160.14497236146,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -125,7 +125,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 88921.49635414961,
+      "dps": 79772.3589242578,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -157,7 +157,7 @@
   },
   "120": {
     "base": {
-      "dps": 82761.57956884665,
+      "dps": 76350.98161394369,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -188,7 +188,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 97221.10825192781,
+      "dps": 89650.25264134313,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -215,6 +215,36 @@
       "share": [
         "Weapon",
         "Yue"
+      ]
+    },
+    "buffer": {
+      "dps": 65073.70438447108,
+      "team": 0.06708072126847803,
+      "tdps": 168115.0264371401,
+      "slots.a": [
+        "Dear_Diary",
+        "Memory_of_a_Friend",
+        "The_Lurker_in_the_Woods",
+        "Chariot_Drift",
+        "From_Whence_He_Comes"
+      ],
+      "slots.d": "Dragonyule_Jeanne",
+      "acl": [
+        "`s3, not buff(s3)",
+        "`s1, fsc",
+        "`s2, not buff(s2) and fsc",
+        "`s4, fsc",
+        "`dodge, fscf",
+        "fs4"
+      ],
+      "coabs": [
+        "Dragonyule_Cleo",
+        "Xander",
+        "Grace"
+      ],
+      "share": [
+        "Weapon",
+        "Patia"
       ]
     }
   }

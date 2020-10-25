@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 49472.81058766985,
-      "team": 0.0458682395934955,
+      "dps": 49900.17183016047,
+      "team": 0.04488769097270198,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -31,8 +31,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 54037.016676585146,
-      "team": 0.04586823959349528,
+      "dps": 54244.772360564,
+      "team": 0.04478849391235971,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -47,7 +47,7 @@
         "`s3, not buff(s3)",
         "`s1",
         "`s2",
-        "`s4, cancel"
+        "`s4"
       ],
       "coabs": [
         "Lucretia",
@@ -62,7 +62,7 @@
     "buffer": {
       "dps": 35038.425387368385,
       "team": 0.06757581295152214,
-      "tdps": 664946.9732168001,
+      "tdps": 655045.2459954967,
       "slots.a": [
         "Memory_of_a_Friend",
         "Spirit_of_the_Season",
@@ -92,8 +92,8 @@
   },
   "60": {
     "base": {
-      "dps": 45576.26112032646,
-      "team": 0.06588976048401535,
+      "dps": 44811.144279368214,
+      "team": 0.06616507968694652,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -122,8 +122,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 51105.87251937802,
-      "team": 0.040575121783338115,
+      "dps": 51116.86724331361,
+      "team": 0.037856984623884815,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",

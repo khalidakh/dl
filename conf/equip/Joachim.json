@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 49217.85489820893,
-      "team": 0.08336140568808209,
+      "dps": 49448.83715707303,
+      "team": 0.08119792266872945,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
@@ -31,14 +31,14 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 54168.46944352478,
-      "team": 0.06411101142072236,
+      "dps": 53700.54233409725,
+      "team": 0.08119792266872945,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
         "Forest_Bonds",
         "Memory_of_a_Friend",
-        "His_Clever_Brother",
+        "Hastened_Squall",
         "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
@@ -56,13 +56,13 @@
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Curran"
       ]
     },
     "buffer": {
-      "dps": 44905.576684659914,
-      "team": 0.08546228927450318,
-      "tdps": 2052602.172448351,
+      "dps": 39724.27439095001,
+      "team": 0.09210981796727948,
+      "tdps": 891189.1564259438,
       "slots.a": [
         "Dear_Diary",
         "Forest_Bonds",
@@ -70,7 +70,7 @@
         "Hastened_Squall",
         "The_Plaguebringer"
       ],
-      "slots.d": "Vayu",
+      "slots.d": "Ariel",
       "acl": [
         "`dragon(c3-s-end), s1.check()",
         "`s3, not buff(s3)",
@@ -91,14 +91,14 @@
   },
   "60": {
     "affliction": {
-      "dps": 51745.506946923124,
-      "team": 0.0496129117933694,
+      "dps": 52738.01905974219,
+      "team": 0.06172113376623357,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
         "Forest_Bonds",
         "Memory_of_a_Friend",
-        "His_Clever_Brother",
+        "Hastened_Squall",
         "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
@@ -116,7 +116,7 @@
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Curran"
       ]
     },
     "pref": "base"

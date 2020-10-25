@@ -1,15 +1,15 @@
 {
   "180": {
     "base": {
-      "dps": 50179.131469996275,
-      "team": 0.020396613549087006,
+      "dps": 51960.38683779119,
+      "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "A_Dogs_Day",
+        "Levins_Champion",
         "Memory_of_a_Friend",
         "Valiant_Crown",
-        "The_Plaguebringer",
-        "The_Queen_of_the_Knife"
+        "His_Clever_Brother",
+        "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
       "acl": [
@@ -28,20 +28,20 @@
       ],
       "share": [
         "Weapon",
-        "Curran"
+        "Xander"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 52005.639718044,
-      "team": 0.020396613549087006,
+      "dps": 54013.268943088675,
+      "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "A_Dogs_Day",
+        "Levins_Champion",
         "Memory_of_a_Friend",
         "Valiant_Crown",
-        "The_Plaguebringer",
-        "The_Queen_of_the_Knife"
+        "His_Clever_Brother",
+        "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
       "acl": [
@@ -60,44 +60,45 @@
       ],
       "share": [
         "Weapon",
-        "Curran"
+        "Xander"
       ]
     },
     "buffer": {
-      "dps": 44947.66606515016,
-      "team": 0.020761836399476114,
-      "tdps": 14324036.4048211,
+      "dps": 37284.27812528248,
+      "team": 0.062454155180422265,
+      "tdps": 234990.10866628916,
       "slots.a": [
-        "A_Dogs_Day",
+        "Levins_Champion",
         "Memory_of_a_Friend",
         "Valiant_Crown",
-        "The_Plaguebringer",
-        "The_Queen_of_the_Knife"
+        "His_Clever_Brother",
+        "The_Plaguebringer"
       ],
-      "slots.d": "Midgardsormr_Zero",
+      "slots.d": "Vayu",
       "acl": [
         "`dragon(c3-s-end), s1.check()",
         "`s3, not buff(s3)",
+        "`s2, s4.check() or s1",
         "`s1, buff(s3)",
         "`s4",
         "`fs, xf=5",
         "`dodge, fsc"
       ],
       "coabs": [
-        "Dragonyule_Xainfried",
+        "Wand",
         "Eleonora",
         "Akasha"
       ],
       "share": [
         "Weapon",
-        "Curran"
+        "Elisanne"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 46660.897696419626,
-      "team": 0.01536044375594548,
+      "dps": 47030.63418582355,
+      "team": 0.014516619654260555,
       "tdps": null,
       "slots.a": [
         "Levins_Champion",
@@ -128,15 +129,15 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 50040.4097043919,
-      "team": 0.01536044375594548,
+      "dps": 51897.483396475895,
+      "team": 0.017270012375337703,
       "tdps": null,
       "slots.a": [
-        "Levins_Champion",
+        "A_Dogs_Day",
         "Memory_of_a_Friend",
         "Valiant_Crown",
-        "A_Small_Courage",
-        "The_Plaguebringer"
+        "The_Plaguebringer",
+        "The_Queen_of_the_Knife"
       ],
       "slots.d": "Midgardsormr_Zero",
       "acl": [

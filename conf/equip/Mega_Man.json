@@ -1,19 +1,19 @@
 {
   "180": {
     "base": {
-      "dps": 42069.080270463215,
+      "dps": 43821.91058199031,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
         "Memory_of_a_Friend",
         "Moonlight_Party",
-        "Entwined_Flames",
+        "Worthy_Rivals",
+        "The_Plaguebringer",
         "To_the_Extreme"
       ],
-      "slots.d": "Horus",
+      "slots.d": "Gala_Mars",
       "acl": [
-        "`dragon, s=4",
+        "`dragon(s), s=4",
         "`s3, not buff(s3)",
         "`s4",
         "if bleed_stack >= 3",
@@ -24,18 +24,18 @@
         "end"
       ],
       "coabs": [
-        "Nobunaga",
-        "Marth",
+        "Blade",
+        "Serena",
         "Dagger2"
       ],
       "share": [
         "Weapon",
-        "Yue"
+        "Rodrigo"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 54664.55884614127,
+      "dps": 52378.84695239236,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -47,7 +47,7 @@
       ],
       "slots.d": "Gala_Mars",
       "acl": [
-        "`dragon, s=4",
+        "`dragon(s), s=4",
         "`s3, not buff(s3)",
         "`s4",
         "if bleed_stack >= 3",
@@ -58,8 +58,8 @@
         "end"
       ],
       "coabs": [
-        "Nobunaga",
-        "Marth",
+        "Blade",
+        "Serena",
         "Dagger2"
       ],
       "share": [
@@ -68,9 +68,9 @@
       ]
     },
     "buffer": {
-      "dps": 9250.867540492187,
-      "team": 0.048338636087311725,
-      "tdps": 678923.0186530933,
+      "dps": 9102.837111058545,
+      "team": 0.05259597697846355,
+      "tdps": 660108.918314193,
       "slots.a": [
         "Honest_Repose",
         "Study_Rabbits",
@@ -86,7 +86,7 @@
         "`fs, xf=5"
       ],
       "coabs": [
-        "Nobunaga",
+        "Blade",
         "Yuya",
         "Dagger2"
       ],

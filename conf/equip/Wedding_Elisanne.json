@@ -1,20 +1,20 @@
 {
   "180": {
     "base": {
-      "dps": 46878.84986356062,
-      "team": 0.1002530795895844,
+      "dps": 48341.16755456298,
+      "team": 0.10779550361958072,
       "tdps": null,
       "slots.a": [
+        "A_Dogs_Day",
         "Memory_of_a_Friend",
-        "The_Red_Impulse",
         "The_Shining_Overlord",
-        "Dueling_Dancers",
-        "The_Plaguebringer"
+        "The_Plaguebringer",
+        "The_Queen_of_the_Knife"
       ],
       "slots.d": "Midgardsormr_Zero",
       "acl": [
-        "`dragon(s-end)",
-        "`s3, not buff(s3)",
+        "`dragon(s-end), s",
+        "`s3, not buff(s3) and x=3",
         "`s2",
         "`s1, cancel",
         "`s4, fsc",
@@ -32,20 +32,20 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 49767.4297888592,
-      "team": 0.1002530795895844,
+      "dps": 54479.22411848533,
+      "team": 0.09546133349618646,
       "tdps": null,
       "slots.a": [
+        "Levins_Champion",
         "Memory_of_a_Friend",
-        "The_Red_Impulse",
         "The_Shining_Overlord",
-        "Dueling_Dancers",
+        "His_Clever_Brother",
         "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
       "acl": [
-        "`dragon(s-end)",
-        "`s3, not buff(s3)",
+        "`dragon(s-end), s",
+        "`s3, not buff(s3) and x=3",
         "`s2",
         "`s1, cancel",
         "`s4, fsc",
@@ -54,17 +54,17 @@
       "coabs": [
         "Blade",
         "Dragonyule_Xainfried",
-        "Eleonora"
+        "Bow"
       ],
       "share": [
         "Weapon",
-        "Rodrigo"
+        "Jurota"
       ]
     },
     "buffer": {
-      "dps": 20722.40122272167,
-      "team": 0.2637100066115136,
-      "tdps": 160020.43545899913,
+      "dps": 22717.19868123262,
+      "team": 0.2800707311451978,
+      "tdps": 148738.55772165564,
       "slots.a": [
         "Memory_of_a_Friend",
         "The_Red_Impulse",
@@ -94,8 +94,8 @@
   },
   "60": {
     "base": {
-      "dps": 49587.057254813684,
-      "team": 0.08156717588782825,
+      "dps": 51962.035697423256,
+      "team": 0.08817255934167542,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -125,8 +125,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 56838.96972276115,
-      "team": 0.08788217317692859,
+      "dps": 59978.937766992254,
+      "team": 0.08812364146391224,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",

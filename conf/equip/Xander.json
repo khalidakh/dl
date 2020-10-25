@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 56368.64153298548,
+      "dps": 56599.62133773045,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -13,16 +13,16 @@
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(c1-s-end), cancel and ((self.dragonform.shift_count<3))",
+        "`dragon(c1-s-end), cancel",
         "`s3, not buff(s3) and fsc",
-        "`s2",
         "`s1",
         "`s4",
-        "`fs, x=1"
+        "`s2, cancel",
+        "`fs, x=2"
       ],
       "coabs": [
         "Yurius",
-        "Eugene",
+        "Xainfried",
         "Summer_Celliera"
       ],
       "share": [
@@ -32,9 +32,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 45426.84995025829,
-      "team": 0.13790183391941563,
-      "tdps": 79344.78659015613,
+      "dps": 48471.9947398893,
+      "team": 0.12198691712184676,
+      "tdps": 66627.03501001559,
       "slots.a": [
         "Memory_of_a_Friend",
         "The_Lurker_in_the_Woods",
@@ -67,7 +67,7 @@
       ]
     },
     "affliction": {
-      "dps": 57903.59815605851,
+      "dps": 61336.2294449468,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -79,16 +79,16 @@
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(c1-s-end), cancel and ((self.dragonform.shift_count<3))",
+        "`dragon(c3-s-end)",
         "`s3, not buff(s3) and fsc",
-        "`s4",
-        "`s2",
         "`s1",
-        "`fs, x=3"
+        "`s4",
+        "`s2, cancel",
+        "`fs, x=2"
       ],
       "coabs": [
         "Yurius",
-        "Eugene",
+        "Xainfried",
         "Summer_Celliera"
       ],
       "share": [
@@ -99,7 +99,7 @@
   },
   "60": {
     "base": {
-      "dps": 47368.14670929286,
+      "dps": 47308.57474352269,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -135,7 +135,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 49052.03222606354,
+      "dps": 51869.32784486337,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -147,16 +147,16 @@
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(c1-s-end), cancel and ((self.dragonform.shift_count<3))",
+        "`dragon(c1-s-end), cancel",
         "`s3, not buff(s3) and fsc",
-        "`s2",
         "`s1",
         "`s4",
-        "`fs, x=1"
+        "`s2, cancel",
+        "`fs, x=2"
       ],
       "coabs": [
         "Yurius",
-        "Eugene",
+        "Xainfried",
         "Summer_Celliera"
       ],
       "share": [
@@ -167,7 +167,7 @@
   },
   "120": {
     "base": {
-      "dps": 50758.63659516471,
+      "dps": 53050.59349484876,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -203,7 +203,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 55776.6751026691,
+      "dps": 56596.49516728914,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -215,16 +215,16 @@
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(c1-s-end), cancel and ((self.dragonform.shift_count<3))",
+        "`dragon(c3-s-end)",
         "`s3, not buff(s3) and fsc",
-        "`s2",
         "`s1",
         "`s4",
-        "`fs, x=1"
+        "`s2, cancel",
+        "`fs, x=2"
       ],
       "coabs": [
         "Yurius",
-        "Eugene",
+        "Xainfried",
         "Summer_Celliera"
       ],
       "share": [

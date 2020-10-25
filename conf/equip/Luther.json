@@ -1,39 +1,39 @@
 {
   "180": {
     "base": {
-      "dps": 48635.16123785519,
-      "team": 0.012329914537461194,
+      "dps": 51162.419075617836,
+      "team": 0.008770512899477438,
       "tdps": null,
       "slots.a": [
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "Seaside_Princess",
-        "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-s-end)",
+        "`dragon",
+        "`s3, not buff(s3)",
         "`s1",
         "`s4",
-        "`s3, not buff(s3)",
-        "`s2, cancel"
+        "`s2, x=5"
       ],
       "coabs": [
-        "Yurius",
-        "Xander",
-        "Axe2"
+        "Blade",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Gala_Mym"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 34083.77200886294,
-      "team": 0.15764575393920757,
-      "tdps": 100136.29132859255,
+      "dps": 32994.698130492674,
+      "team": 0.18413858365034258,
+      "tdps": 103597.65530485279,
       "slots.a": [
         "Memory_of_a_Friend",
         "The_Red_Impulse",
@@ -61,43 +61,43 @@
       ]
     },
     "affliction": {
-      "dps": 49496.74043944761,
-      "team": 0.012329914537461208,
+      "dps": 53028.74401561382,
+      "team": 0.008770512899477438,
       "tdps": null,
       "slots.a": [
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "Seaside_Princess",
-        "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-s-end)",
+        "`dragon",
+        "`s3, not buff(s3)",
         "`s1",
         "`s4",
-        "`s3, not buff(s3)",
-        "`s2, cancel"
+        "`s2, x=5"
       ],
       "coabs": [
-        "Yurius",
-        "Xander",
-        "Axe2"
+        "Blade",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Gala_Mym"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 42848.14678891777,
-      "team": 0.008758654623703437,
-      "tdps": null,
+      "dps": 46765.563969892304,
+      "team": 0.008769781228160531,
+      "tdps": -86818212.47818625,
       "slots.a": [
         "Memory_of_a_Friend",
-        "Seaside_Princess",
+        "Moonlight_Party",
         "Twinfold_Bonds",
         "A_Passion_for_Produce",
         "His_Clever_Brother"
@@ -108,8 +108,8 @@
         "`s1",
         "`s4",
         "`s3, not buff(s3)",
-        "`s2, cancel",
-        "`fs, x=5"
+        "`s2, cancel or fsc",
+        "`fs, x=4"
       ],
       "coabs": [
         "Yurius",
@@ -121,14 +121,14 @@
         "Summer_Julietta"
       ]
     },
-    "pref": "base",
+    "pref": "buffer",
     "affliction": {
-      "dps": 43359.30386087489,
-      "team": 0.008758654623703437,
+      "dps": 47285.27503220725,
+      "team": 0.008769781228160531,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
-        "Seaside_Princess",
+        "Moonlight_Party",
         "Twinfold_Bonds",
         "A_Passion_for_Produce",
         "His_Clever_Brother"
@@ -139,8 +139,37 @@
         "`s1",
         "`s4",
         "`s3, not buff(s3)",
-        "`s2, cancel",
-        "`fs, x=5"
+        "`s2, cancel or fsc",
+        "`fs, x=4"
+      ],
+      "coabs": [
+        "Yurius",
+        "Xander",
+        "Axe2"
+      ],
+      "share": [
+        "Weapon",
+        "Summer_Julietta"
+      ]
+    },
+    "buffer": {
+      "dps": 44281.809850767044,
+      "team": 0.008741172552074862,
+      "tdps": -86818212.47818625,
+      "slots.a": [
+        "Memory_of_a_Friend",
+        "Moonlight_Party",
+        "Twinfold_Bonds",
+        "A_Passion_for_Produce",
+        "His_Clever_Brother"
+      ],
+      "slots.d": "Siren",
+      "acl": [
+        "`dragon(c3-s-end)",
+        "`s1",
+        "`s4",
+        "`s3, not buff(s3)",
+        "`s2, cancel"
       ],
       "coabs": [
         "Yurius",

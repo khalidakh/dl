@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 59158.28127704314,
+      "dps": 59831.57805196941,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -13,7 +13,7 @@
       ],
       "slots.d": "Midgardsormr_Zero",
       "acl": [
-        "`dragon(c3-s-end)",
+        "`dragon(c3-s-c3-end)",
         "`s3, not buff(s3)",
         "`s1",
         "`s4, x>2"
@@ -25,14 +25,14 @@
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Jurota"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 27420.079128332294,
-      "team": 0.1465290111110412,
-      "tdps": 216600.1251769816,
+      "dps": 27700.56754523593,
+      "team": 0.14652874813862496,
+      "tdps": 219281.27357189747,
       "slots.a": [
         "Kung_Fu_Masters",
         "Memory_of_a_Friend",
@@ -58,7 +58,7 @@
       ]
     },
     "affliction": {
-      "dps": 60277.75615695661,
+      "dps": 61069.78310831282,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -70,7 +70,7 @@
       ],
       "slots.d": "Midgardsormr_Zero",
       "acl": [
-        "`dragon(c3-s-end)",
+        "`dragon(c3-s-c3-end)",
         "`s3, not buff(s3)",
         "`s1",
         "`s4, x>2"
@@ -82,13 +82,13 @@
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Jurota"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 52854.81017838851,
+      "dps": 53448.02348393919,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -117,7 +117,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 54956.92142432661,
+      "dps": 55606.93943407296,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

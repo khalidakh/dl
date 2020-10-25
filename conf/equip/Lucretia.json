@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 52674.38528369948,
-      "team": 0.12642876233673722,
+      "dps": 52118.85907953386,
+      "team": 0.12639219570310056,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -32,8 +32,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 56542.34005477381,
-      "team": 0.12588854842924613,
+      "dps": 55078.32862601661,
+      "team": 0.1398679832356789,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -58,13 +58,13 @@
       ],
       "share": [
         "Weapon",
-        "Summer_Luca"
+        "Mikoto"
       ]
     },
     "buffer": {
-      "dps": 14445.66404885372,
-      "team": 0.2869548210180525,
-      "tdps": 238146.51371176698,
+      "dps": 29450.601652802656,
+      "team": 0.3052063137336938,
+      "tdps": 126769.95349356534,
       "slots.a": [
         "Jewels_of_the_Sun",
         "Memory_of_a_Friend",
@@ -72,7 +72,7 @@
         "A_Game_of_Cat_and_Boar",
         "Taiko_Tandem"
       ],
-      "slots.d": "Tie_Shan_Gongzhu",
+      "slots.d": "Gala_Thor",
       "acl": [
         "`s3, not buff(s3)",
         "`s4, x=5",
@@ -93,8 +93,8 @@
   },
   "120": {
     "base": {
-      "dps": 45771.009939119955,
-      "team": 0.11682903144372395,
+      "dps": 46116.462912676194,
+      "team": 0.11651785456052999,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -124,8 +124,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 54244.271212928055,
-      "team": 0.13143021065749624,
+      "dps": 56072.3064825051,
+      "team": 0.12858315136610327,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -156,8 +156,8 @@
   },
   "60": {
     "base": {
-      "dps": 40367.03763358903,
-      "team": 0.05641257378905088,
+      "dps": 40766.37768993024,
+      "team": 0.05635459923513819,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -187,8 +187,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 51945.492557311925,
-      "team": 0.0751382836556543,
+      "dps": 44318.210382953715,
+      "team": 0.06311070121439642,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -208,12 +208,12 @@
       ],
       "coabs": [
         "Blade",
-        "Bow",
+        "Axe2",
         "Peony"
       ],
       "share": [
         "Weapon",
-        "Summer_Luca"
+        "Mikoto"
       ]
     }
   }

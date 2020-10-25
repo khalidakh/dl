@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 92555.64970905564,
-      "team": 0.16447902959322702,
+      "dps": 95597.46677374952,
+      "team": 0.1728476937452398,
       "tdps": null,
       "slots.a": [
         "Howling_to_the_Heavens",
@@ -17,7 +17,7 @@
         "`s3, not buff(s3)",
         "`s1",
         "`s2",
-        "`s4"
+        "`s4, x=5"
       ],
       "coabs": [
         "Axe2",
@@ -26,14 +26,14 @@
       ],
       "share": [
         "Weapon",
-        "Kleimann"
+        "Rodrigo"
       ]
     },
     "pref": "base",
     "buffer": {
       "dps": 45231.33675393135,
       "team": 0.3668920066936969,
-      "tdps": 233800.78507335202,
+      "tdps": 259559.93893619877,
       "slots.a": [
         "Howling_to_the_Heavens",
         "Memory_of_a_Friend",
@@ -59,8 +59,8 @@
       ]
     },
     "affliction": {
-      "dps": 109276.01495973341,
-      "team": 0.18734856434751276,
+      "dps": 107529.58371894472,
+      "team": 0.18810420422398574,
       "tdps": null,
       "slots.a": [
         "Howling_to_the_Heavens",
@@ -71,7 +71,7 @@
       ],
       "slots.d": "Epimetheus",
       "acl": [
-        "`dragon, s=1",
+        "`dragon(s), s=1",
         "`s3, not buff(s3)",
         "`s1",
         "`s2",
@@ -90,8 +90,8 @@
   },
   "60": {
     "affliction": {
-      "dps": 104621.03311947917,
-      "team": 0.11179621457152915,
+      "dps": 101278.02318620498,
+      "team": 0.11346760123391875,
       "tdps": null,
       "slots.a": [
         "Howling_to_the_Heavens",
@@ -102,7 +102,7 @@
       ],
       "slots.d": "Epimetheus",
       "acl": [
-        "`dragon, s=1",
+        "`dragon(s), s=1",
         "`s3, not buff(s3)",
         "`s1",
         "`s2",
@@ -120,8 +120,8 @@
     },
     "pref": "base",
     "base": {
-      "dps": 97280.78200404179,
-      "team": 0.11788902409777288,
+      "dps": 94812.62738004362,
+      "team": 0.11956210936815627,
       "tdps": null,
       "slots.a": [
         "Howling_to_the_Heavens",
@@ -151,8 +151,8 @@
   },
   "120": {
     "base": {
-      "dps": 85753.52995696118,
-      "team": 0.15769591945867206,
+      "dps": 85221.44679494308,
+      "team": 0.15846250896569244,
       "tdps": null,
       "slots.a": [
         "Howling_to_the_Heavens",
@@ -183,7 +183,7 @@
     "buffer": {
       "dps": 57888.46644971127,
       "team": 0.18396855578288748,
-      "tdps": 1060611.6250909604,
+      "tdps": 1071627.4670524457,
       "slots.a": [
         "Howling_to_the_Heavens",
         "Memory_of_a_Friend",
@@ -210,8 +210,8 @@
       ]
     },
     "affliction": {
-      "dps": 99163.86950940404,
-      "team": 0.16688086881153233,
+      "dps": 102680.99788653223,
+      "team": 0.16852476926954651,
       "tdps": null,
       "slots.a": [
         "Howling_to_the_Heavens",

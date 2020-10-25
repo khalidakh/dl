@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 65807.1783235095,
-      "team": 0.09379135609986082,
+      "dps": 66204.75067242494,
+      "team": 0.08831275011550582,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
@@ -16,7 +16,7 @@
         "queue not buff(s3)",
         "`s3;s1;s2;fs,x=2;s4,fsc",
         "end",
-        "`dragon,s=2",
+        "`dragon(s-s),s=2",
         "queue prep and aff(burn)",
         "`s2;s4",
         "end",
@@ -31,18 +31,18 @@
       "coabs": [
         "Blade",
         "Wand",
-        "Joe"
+        "Dagger2"
       ],
       "share": [
         "Weapon",
-        "Jurota"
+        "Xander"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 10176.430204717388,
-      "team": 0.6591658289812409,
-      "tdps": 98396.2856251274,
+      "dps": 11606.583334994324,
+      "team": 0.7204494191529921,
+      "tdps": 86370.82772078973,
       "slots.a": [
         "Honest_Repose",
         "Jewels_of_the_Sun",
@@ -58,7 +58,7 @@
         "`fs, x=2"
       ],
       "coabs": [
-        "Nobunaga",
+        "Blade",
         "Gala_Sarisse",
         "Tobias"
       ],
@@ -68,8 +68,8 @@
       ]
     },
     "affliction": {
-      "dps": 70203.7302147935,
-      "team": 0.10064309083276868,
+      "dps": 73237.98966907455,
+      "team": 0.08917727125885762,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
@@ -83,7 +83,7 @@
         "queue not buff(s3)",
         "`s3;s1;s2;fs,x=2;s4,fsc",
         "end",
-        "`dragon,s=2",
+        "`dragon(s-s),s=2",
         "queue prep and aff(burn)",
         "`s2;s4",
         "end",
@@ -98,7 +98,7 @@
       "coabs": [
         "Blade",
         "Wand",
-        "Joe"
+        "Dagger2"
       ],
       "share": [
         "Weapon",
@@ -108,46 +108,8 @@
   },
   "60": {
     "base": {
-      "dps": 72042.15694042349,
-      "team": 0.08782872123439552,
-      "tdps": null,
-      "slots.a": [
-        "Me_and_My_Bestie",
-        "Memory_of_a_Friend",
-        "The_Shining_Overlord",
-        "His_Clever_Brother",
-        "To_the_Extreme"
-      ],
-      "slots.d": "Gala_Mars",
-      "acl": [
-        "queue not buff(s3)",
-        "`s3;s1;s2;fs,x=2;s4,fsc",
-        "end",
-        "`dragon,s=2",
-        "queue prep and aff(burn)",
-        "`s2;s4",
-        "end",
-        "queue prep and not aff(burn)",
-        "`s1;s2;s4",
-        "end",
-        "`s2, aff(burn)",
-        "`s4, cancel",
-        "`s1, fsc and not energy()=5",
-        "`fs, x=3"
-      ],
-      "coabs": [
-        "Blade",
-        "Wand",
-        "Joe"
-      ],
-      "share": [
-        "Weapon",
-        "Xander"
-      ]
-    },
-    "affliction": {
-      "dps": 81255.75301501459,
-      "team": 0.08799679996545895,
+      "dps": 75281.0300951925,
+      "team": 0.08790486110669808,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
@@ -176,7 +138,45 @@
       "coabs": [
         "Blade",
         "Wand",
-        "Joe"
+        "Dagger"
+      ],
+      "share": [
+        "Weapon",
+        "Xander"
+      ]
+    },
+    "affliction": {
+      "dps": 82057.13253746205,
+      "team": 0.088295445730557,
+      "tdps": null,
+      "slots.a": [
+        "Me_and_My_Bestie",
+        "Memory_of_a_Friend",
+        "The_Shining_Overlord",
+        "His_Clever_Brother",
+        "To_the_Extreme"
+      ],
+      "slots.d": "Gala_Mars",
+      "acl": [
+        "queue not buff(s3)",
+        "`s3;s1;s2;fs,x=2;s4,fsc",
+        "end",
+        "`dragon,s=2",
+        "queue prep and aff(burn)",
+        "`s2;s4",
+        "end",
+        "queue prep and not aff(burn)",
+        "`s1;s2;s4",
+        "end",
+        "`s2, aff(burn)",
+        "`s4, cancel",
+        "`s1, fsc and not energy()=5",
+        "`fs, x=4"
+      ],
+      "coabs": [
+        "Blade",
+        "Wand",
+        "Dagger"
       ],
       "share": [
         "Weapon",
@@ -185,9 +185,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 9786.946205712098,
-      "team": 0.5945276592837575,
-      "tdps": 122864.30079047565,
+      "dps": 11096.808782124066,
+      "team": 0.6609261777621224,
+      "tdps": 112010.18085626372,
       "slots.a": [
         "Honest_Repose",
         "Jewels_of_the_Sun",
@@ -203,7 +203,7 @@
         "`fs, x=2"
       ],
       "coabs": [
-        "Nobunaga",
+        "Blade",
         "Gala_Sarisse",
         "Tobias"
       ],
@@ -215,9 +215,9 @@
   },
   "120": {
     "base": {
-      "dps": 66351.32387987367,
-      "team": 0.08815760658098248,
-      "tdps": null,
+      "dps": 61254.47152625895,
+      "team": 0.09083370785396551,
+      "tdps": -10342476.019444654,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",
@@ -252,10 +252,10 @@
         "Xander"
       ]
     },
-    "pref": "base",
+    "pref": "buffer",
     "affliction": {
-      "dps": 71475.85790626197,
-      "team": 0.08829509150334436,
+      "dps": 73602.24666735785,
+      "team": 0.08823046264668853,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
@@ -279,12 +279,12 @@
         "`s2, aff(burn)",
         "`s4, cancel",
         "`s1, fsc and not energy()=5",
-        "`fs, x=3"
+        "`fs, x=4"
       ],
       "coabs": [
         "Blade",
         "Wand",
-        "Joe"
+        "Dagger"
       ],
       "share": [
         "Weapon",
@@ -292,9 +292,9 @@
       ]
     },
     "buffer": {
-      "dps": 51270.169078041836,
-      "team": 0.08828975297575477,
-      "tdps": 114124602.70157076,
+      "dps": 53197.07885684244,
+      "team": 0.09005464946850075,
+      "tdps": -10342476.019444654,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",

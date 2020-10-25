@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 84404.22755540727,
+      "dps": 84708.75483771363,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -15,7 +15,7 @@
       "acl": [
         "# `norm",
         "`ex",
-        "`dragon(s),s=2",
+        "`dragon(s-s),s=2",
         "queue prep",
         "`s2;s1;s4",
         "end",
@@ -25,7 +25,7 @@
         "`s4, x=4"
       ],
       "coabs": [
-        "Nobunaga",
+        "Blade",
         "Gala_Sarisse",
         "Serena"
       ],
@@ -36,7 +36,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 94435.59163495126,
+      "dps": 97081.24233085514,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -50,7 +50,7 @@
       "acl": [
         "# `norm",
         "`ex",
-        "`dragon, s=2",
+        "`dragon,s=2",
         "`s3, not buff(s3) and fsc",
         "`s4",
         "`s2",
@@ -64,13 +64,13 @@
       ],
       "share": [
         "Weapon",
-        "Karina"
+        "Xander"
       ]
     },
     "buffer": {
-      "dps": 52278.85956129883,
+      "dps": 52262.0043132649,
       "team": 0.158874892395412,
-      "tdps": 202205.4429730406,
+      "tdps": 204228.30842078183,
       "slots.a": [
         "Me_and_My_Bestie",
         "Moonlight_Party",
@@ -104,7 +104,7 @@
   },
   "60": {
     "base": {
-      "dps": 93807.009242956,
+      "dps": 93696.17263732248,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -128,9 +128,9 @@
         "`s4"
       ],
       "coabs": [
-        "Nobunaga",
         "Gala_Sarisse",
-        "Serena"
+        "Serena",
+        "Blade"
       ],
       "share": [
         "Weapon",
@@ -139,7 +139,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 101166.0903961728,
+      "dps": 101622.36900285172,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -173,7 +173,7 @@
   },
   "120": {
     "base": {
-      "dps": 89833.68435101883,
+      "dps": 88333.09706598613,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -197,9 +197,9 @@
         "`s4"
       ],
       "coabs": [
-        "Nobunaga",
         "Gala_Sarisse",
-        "Serena"
+        "Serena",
+        "Blade"
       ],
       "share": [
         "Weapon",
@@ -208,7 +208,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 98964.53823371332,
+      "dps": 98933.762736789,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -240,9 +240,9 @@
       ]
     },
     "buffer": {
-      "dps": 61170.564909896144,
+      "dps": 61140.61451736667,
       "team": 0.00438535279012043,
-      "tdps": 6536103.436352163,
+      "tdps": 6200751.4218423255,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",

@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 52853.979955432646,
+      "dps": 55278.75880299055,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -13,29 +13,32 @@
       ],
       "slots.d": "Siren",
       "acl": [
-        "`dragon(c3-s-end), cancel and aff_timeleft(poison) > 12",
+        "`dragon(s-end)",
+        "queue prep",
+        "`s3;s1;s4;s2",
+        "end",
         "`s3, not buff(s3)",
         "`s4, x=4 or x=5",
-        "`s2",
-        "`s1",
+        "`s2, cancel",
+        "`s1, cancel",
         "`dodge, fsc",
         "`fs, x=5"
       ],
       "coabs": [
         "Blade",
         "Dragonyule_Cleo",
-        "Hunter_Sarisse"
+        "Catherine"
       ],
       "share": [
         "Weapon",
-        "Kleimann"
+        "Rodrigo"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 12191.96382076449,
-      "team": 0.2629779100698458,
-      "tdps": 154621.41334938933,
+      "dps": 12851.880583886672,
+      "team": 0.26039003346300216,
+      "tdps": 162935.87605814473,
       "slots.a": [
         "Sisters_Day_Out",
         "Study_Rabbits",
@@ -62,40 +65,43 @@
       ]
     },
     "affliction": {
-      "dps": 54613.284348209476,
+      "dps": 57919.00863818971,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "Candy_Couriers",
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "The_Prince_of_Dragonyule",
-        "His_Clever_Brother",
-        "The_Plaguebringer"
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
+        "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-s-end), cancel and aff_timeleft(poison) > 12",
+        "`dragon",
+        "queue prep",
+        "`s3;s1;s4;s2",
+        "end",
         "`s3, not buff(s3)",
-        "`s4, x=4 or x=5",
-        "`s2",
-        "`s1",
+        "`s4",
+        "`s2, cancel",
+        "`s1, x=5",
         "`dodge, fsc",
         "`fs, x=5"
       ],
       "coabs": [
-        "Blade",
         "Dragonyule_Cleo",
-        "Hunter_Sarisse"
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Kleimann"
+        "Gala_Mym"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 37167.87386485229,
+      "dps": 35940.185875643045,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -115,8 +121,8 @@
       ],
       "coabs": [
         "Blade",
-        "Dragonyule_Cleo",
-        "Summer_Celliera"
+        "Summer_Celliera",
+        "Dagger"
       ],
       "share": [
         "Gala_Mym",
@@ -125,7 +131,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 52258.456364545746,
+      "dps": 49457.77243128389,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

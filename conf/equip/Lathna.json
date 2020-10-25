@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 72850.24934806066,
+      "dps": 71999.20748085683,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -32,7 +32,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 82882.75452176211,
+      "dps": 84082.64344457915,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -62,9 +62,9 @@
       ]
     },
     "buffer": {
-      "dps": 45863.87016553617,
-      "team": 0.06246237949608257,
-      "tdps": 432042.12519980903,
+      "dps": 43663.802768977985,
+      "team": 0.06247937884737655,
+      "tdps": 453516.10778807575,
       "slots.a": [
         "An_Ancient_Oath",
         "Dragon_and_Tamer",
@@ -94,7 +94,7 @@
   },
   "60": {
     "base": {
-      "dps": 63006.257637040464,
+      "dps": 67135.02316120715,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -108,23 +108,87 @@
       "acl": [
         "`dragon(c3-s-end), cancel",
         "`s3, not buff(s3)",
-        "`s2",
         "`s4",
-        "`s1(all), x=5"
+        "`s2",
+        "`s1",
+        "`fs, x=5"
       ],
       "coabs": [
         "Ieyasu",
         "Wand",
-        "Forte"
+        "Berserker"
       ],
       "share": [
         "Weapon",
-        "Rodrigo"
+        "Kleimann"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 74441.25257823273,
+      "dps": 77267.81919602345,
+      "team": 0.0,
+      "tdps": null,
+      "slots.a": [
+        "An_Ancient_Oath",
+        "Dragon_and_Tamer",
+        "Memory_of_a_Friend",
+        "Dueling_Dancers",
+        "The_Plaguebringer"
+      ],
+      "slots.d": "Gala_Cat_Sith",
+      "acl": [
+        "`dragon(c3-s-end), cancel",
+        "`s3, not buff(s3)",
+        "`s4",
+        "`s2",
+        "`s1",
+        "`fs, x=5"
+      ],
+      "coabs": [
+        "Ieyasu",
+        "Wand",
+        "Berserker"
+      ],
+      "share": [
+        "Weapon",
+        "Kleimann"
+      ]
+    }
+  },
+  "120": {
+    "base": {
+      "dps": 74825.50284675095,
+      "team": 0.0,
+      "tdps": null,
+      "slots.a": [
+        "An_Ancient_Oath",
+        "Dragon_and_Tamer",
+        "Memory_of_a_Friend",
+        "Dueling_Dancers",
+        "The_Plaguebringer"
+      ],
+      "slots.d": "Gala_Cat_Sith",
+      "acl": [
+        "`dragon(c3-s-end), cancel",
+        "`s3, not buff(s3)",
+        "`s4",
+        "`s2",
+        "`s1",
+        "`fs, x=5"
+      ],
+      "coabs": [
+        "Ieyasu",
+        "Wand",
+        "Berserker"
+      ],
+      "share": [
+        "Weapon",
+        "Kleimann"
+      ]
+    },
+    "pref": "base",
+    "affliction": {
+      "dps": 83044.15590214817,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

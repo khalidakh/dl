@@ -1,9 +1,9 @@
 {
   "180": {
     "base": {
-      "dps": 35077.37268997394,
-      "team": 0.3898034592209776,
-      "tdps": 31364.97206065074,
+      "dps": 35213.66281812919,
+      "team": 0.38811951924730237,
+      "tdps": 29043.515128370116,
       "slots.a": [
         "Dragon_and_Tamer",
         "Memory_of_a_Friend",
@@ -39,9 +39,9 @@
     },
     "pref": "buffer",
     "buffer": {
-      "dps": 8676.52435983223,
-      "team": 1.2315337907223143,
-      "tdps": 31364.97206065074,
+      "dps": 9003.266438911063,
+      "team": 1.290572141230908,
+      "tdps": 29043.515128370116,
       "slots.a": [
         "Honest_Repose",
         "Study_Rabbits",
@@ -52,8 +52,8 @@
       "slots.d": "Horus",
       "acl": [
         "`s1",
-        "`s4, s=1",
-        "`s3"
+        "`s3, s=1",
+        "`s4"
       ],
       "coabs": [
         "Bow",
@@ -66,8 +66,8 @@
       ]
     },
     "affliction": {
-      "dps": 35077.37268997394,
-      "team": 0.3898034592209776,
+      "dps": 35213.66281812919,
+      "team": 0.38811951924730237,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -105,9 +105,9 @@
   },
   "120": {
     "base": {
-      "dps": 8233.621314714012,
-      "team": 1.1442035525673993,
-      "tdps": -438854.6934447083,
+      "dps": 8439.462582881659,
+      "team": 1.160724824753338,
+      "tdps": -4380.1122906772625,
       "slots.a": [
         "Honest_Repose",
         "Study_Rabbits",
@@ -134,8 +134,8 @@
     },
     "pref": "buffer",
     "affliction": {
-      "dps": 38238.79935737457,
-      "team": 0.3577634164693357,
+      "dps": 38381.067484111045,
+      "team": 0.3567278168142265,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -171,9 +171,9 @@
       ]
     },
     "buffer": {
-      "dps": 8302.54139624993,
-      "team": 1.144360597900548,
-      "tdps": -438854.6934447083,
+      "dps": 8616.906019754364,
+      "team": 1.2012359863622264,
+      "tdps": -4380.1122906772625,
       "slots.a": [
         "Honest_Repose",
         "Study_Rabbits",
@@ -193,9 +193,40 @@
         "Tobias"
       ],
       "share": [
-        "Summer_Cleo",
-        "Mikoto"
+        "Mikoto",
+        "Summer_Cleo"
       ]
     }
+  },
+  "60": {
+    "base": {
+      "dps": 2242.220567682737,
+      "team": 0.6607756896643957,
+      "tdps": null,
+      "slots.a": [
+        "Honest_Repose",
+        "Sisters_Day_Out",
+        "Study_Rabbits",
+        "From_Whence_He_Comes",
+        "Bellathorna"
+      ],
+      "slots.d": "Horus",
+      "acl": [
+        "`s1",
+        "`s4, s=1",
+        "`s3",
+        "`fs"
+      ],
+      "coabs": [
+        "Bow",
+        "Dagger2",
+        "Tobias"
+      ],
+      "share": [
+        "Halloween_Lowen",
+        "Summer_Cleo"
+      ]
+    },
+    "pref": "base"
   }
 }

@@ -1,14 +1,14 @@
 {
   "180": {
     "base": {
-      "dps": 75282.29266523817,
+      "dps": 70272.29485048933,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
-        "The_Synthetic_Dragon",
         "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "Worthy_Rivals",
+        "His_Clever_Brother",
         "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
@@ -26,14 +26,14 @@
       ],
       "share": [
         "Weapon",
-        "Veronica"
+        "Xander"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 43149.07873804061,
-      "team": 0.11933295502389853,
-      "tdps": 269273.5960553589,
+      "dps": 41558.32875200848,
+      "team": 0.11933140696397344,
+      "tdps": 240623.71197173343,
       "slots.a": [
         "Memory_of_a_Friend",
         "The_Synthetic_Dragon",
@@ -59,8 +59,8 @@
       ]
     },
     "affliction": {
-      "dps": 77211.66265467595,
-      "team": 0.0,
+      "dps": 72595.8643169706,
+      "team": 0.01834674043273157,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -80,17 +80,17 @@
       "coabs": [
         "Blade",
         "Dragonyule_Xainfried",
-        "Eleonora"
+        "Bow"
       ],
       "share": [
         "Weapon",
-        "Veronica"
+        "Curran"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 54999.808726770476,
+      "dps": 55199.49046851856,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -120,7 +120,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 68028.74043972506,
+      "dps": 63650.27506821139,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -136,13 +136,12 @@
         "`s3, not buff(s3)",
         "`s1, c_s(1, a) or c_s(1, c)",
         "`s2, x=5 and (c_s(2, b) or c_s(2, d))",
-        "`s4, x=5",
-        "`fs, x=5"
+        "`s4, x=5"
       ],
       "coabs": [
         "Blade",
         "Dragonyule_Xainfried",
-        "Lin_You"
+        "Eleonora"
       ],
       "share": [
         "Weapon",

@@ -1,19 +1,19 @@
 {
   "180": {
     "base": {
-      "dps": 39135.56923228821,
+      "dps": 39553.5946281644,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "Dear_Diary",
-        "Forest_Bonds",
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "Chariot_Drift",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(s-end)",
+        "`dragon(c3-c3-c3-c1-s)",
         "`s3, not buff(s3)",
         "`s4",
         "`s1, cancel",
@@ -21,20 +21,20 @@
         "`fs, x=5"
       ],
       "coabs": [
-        "Blade",
-        "Yurius",
-        "Xander"
+        "Dragonyule_Cleo",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Gala_Mym"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 5939.954094625758,
-      "team": 0.39790565192557803,
-      "tdps": 83425.84473736293,
+      "dps": 6657.60022957022,
+      "team": 0.40010305150726416,
+      "tdps": 82218.80406727397,
       "slots.a": [
         "Dear_Diary",
         "Forest_Bonds",
@@ -60,19 +60,19 @@
       ]
     },
     "affliction": {
-      "dps": 39994.64352834658,
+      "dps": 41533.04183377106,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "Dear_Diary",
-        "Forest_Bonds",
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "Chariot_Drift",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(s-end)",
+        "`dragon(c3-c3-c3-c1-s)",
         "`s3, not buff(s3)",
         "`s4",
         "`s1, cancel",
@@ -80,13 +80,13 @@
         "`fs, x=5"
       ],
       "coabs": [
-        "Blade",
-        "Yurius",
-        "Xander"
+        "Dragonyule_Cleo",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Gala_Mym"
       ]
     }
   }

@@ -1,40 +1,40 @@
 {
   "180": {
     "base": {
-      "dps": 30218.98380889759,
-      "team": 0.03430683229924088,
+      "dps": 38626.225582182,
+      "team": 0.022719987724089005,
       "tdps": null,
       "slots.a": [
-        "Dragon_and_Tamer",
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "The_Prince_of_Dragonyule",
-        "Chariot_Drift",
-        "His_Clever_Brother"
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
+        "Such_High_Spirits"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-s-c3-end)",
+        "`dragon(c3-c3-c3-c3-c1-s)",
         "`s3, not buff(s3)",
-        "`s1, fscf",
         "`s4",
-        "`s2, cancel",
+        "`s2, fscf",
+        "`s1, fscf",
         "`fs, x=5"
       ],
       "coabs": [
-        "Blade",
-        "Summer_Estelle",
-        "Xander"
+        "Dragonyule_Cleo",
+        "Summer_Celliera",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Gala_Mym"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 5118.413180048584,
-      "team": 0.6215569585067913,
-      "tdps": 42742.554677591965,
+      "dps": 6003.369035081326,
+      "team": 0.6950168084799714,
+      "tdps": 48524.48433479408,
       "slots.a": [
         "Once_in_a_Lifetime",
         "Study_Rabbits",
@@ -44,20 +44,48 @@
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(c3-s-end), s=3",
+        "`dragon(s-end), s",
         "`s4",
-        "`s3",
-        "`s1, s",
-        "`fs, x=5"
+        "`s3"
       ],
       "coabs": [
         "Renee",
         "Hunter_Sarisse",
-        "Xander"
+        "Tobias"
       ],
       "share": [
         "Gala_Elisanne",
-        "Templar_Hope"
+        "Yuya"
+      ]
+    },
+    "affliction": {
+      "dps": 41550.22186884753,
+      "team": 0.023030689614353804,
+      "tdps": null,
+      "slots.a": [
+        "An_Ancient_Oath",
+        "Memory_of_a_Friend",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
+        "His_Clever_Brother"
+      ],
+      "slots.d": "Nimis",
+      "acl": [
+        "`dragon",
+        "`s3, not buff(s3)",
+        "`s4",
+        "`s2, fscf",
+        "`s1, fscf",
+        "`fs, x=5"
+      ],
+      "coabs": [
+        "Dragonyule_Cleo",
+        "Summer_Celliera",
+        "Tiki"
+      ],
+      "share": [
+        "Weapon",
+        "Gala_Mym"
       ]
     }
   }

@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 52828.48805153022,
-      "team": 0.10085783472972677,
+      "dps": 52255.52230372925,
+      "team": 0.10073362086065968,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -32,8 +32,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 57549.53250514116,
-      "team": 0.10085783472972677,
+      "dps": 56828.53944442462,
+      "team": 0.10073362086065968,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -62,17 +62,17 @@
       ]
     },
     "buffer": {
-      "dps": 12877.343591554047,
-      "team": 0.20708324009640947,
-      "tdps": 376097.8301006959,
+      "dps": 15335.602759516316,
+      "team": 0.3225420772894134,
+      "tdps": 166449.55804952298,
       "slots.a": [
         "Dragon_and_Tamer",
-        "Me_and_My_Bestie",
-        "Memory_of_a_Friend",
-        "His_Clever_Brother",
-        "The_Queen_of_the_Knife"
+        "Jewels_of_the_Sun",
+        "Sisters_Day_Out",
+        "From_Whence_He_Comes",
+        "Halidom_Grooms"
       ],
-      "slots.d": "Gold_Fafnir",
+      "slots.d": "PopStar_Siren",
       "acl": [
         "`dragon",
         "`s3, not buff(s3) and x=5",

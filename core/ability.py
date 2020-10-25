@@ -28,6 +28,7 @@ class Ability:
             flurry_hits = int(cond[3:])
             def flurry_get():
                 return adv.hits > flurry_hits
+            adv.uses_combo = True
             return (m[0], m[1], m[2], cond, flurry_get)
         return m
 
@@ -46,7 +47,7 @@ class Ability:
             mod_name = '{}{}_{}'.format(afrom, self.name, idx)
             self.mod_object = adv.Modifier(mod_name,*m)
             if m[1] == 'buff':
-                adv.Buff(f'{mod_name}_buff', duration=-1, modifier=self.mod_object).on()
+                adv.Buff(f'{mod_name}_buff', duration=-1, modifier=self.mod_object, source='ability').on()
 
 ability_dict = {}
 
@@ -263,7 +264,7 @@ class Last_Buff(BuffingAbility):
 
     def oninit(self, adv, afrom=None):
         def l_lo_buff(e):
-            if self.proc_chances > 0 and e.delta < 0 and e.hp <= 30:
+            if self.proc_chances > 0 and e.hp <= 30 and (e.hp - e.delta) > 30:
                 self.proc_chances -= 1
                 adv.Buff(*self.buff_args).no_bufftime().on()
         adv.Event('hp').listener(l_lo_buff)
@@ -294,11 +295,17 @@ class Doublebuff(BuffingAbility):
     def oninit(self, adv, afrom=None):
         if self.name == 'bc_energy':
             def defchain(e):
-                adv.energy.add(self.buff_args[1])
+                if hasattr(e, 'rate'):
+                    adv.energy.add(self.buff_args[1] * e.rate)
+                else:
+                    adv.energy.add(self.buff_args[1])
             adv.Event('defchain').listener(defchain)
         else:
             def defchain(e):
-                adv.Buff(*self.buff_args, source=e.source).on()
+                if hasattr(e, 'rate'):
+                    adv.Buff(self.buff_args[0], self.buff_args[1] * e.rate, *self.buff_args[2:], source=e.source).on()
+                else:
+                    adv.Buff(*self.buff_args, source=e.source).on()
             adv.Event('defchain').listener(defchain)
 
 ability_dict['bc'] = Doublebuff
@@ -420,7 +427,7 @@ class Resilient_Offense(BuffingAbility):
 
     def oninit(self, adv, afrom=None):
         def l_ro_buff(e):
-            if self.proc_chances > 0 and e.delta < 0 and e.hp <= self.hp_threshold:
+            if self.proc_chances > 0 and e.hp <= 30 and (e.hp - e.delta) > 30:
                 self.proc_chances -= 1
                 adv.Buff(*self.buff_args).on()
         adv.Event('hp').listener(l_ro_buff)

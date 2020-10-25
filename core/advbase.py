@@ -297,6 +297,13 @@ class Action(object):
     def has_delayed(self):
         return len([mt for mt in self.delayed if mt.online and mt.timing > now()])
 
+    @property
+    def max_delayed(self):
+        try:
+            return max([mt.timing - now() for mt in self.delayed if mt.online and mt.timing > now()])
+        except ValueError:
+            return 0
+
     def tap(self, t=None):
         doing = self._static.doing
 
@@ -425,8 +432,15 @@ class Fs(Action):
             buffer = 0
         else:
             try:
-                buffer = max(0, self._buffer - prev.startup_timer.elapsed() - prev.recovery_timer.elapsed())
-                log('bufferable', prev.startup_timer.elapsed() + prev.recovery_timer.elapsed())
+                # check if it's 2 X in a row, maybe (???)
+                prevprev_rec = 0
+                if isinstance(prev, X) and prev.index > 1:
+                    prevprev = prev.getprev()
+                    if isinstance(prevprev, X):
+                        prevprev_rec = prevprev.getrecovery()
+                bufferable = prev.startup_timer.elapsed() + prev.recovery_timer.elapsed() + prevprev_rec
+                buffer = max(0, self._buffer - bufferable)
+                log('bufferable', bufferable)
             except AttributeError:
                 buffer = 0
         charge = self._charge / self.charge_speed()
@@ -500,6 +514,9 @@ class Dodge(Action):
 
 
 class Adv(object):
+
+    BASE_CTIME = 2
+
     Timer = Timer
     Event = Event
     Listener = Listener
@@ -508,6 +525,10 @@ class Adv(object):
     _acl_default = None
     _acl_dragonbattle = core.acl.build_acl('`dragon')
     _acl = None
+
+    @property
+    def variant(self):
+        return self.__class__.__name__.replace(self.name, '').strip('_')
 
     def dmg_proc(self, name, amount):
         pass
@@ -530,15 +551,6 @@ class Adv(object):
         x_proc is called when base dagger combo
         x_tempura_proc is called when tempura combo
     """
-
-    def d_coabs(self):
-        pass
-
-    def d_slots(self):
-        pass
-
-    def d_skillshare(self):
-        pass
 
     def prerun(self):
         pass
@@ -577,6 +589,7 @@ class Adv(object):
 
         'acl': 's1;s2;s3;s4',
 
+        'mbleed': True,
         'attenuation.hits': 1,
         'attenuation.delay': 0.25,
     }
@@ -662,7 +675,6 @@ class Adv(object):
 
         self.hits = 0
         self.last_c = 0
-        self.ctime_override = 0
 
         self.hp = 100
         self.hp_event = Event('hp')
@@ -681,7 +693,7 @@ class Adv(object):
     @property
     def ctime(self):
         # base ctime is 2
-        return self.ctime_override or self.mod('ctime') + 1
+        return self.mod('ctime', operator.add, initial=Adv.BASE_CTIME)
 
     def actmod_on(self, e):
         do_sab = True
@@ -738,6 +750,8 @@ class Adv(object):
             self.hp_event.hp = self.hp
             self.hp_event.delta = delta
             self.hp_event()
+            if self.dragonform.status != Action.OFF and delta < 0:
+                self.dragonform.set_shift_end(delta/100)
 
     def afflic_condition(self):
         if 'afflict_res' in self.conf:
@@ -781,14 +795,13 @@ class Adv(object):
             if 'doublebuff_interval' in self.conf.sim_buffbot:
                 interval = round(self.conf.sim_buffbot.doublebuff_interval, 2)
                 if self.condition('team doublebuff every {:.2f} sec'.format(interval)):
-                    Event('defchain').on()
-                    Timer(lambda t: Event('defchain').on(), interval, True).on()
+                    sim_defchain = Event('defchain')
+                    sim_defchain.source = None
+                    Timer(lambda t: sim_defchain.on(), interval, True).on()
 
     def config_slots(self):
         if self.conf['classbane'] == 'HDT':
             self.conf.c.a.append(['k_HDT', 0.3])
-        if not self.conf['flask_env']:
-            self.d_slots()
         self.slots.set_slots(self.conf.slots)
 
     def pre_conf(self, equip_key=None):
@@ -814,9 +827,10 @@ class Adv(object):
     def default_slot(self):
         self.slots = Slots(self.name, self.conf.c, self.sim_afflict, bool(self.conf['flask_env']))
 
-    def __init__(self, conf=None, duration=180, cond=None, equip_key=None):
-        if not self.name:
-            self.name = self.__class__.__name__
+    def __init__(self, name=None, conf=None, duration=180, cond=None, equip_key=None):
+        if not name:
+            raise ValueError('Adv module must have a name')
+        self.name = name
 
         self.Event = Event
         self.Buff = Buff
@@ -1022,7 +1036,7 @@ class Adv(object):
                 cond_p = cond[1]
                 if on:
                     p *= cond_p
-                    for order, mods in self.all_modifiers[f"{cond_name}_killer"].items():
+                    for order, mods in self.all_modifiers[f'{cond_name}_killer'].items():
                         for mod in mods:
                             modifiers[order].add(mod)
                 else:
@@ -1166,12 +1180,19 @@ class Adv(object):
     def add_combo(self, name='#'):
         # real combo count
         delta = now()-self.last_c
-        if delta <= self.ctime:
+        ctime = self.ctime
+        self.last_c = now()
+        if delta <= ctime:
             self.hits += self.echo
+            if self.ctime_coab_val:
+                ctime_needed = delta - ctime + self.ctime_coab_val
+                if ctime_needed > self.ctime_needed:
+                    self.ctime_needed = ctime_needed
+            return True
         else:
             self.hits = self.echo
             log('combo', f'reset combo after {delta:.02}s')
-        self.last_c = now()
+            return False
 
     def load_aff_conf(self, key):
         confv = self.conf[key]
@@ -1186,20 +1207,36 @@ class Adv(object):
         return confv['base'] or []
 
     def config_coabs(self):
+        self.ctime_coab_val = 0
+        self.ctime_coab_list = []
+        self.ctime_needed = 0
         if not self.conf['flask_env']:
-            self.d_coabs()
             coab_list = self.load_aff_conf('coabs')
         else:
             coab_list = self.conf['coabs'] or []
         try:
             self_coab = list(self.slots.c.coabs.keys())[0]
         except:
-            self_coab = self.__class__.__name__
+            self_coab = self.name
         for name in coab_list:
             try:
-                self.slots.c.coabs[name] = self.slots.c.valid_coabs[name]
+                coab = self.slots.c.valid_coabs[name]
+                self.slots.c.coabs[name] = coab
+                if name != self.name and coab[0] and coab[0][0] == 'ctime':
+                    self.ctime_coab_val += coab[0][1]
+                    self.ctime_coab_list.append(name)
             except KeyError:
                 raise ValueError(f'No such coability: {name}')
+
+    def downgrade_coab(self, coab_name):
+        try:
+            new_coab = self.slots.c.coabs[coab_name][1].capitalize()
+            self.slots.c.coabs[new_coab] = self.slots.c.valid_coabs[new_coab]
+            self.slots.c.coab_list.append(new_coab)
+        except KeyError:
+            pass
+        del self.slots.c.coabs[coab_name]
+        self.slots.c.coab_list.remove(coab_name)
 
     def rebind_function(self, owner, src, dst=None):
         dst = dst or src
@@ -1237,16 +1274,15 @@ class Adv(object):
         self.current_s = {'s1': 'default', 's2': 'default', 's3': 'default', 's4': 'default'}
         self.Skill._static.current_s = self.current_s
         self.conf.s1.owner = None
-        self.conf.s3.owner = None
+        self.conf.s2.owner = None
 
         if not self.conf['flask_env']:
-            self.d_skillshare()
             self.skillshare_list = self.load_aff_conf('share')
         else:
             self.skillshare_list = self.conf['share'] or []
         preruns = {}
         try:
-            self.skillshare_list.remove(self.__class__.__name__)
+            self.skillshare_list.remove(self.name)
         except ValueError:
             pass
         self.skillshare_list = list(OrderedDict.fromkeys(self.skillshare_list))
@@ -1257,7 +1293,7 @@ class Adv(object):
 
         from conf import load_adv_json, skillshare
         from core.simulate import load_adv_module
-        self_data = skillshare.get(self.__class__.__name__, {})
+        self_data = skillshare.get(self.name, {})
         share_limit = self_data.get('limit', 10)
         sp_modifier = self_data.get('mod_sp', 1)
         self.skill_share_att = self_data.get('mod_att', 0.7)
@@ -1290,13 +1326,14 @@ class Adv(object):
                         self.conf[dst_sn] = src_snconf
                         self.conf[dst_sn].owner = owner
                         self.conf[dst_sn].sp = shared_sp
-                    owner_module = load_adv_module(owner)
+                    owner_module, _ = load_adv_module(owner)
                     preruns[dst_key] = owner_module.prerun_skillshare
                     for sfn in ('before', 'proc'):
                         self.rebind_function(owner_module, f'{src_key}_{sfn}', f'{dst_key}_{sfn}')
                 except:
                     pass
-                # self.conf[dst_key].sp = shared_sp
+                self.conf[dst_key].owner = owner
+                self.conf[dst_key].sp = shared_sp
 
         for sn, snconf in self.conf.find(r'^s\d(_[A-Za-z0-9]+)?$'):
             s = S(sn, snconf)
@@ -1339,6 +1376,8 @@ class Adv(object):
         self.l_true_dmg = Listener('true_dmg', self.l_true_dmg)
         self.l_dmg_formula = Listener('dmg_formula', self.l_dmg_formula)
         self.l_set_hp = Listener('set_hp', self.l_set_hp)
+
+        self.uses_combo = False
 
         self.ctx.on()
 
@@ -1388,6 +1427,26 @@ class Adv(object):
         self.base_buff.count_team_buff()
         log('sim', 'end', reason)
 
+        if self.ctime_coab_val:
+            if not self.ctime_needed or not self.uses_combo:
+                for name in self.ctime_coab_list:
+                    self.downgrade_coab(name)
+            elif len(self.ctime_coab_list) > 1:
+                ctime_unused = self.ctime_coab_val - self.ctime_needed
+                ctime_coabs = {
+                    name : self.slots.c.coabs[name] for name in sorted(
+                        self.ctime_coab_list,
+                        key=lambda k: self.slots.c.coabs[k][0][1],
+                        reverse=True
+                    )
+                }
+                for coab_name in ctime_coabs.keys():
+                    ctime_amt = ctime_coabs[coab_name][0][1]
+                    if ctime_amt < ctime_unused:
+                        ctime_unused -= ctime_amt
+                        self.downgrade_coab(coab_name)
+
+
         self.post_run(end)
 
         # for aff, up in self.afflics.get_uptimes().items():
@@ -1429,7 +1488,7 @@ class Adv(object):
     def _cb_think_dumb(self, t):
         if now() // self.dumb_cd > self.dumb_count:
             self.dumb_count = now() // self.dumb_cd
-            self.hits = 0
+            self.last_c = 0
             return self.a_dooodge()
         return self._cb_think(t)
 
@@ -1554,14 +1613,23 @@ class Adv(object):
 
     def l_attenuation(self, t):
         self.add_combo(name=t.dname)
-        return self.dmg_make(t.dname, t.dmg_coef, t.dtype, attenuation=t.attenuation, depth=t.depth)
+        return self.dmg_make(
+            t.dname, t.dmg_coef, t.dtype,
+            hitmods=t.hitmods, attenuation=t.attenuation, depth=t.depth
+        )
 
-    def dmg_make(self, name, coef, dtype=None, fixed=False, attenuation=None, depth=0):
+    def dmg_make(self, name, coef, dtype=None, fixed=False, hitmods=None, attenuation=None, depth=0):
         if coef <= 0.01:
             return 0
         if dtype == None:
             dtype = name
+        if hitmods is not None:
+            for m in hitmods:
+                m.on()
         count = self.dmg_formula(dtype, coef) if not fixed else coef
+        if hitmods is not None:
+            for m in hitmods:
+                m.off()
         log('dmg', name, count)
         self.dmg_proc(name, count)
         if fixed:
@@ -1572,7 +1640,7 @@ class Adv(object):
             log('dmg', 'echo', echo_count, f'from {name}')
             count += echo_count
         if attenuation is not None:
-            rate, pierce = attenuation
+            rate, pierce, hitmods = attenuation
             if pierce != 0:
                 coef *= rate
                 depth += 1
@@ -1584,7 +1652,8 @@ class Adv(object):
                 t.dname = name
                 t.dmg_coef = coef
                 t.dtype = dtype
-                t.attenuation = (rate, pierce-1)
+                t.hitmods = hitmods
+                t.attenuation = (rate, pierce-1, hitmods)
                 t.depth = depth
                 t.on(self.conf.attenuation.delay)
         return count
@@ -1600,7 +1669,7 @@ class Adv(object):
             if 'bufc' in attr:
                 hitmods.append(Modifier(f'{name}_bufc', 'att', 'bufc', attr['bufc']*self.buffcount))
             if 'fade' in attr:
-                attenuation = (attr['fade'], self.conf.attenuation.hits)
+                attenuation = (attr['fade'], self.conf.attenuation.hits, hitmods)
             else:
                 attenuation = None
             for m in hitmods:
@@ -1664,20 +1733,18 @@ class Adv(object):
             debufftime = self.mod('debuff', operator=operator.add)
             if self.conf.mbleed or (rate < 100 and base[0] == 's' and self.a_s_dict[base].owner is not None):
                 from module.bleed import mBleed
-                bleed = mBleed(name, mod)
                 if self.bleed is None:
-                    self.bleed = bleed
+                    self.bleed = mBleed('init', mod)
                     self.bleed.reset()
-                self.bleed = mBleed(name, mod, chance=rate/100, debufftime=debufftime)
+                self.bleed = mBleed(base, mod, chance=rate/100, debufftime=debufftime)
                 self.bleed.on()
             else:
                 from module.bleed import Bleed
-                bleed = Bleed(name, mod)
                 if self.bleed is None:
-                    self.bleed = bleed
+                    self.bleed = Bleed('init', mod)
                     self.bleed.reset()
-                if rate == 100 or rate > random.uniform(0, 100):
-                    self.bleed = Bleed(name, mod, debufftime=debufftime)
+                if rate == 100 or rate >= random.uniform(0, 100):
+                    self.bleed = Bleed(base, mod, debufftime=debufftime)
                     self.bleed.on()
 
 

@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 54404.989693364085,
-      "team": 0.10125644505464348,
+      "dps": 57066.76878007543,
+      "team": 0.10082421155303753,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
@@ -17,7 +17,7 @@
         "`s3, not buff(s3) and fsc",
         "`s4",
         "`s2, butterflies>=9",
-        "`s1, butterflies=9",
+        "`s1, butterflies>=9",
         "`fs, xf=2 or butterflies=6"
       ],
       "coabs": [
@@ -32,9 +32,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 32453.760410097253,
-      "team": 0.2332762610785266,
-      "tdps": 166272.23052102825,
+      "dps": 32370.74026176009,
+      "team": 0.23502848005776877,
+      "tdps": 184018.20443918818,
       "slots.a": [
         "Dear_Diary",
         "Forest_Bonds",
@@ -62,8 +62,8 @@
       ]
     },
     "affliction": {
-      "dps": 60411.875012186276,
-      "team": 0.10125644505464348,
+      "dps": 63377.66139873953,
+      "team": 0.10082421155303753,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
@@ -78,7 +78,7 @@
         "`s3, not buff(s3) and fsc",
         "`s4",
         "`s2, butterflies>=9",
-        "`s1, butterflies=9",
+        "`s1, butterflies>=9",
         "`fs, xf=2 or butterflies=6"
       ],
       "coabs": [

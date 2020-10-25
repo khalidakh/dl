@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 63797.40413831557,
+      "dps": 63644.604324596214,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -17,7 +17,8 @@
         "`s3, not buff(s3)",
         "`s1",
         "`s2, s=1",
-        "`s4, x=5"
+        "`s4, x=5",
+        "`fsf, x=5"
       ],
       "coabs": [
         "Wand",
@@ -31,7 +32,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 68644.97243123369,
+      "dps": 68559.10617947299,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -47,12 +48,13 @@
         "`s3, not buff(s3)",
         "`s1",
         "`s2, s=1",
-        "`s4, x=5"
+        "`s4, x=5",
+        "`fsf, x=5"
       ],
       "coabs": [
-        "Wand",
         "Yuya",
-        "Serena"
+        "Serena",
+        "Axe2"
       ],
       "share": [
         "Weapon",
@@ -62,7 +64,7 @@
     "buffer": {
       "dps": 27841.03345224825,
       "team": 0.1485586499944772,
-      "tdps": 242034.85079733847,
+      "tdps": 241006.30204756834,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",
@@ -92,7 +94,7 @@
   "60": {
     "pref": "base",
     "base": {
-      "dps": 69741.4815326354,
+      "dps": 67813.26212590505,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -121,7 +123,7 @@
       ]
     },
     "affliction": {
-      "dps": 73315.80723530024,
+      "dps": 71891.4316372112,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -137,12 +139,13 @@
         "`s3, not buff(s3)",
         "`s1",
         "`s2, s=1",
-        "`s4, x=5"
+        "`s4, x=5",
+        "`fsf, x=5"
       ],
       "coabs": [
-        "Wand",
         "Yuya",
-        "Serena"
+        "Serena",
+        "Axe2"
       ],
       "share": [
         "Weapon",
@@ -152,7 +155,7 @@
   },
   "120": {
     "base": {
-      "dps": 66448.04982148508,
+      "dps": 66342.59111796404,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -182,7 +185,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 70699.31344914118,
+      "dps": 71321.64769903624,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -198,12 +201,13 @@
         "`s3, not buff(s3)",
         "`s1",
         "`s2, s=1",
-        "`s4, x=5"
+        "`s4, x=5",
+        "`fsf, x=5"
       ],
       "coabs": [
-        "Wand",
         "Yuya",
-        "Serena"
+        "Serena",
+        "Axe2"
       ],
       "share": [
         "Weapon",
@@ -211,9 +215,9 @@
       ]
     },
     "buffer": {
-      "dps": 61437.898102989704,
-      "team": 0.031243915247505492,
-      "tdps": 160356.078257362,
+      "dps": 61257.817496909076,
+      "team": 0.031235243950170483,
+      "tdps": 162789.62409151313,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",

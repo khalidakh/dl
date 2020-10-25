@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 38954.90519181767,
-      "team": 0.03603754005214555,
+      "dps": 41407.056217129924,
+      "team": 0.030486697100830074,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -13,11 +13,10 @@
       ],
       "slots.d": "Nimis",
       "acl": [
-        "`dragon",
+        "`dragon(c3-c3-c3-c1-s)",
         "`s3, not buff(s3)",
         "`s4",
-        "`s1, cancel",
-        "`s2",
+        "`s1, x=4 or fscf",
         "`fs, x=4"
       ],
       "coabs": [
@@ -32,15 +31,15 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 20265.537375586322,
-      "team": 0.41236814328593296,
-      "tdps": 49662.099376544655,
+      "dps": 18518.80605677274,
+      "team": 0.5022248515489197,
+      "tdps": 48518.97168914672,
       "slots.a": [
-        "Proper_Maintenance",
-        "The_Prince_of_Dragonyule",
+        "Study_Rabbits",
         "Twinfold_Bonds",
-        "Beach_Battle",
-        "From_Whence_He_Comes"
+        "Warrior_Maiden",
+        "From_Whence_He_Comes",
+        "Bellathorna"
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
@@ -59,43 +58,43 @@
         "`fs, x=5"
       ],
       "coabs": [
-        "Blade",
         "Summer_Estelle",
-        "Xander"
+        "Xander",
+        "Tobias"
       ],
       "share": [
-        "Gala_Elisanne",
-        "Marty"
+        "Templar_Hope",
+        "Gala_Elisanne"
       ]
     },
     "affliction": {
-      "dps": 43004.17354970384,
-      "team": 0.04646962004000356,
+      "dps": 46836.8807840617,
+      "team": 0.035237347005654646,
       "tdps": null,
       "slots.a": [
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
         "Twinfold_Bonds",
         "A_Passion_for_Produce",
         "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Nimis",
       "acl": [
-        "`dragon(c3-s-end), x=2",
+        "`dragon",
         "`s3, not buff(s3)",
         "`s4",
         "`s1, cancel",
         "`s2",
-        "`fs, x=5"
+        "`fs, x=4"
       ],
       "coabs": [
         "Blade",
-        "Summer_Estelle",
-        "Xander"
+        "Eugene",
+        "Tiki"
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Gala_Mym"
       ]
     }
   }

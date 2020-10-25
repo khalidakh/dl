@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 52040.861520840335,
-      "team": 0.22984262447301787,
+      "dps": 51502.93771319789,
+      "team": 0.2299758482618655,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -33,7 +33,7 @@
     "buffer": {
       "dps": 9464.867616796995,
       "team": 0.7338978089245826,
-      "tdps": 84466.92984691345,
+      "tdps": 83421.78626451576,
       "slots.a": [
         "Gentle_Winds",
         "Honest_Repose",
@@ -59,19 +59,19 @@
       ]
     },
     "affliction": {
-      "dps": 59150.2904030438,
-      "team": 0.22984262447301795,
+      "dps": 60381.07030894821,
+      "team": 0.2299758482618655,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
         "Honest_Repose",
         "Me_and_My_Bestie",
-        "Entwined_Flames",
+        "Dueling_Dancers",
         "Such_High_Spirits"
       ],
       "slots.d": "Gala_Mars",
       "acl": [
-        "`dragon(c3-c3-c3-s), s4",
+        "`dragon(c3-c3-c3-s)",
         "`s3, not buff(s3)",
         "`s1, cancel",
         "`s2",
@@ -90,19 +90,19 @@
   },
   "120": {
     "affliction": {
-      "dps": 56748.40867433711,
-      "team": 0.2171742572738771,
+      "dps": 57900.04836938466,
+      "team": 0.21835118843164183,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
         "Honest_Repose",
         "Me_and_My_Bestie",
-        "Entwined_Flames",
+        "Dueling_Dancers",
         "Such_High_Spirits"
       ],
       "slots.d": "Gala_Mars",
       "acl": [
-        "`dragon(c3-c3-c3-s), s4",
+        "`dragon(c3-c3-c3-s)",
         "`s3, not buff(s3)",
         "`s1, cancel",
         "`s2",
@@ -120,8 +120,8 @@
     },
     "pref": "base",
     "base": {
-      "dps": 56545.11574045395,
-      "team": 0.2171742572738771,
+      "dps": 55938.11189759931,
+      "team": 0.2183511884316419,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
