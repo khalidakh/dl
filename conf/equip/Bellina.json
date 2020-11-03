@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 73979.81270326725,
+      "dps": 74467.0339614916,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -17,7 +17,7 @@
         "`s3, not buff(s3)",
         "if dragondrive.get()",
         "`s4, dgauge>500 and x=3",
-        "`s1, dgauge>1000 and x=3",
+        "`s1, dgauge>1100 and x=3",
         "else",
         "`s2",
         "`dragon",
@@ -26,7 +26,7 @@
       "coabs": [
         "Ieyasu",
         "Curran",
-        "Summer_Patia"
+        "Berserker"
       ],
       "share": [
         "Weapon",
@@ -35,7 +35,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 83312.12318813114,
+      "dps": 83868.4166131872,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -51,7 +51,7 @@
         "`s3, not buff(s3)",
         "if dragondrive.get()",
         "`s4, dgauge>500 and x=3",
-        "`s1, dgauge>1000 and x=3",
+        "`s1, dgauge>1100 and x=3",
         "else",
         "`s2",
         "`dragon",
@@ -59,8 +59,8 @@
       ],
       "coabs": [
         "Ieyasu",
-        "Curran",
-        "Summer_Patia"
+        "Summer_Patia",
+        "Berserker"
       ],
       "share": [
         "Weapon",
@@ -68,9 +68,9 @@
       ]
     },
     "buffer": {
-      "dps": 38178.91751153316,
-      "team": 0.11598594996042311,
-      "tdps": 308665.7927442946,
+      "dps": 38382.145827567896,
+      "team": 0.11549500324708027,
+      "tdps": 312436.79050535837,
       "slots.a": [
         "Brothers_in_Arms",
         "The_Synthetic_Dragon",
@@ -105,7 +105,7 @@
   },
   "60": {
     "base": {
-      "dps": 86910.29289479247,
+      "dps": 86675.44656060981,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -141,7 +141,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 97029.72029397139,
+      "dps": 96767.00686752623,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -178,7 +178,7 @@
   },
   "120": {
     "base": {
-      "dps": 78587.44088257331,
+      "dps": 77471.64952237069,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -212,9 +212,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 53562.34321865066,
-      "team": 0.058815449127768,
-      "tdps": 425485.1069751974,
+      "dps": 54306.072861219145,
+      "team": 0.058811563897492,
+      "tdps": 393894.9268808584,
       "slots.a": [
         "Memory_of_a_Friend",
         "Seaside_Princess",
@@ -247,7 +247,7 @@
       ]
     },
     "affliction": {
-      "dps": 88516.06111706342,
+      "dps": 88605.09220701685,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

@@ -1,40 +1,40 @@
 {
   "180": {
     "base": {
-      "dps": 44403.80513086075,
+      "dps": 47426.61654288099,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
+        "Kung_Fu_Masters",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
+        "Summer_Paladyns",
+        "Chariot_Drift",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon, s=1 or s=2",
+        "`dragon(c3-s-end), s=4",
         "`s3, not buff(s3)",
         "`s4",
-        "`s2",
-        "`s1, x=4",
+        "`s2, cancel",
+        "`s1, cancel",
         "`fsf, x=4"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Pipple",
+        "Xander"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Summer_Julietta"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 27933.621953009788,
-      "team": 0.15744890183198912,
-      "tdps": 104606.5293959687,
+      "dps": 29518.256634903835,
+      "team": 0.15744890183198906,
+      "tdps": 113740.77367072938,
       "slots.a": [
         "Best_Buds",
         "Kung_Fu_Masters",
@@ -62,33 +62,33 @@
       ]
     },
     "affliction": {
-      "dps": 46333.32589975559,
+      "dps": 49495.65272329617,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
+        "Kung_Fu_Masters",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
+        "Summer_Paladyns",
+        "Chariot_Drift",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon, s=1 or s=2",
+        "`dragon(c3-s-end), s=4",
         "`s3, not buff(s3)",
         "`s4",
-        "`s2",
-        "`s1, x=4",
+        "`s2, cancel",
+        "`s1, cancel",
         "`fsf, x=4"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Pipple",
+        "Xander"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Summer_Julietta"
       ]
     }
   }

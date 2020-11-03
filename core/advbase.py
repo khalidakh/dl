@@ -364,6 +364,49 @@ class Action(object):
         return 1
 
 
+class Repeat(Action):
+    def __init__(self, conf, parent):
+        super().__init__(f'{parent.name}-repeat', conf)
+        self.parent = parent
+        self.act_event = Event('repeat')
+        self.act_event.name = self.parent.act_event.name
+        self.act_event.base = self.parent.act_event.base
+        self.act_event.group = self.parent.act_event.group
+        self.act_event.end = False
+        self.end_event = Event('repeat')
+        self.end_event.name = self.parent.act_event.name
+        self.end_event.base = self.parent.act_event.base
+        self.end_event.group = self.parent.act_event.group
+        self.end_event.end = True
+        self.index = 0
+
+    def can_ic(self, target, can):
+        if target == self.parent.name:
+            return None
+        result = can(target)
+        if result is not None:
+            self.end_event.on()
+        return result
+
+    def can_interrupt(self, target):
+        return self.can_ic(target, self.parent.can_interrupt)
+
+    def can_cancel(self, target):
+        return self.can_ic(target, self.parent.can_interrupt)
+
+    def __call__(self):
+        self.index = 0
+        self.tap()
+
+    def _cb_act_end(self, e):
+        self.tap()
+    
+    def tap(self, t=None):
+        self.index += 1
+        self._static.doing = self.nop
+        super().tap()
+
+
 class X(Action):
     def __init__(self, name, conf, act=None):
         parts = name.split('_')
@@ -408,6 +451,16 @@ class Fs(Action):
             except ValueError:
                 pass
         self.atype = 'fs'
+
+        self.act_repeat = None
+        if self.conf['repeat']:
+            self.act_repeat = Repeat(self.conf.repeat, self)
+
+    def _cb_act_end(self, e):
+        if self.act_repeat:
+            self.act_repeat()
+        else:
+            super()._cb_act_end(e)
 
     @property
     def _charge(self):
@@ -697,7 +750,7 @@ class Adv(object):
 
     def actmod_on(self, e):
         do_sab = True
-        do_tension = e.name.startswith('s') or e.name == 'ds'
+        do_tension = e.name.startswith('s') or e.name in ('ds', 'ds_final')
         if do_tension:
             for t in self.tension:
                 t.on(e)
@@ -717,7 +770,7 @@ class Adv(object):
 
     def actmod_off(self, e):
         do_sab = True
-        do_tension = e.name.startswith('s') or e.name == 'ds'
+        do_tension = e.name.startswith('s') or e.name in ('ds', 'ds_final')
         if do_tension:
             for t in self.tension:
                 t.off(e)
@@ -854,6 +907,7 @@ class Adv(object):
 
         # set afflic
         self.afflics = Afflics()
+        self.afflics.set_resist(self.conf.c.ele)
         self.sim_afflict = set()
         self.afflic_condition()
         self.sim_affliction()
@@ -886,12 +940,12 @@ class Adv(object):
             scope = scope[0]
         if name.startswith('dx') or name == 'dshift':
             scope = 'x'
-        elif name == 'ds':
+        elif name in ('ds', 'ds_final'):
             scope = 's'
 
         if scope[0] == 's':
             try:
-                mod = 1 if name == 'ds' or self.a_s_dict[scope].owner is None else self.skill_share_att
+                mod = 1 if name in ('ds', 'ds_final') or self.a_s_dict[scope].owner is None else self.skill_share_att
             except:
                 pass
             return mod * self.mod('s')
@@ -1142,6 +1196,7 @@ class Adv(object):
             self.current_x = self.deferred_x
             self.deferred_x = None
 
+    @allow_acl
     def x(self, x_min=1):
         prev = self.action.getprev()
         self.check_deferred_x()
@@ -1368,6 +1423,7 @@ class Adv(object):
         self.l_dodge = Listener('dodge', self.l_dodge)
         self.l_fs = Listener('fs', self.l_fs)
         self.l_s = Listener('s', self.l_s)
+        self.l_repeat = Listener('repeat', self.l_repeat)
         # self.l_x           = Listener(['x','x1','x2','x3','x4','x5'],self.l_x)
         # self.l_fs          = Listener(['fs','x1fs','x2fs','x3fs','x4fs','x5fs'],self.l_fs)
         # self.l_s           = Listener(['s','s1','s2','s3'],self.l_s)
@@ -1418,6 +1474,9 @@ class Adv(object):
         self._acl.reset(self)
 
         self.displayed_att = int(self.base_att * self.mod('att'))
+
+        if self.conf['fleet']:
+            self.condition(f'with {self.conf["fleet"]} other {self.slots.c.name}')
 
         # from pprint import pprint
         # pprint(self.conf)
@@ -1635,7 +1694,11 @@ class Adv(object):
         if fixed:
             return count
         if self.echo > 1:
-            echo_count = self.dmg_formula_echo(coef)
+            if attenuation is not None:
+                rate, pierce, hitmods = attenuation
+                echo_count = self.dmg_formula_echo(coef / (rate ** depth))
+            else:
+                echo_count = self.dmg_formula_echo(coef)
             self.dmg_proc(name, echo_count)
             log('dmg', 'echo', echo_count, f'from {name}')
             count += echo_count
@@ -1726,6 +1789,13 @@ class Adv(object):
         if 'afflic' in attr:
             aff_type, aff_args = attr['afflic'][0], attr['afflic'][1:]
             getattr(self.afflics, aff_type).on(name, *aff_args)
+            if self.conf['fleet']:
+                try:
+                    aff_args[1] = 0
+                except IndexError:
+                    pass
+                for _ in range(self.conf['fleet']):
+                    getattr(self.afflics, aff_type).on(name, *aff_args)
 
         if 'bleed' in attr:
             rate, mod = attr['bleed']
@@ -1746,7 +1816,6 @@ class Adv(object):
                 if rate == 100 or rate >= random.uniform(0, 100):
                     self.bleed = Bleed(base, mod, debufftime=debufftime)
                     self.bleed.on()
-
 
         if 'buff' in attr:
             self.hitattr_buff_outer(name, base, group, aseq, attr)
@@ -1801,31 +1870,43 @@ class Adv(object):
                             return
                     except:
                         pass
-                    buff = self.hitattr_buff(name, base, group, aseq, 0, blist)
+                    buff = self.hitattr_buff(name, base, group, aseq, 0, blist, stackable=False)
                     if buff:
                         self.active_buff_dict.add_overwrite(base, group, aseq, buff.on(), bctrl)
                     return
             if isinstance(blist[0], list):
                 buff_objs = []
                 for bseq, attrbuff in enumerate(blist):
-                    obj = self.hitattr_buff(name, base, group, aseq, bseq, attrbuff)
+                    obj = self.hitattr_buff(name, base, group, aseq, bseq, attrbuff, stackable=not bctrl)
                     if obj:
                         buff_objs.append(obj)
                 if buff_objs:
                     self.active_buff_dict.add(base, group, aseq, MultiBuffManager(name, buff_objs).on())
             else:
-                buff = self.hitattr_buff(name, base, group, aseq, 0, blist)
+                buff = self.hitattr_buff(name, base, group, aseq, 0, blist, stackable=not bctrl)
                 if buff:
                     self.active_buff_dict.add(base, group, aseq, buff.on())
 
-    def hitattr_buff(self, name, base, group, aseq, bseq, attrbuff):
+    def hitattr_buff(self, name, base, group, aseq, bseq, attrbuff, stackable=False):
         btype = attrbuff[0]
         if btype in ('energy', 'inspiration'):
-            getattr(self, btype).add(attrbuff[1], team=len(attrbuff) > 2 and bool(attrbuff[2]))
+            is_team = len(attrbuff) > 2 and bool(attrbuff[2])
+            if self.conf['fleet'] and is_team:
+                getattr(self, btype).add(attrbuff[1]*(self.conf['fleet']+1))
+            else:
+                getattr(self, btype).add(attrbuff[1], team=is_team)
         else:
             bargs = attrbuff[1:]
+            bname = f'{name}_{aseq}{bseq}'
             try:
-                return bufftype_dict[btype](f'{name}_{aseq}{bseq}', *bargs, source=name)
+                if self.conf['fleet'] and btype in ('team', 'zone', 'debuff'):
+                    for _ in range(self.conf['fleet']+1 if stackable else 1):
+                        buff = bufftype_dict[btype](bname, *bargs, source=name)
+                        buff.bufftype = 'self'
+                        buff.on()
+                    return buff
+                else:
+                    return bufftype_dict[btype](bname, *bargs, source=name)
             except ValueError:
                 return None
 
@@ -1929,20 +2010,26 @@ class Adv(object):
             self.actmod_off(e)
         self.think_pin(pin or e.name)
 
-    @allow_acl
     def l_fs(self, e):
         log('cast', e.name)
         self.actmod_on(e)
         self.hit_make(e, self.conf[e.name], pin=e.name.split('_')[0])
 
-    @allow_acl
     def l_s(self, e):
-        if e.name == 'ds':
+        if e.name in ('ds', 'ds_final'):
             return
         self.actmod_on(e)
         prev = self.action.getprev().name
         log('cast', e.name, f'after {prev}', ', '.join([f'{s.charged}/{s.sp}' for s in self.skills]))
         self.hit_make(e, self.conf[e.name], cb_kind=e.base)
+
+    def l_repeat(self, e):
+        log('repeat', e.name)
+        if e.end:
+            self.hitattr_make(e.name, e.base, e.group, 0, self.conf[e.name].repeat.end)
+        else:
+            self.actmod_on(e)
+            self.hit_make(e, self.conf[e.name].repeat, pin=e.name.split('_')[0])
 
     @allow_acl
     def c_fs(self, group):

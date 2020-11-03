@@ -1,98 +1,98 @@
 {
   "180": {
     "base": {
-      "dps": 47186.19576004868,
-      "team": 0.04275844608645285,
+      "dps": 48185.73485551762,
+      "team": 0.0758999616409904,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
-        "Such_High_Spirits"
+        "Moonlight_Party",
+        "Twinfold_Bonds",
+        "A_Passion_for_Produce",
+        "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s)",
-        "`s3, not buff(s3) and x=5",
+        "`dragon(s-end)",
+        "`s3, not buff(s3)",
         "`s4",
-        "`s1, x=5 or s",
-        "`s2, x=5"
+        "`s1",
+        "`s2, cancel"
       ],
       "coabs": [
-        "Eugene",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Summer_Estelle",
+        "Hunter_Sarisse"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Jurota"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 24714.774479626172,
-      "team": 0.17027809532110902,
-      "tdps": 176219.28397145733,
+      "dps": 31264.31602212863,
+      "team": 0.2502232538161203,
+      "tdps": 97069.1788931411,
       "slots.a": [
-        "Crystalian_Envoy",
         "Memory_of_a_Friend",
-        "The_Prince_of_Dragonyule",
-        "Chariot_Drift",
+        "Moonlight_Party",
+        "Twinfold_Bonds",
+        "A_Passion_for_Produce",
         "His_Clever_Brother"
       ],
-      "slots.d": "Dragonyule_Jeanne",
+      "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s)",
+        "`dragon(s-end)",
         "`s3, not buff(s3) and x=5",
         "`s4",
         "`s1, x=5 or s",
         "`s2, x=5"
       ],
       "coabs": [
-        "Eugene",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Summer_Estelle",
+        "Tobias"
       ],
       "share": [
         "Weapon",
-        "Cleo"
+        "Elisanne"
       ]
     },
     "affliction": {
-      "dps": 51812.51745271985,
-      "team": 0.04279671750234365,
+      "dps": 52960.44908828828,
+      "team": 0.07652726484031083,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
+        "Moonlight_Party",
+        "Twinfold_Bonds",
+        "A_Passion_for_Produce",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s)",
-        "`s3, not buff(s3) and x=5",
+        "`dragon(s-end)",
+        "`s3, not buff(s3)",
         "`s4",
-        "`s1, x=5 or s",
-        "`s2, x=5"
+        "`s1",
+        "`s2, cancel"
       ],
       "coabs": [
-        "Eugene",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Summer_Estelle",
+        "Hunter_Sarisse"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Summer_Julietta"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 38938.129840625035,
-      "team": 0.04662580486609467,
+      "dps": 42190.62288238559,
+      "team": 0.04658701592490219,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -122,8 +122,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 53917.129650657334,
-      "team": 0.016663572796650695,
+      "dps": 48351.50841178592,
+      "team": 0.016663578350145786,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",

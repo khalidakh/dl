@@ -1,23 +1,23 @@
 {
   "180": {
     "base": {
-      "dps": 63610.41506448684,
-      "team": 0.18153922248174306,
+      "dps": 64833.231979541524,
+      "team": 0.1824480600888713,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
+        "Dragon_Brethren",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
         "Dueling_Dancers",
-        "Such_High_Spirits"
+        "Entwined_Flames"
       ],
       "slots.d": "Daikokuten",
       "acl": [
         "`s1, fsc",
-        "`s4, dgauge >= 500 or dgauge <= 100",
-        "`dragon(s), buff(s3, 1) and cancel",
-        "`s2, buff(s3, 1) and cancel",
+        "`s2, cancel and buff(s3, 1)",
         "`s3, cancel",
+        "`s4, dgauge >= 500",
+        "`dragon, buff(s3, 1) and cancel",
         "`fs, x=2"
       ],
       "coabs": [
@@ -32,8 +32,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 69012.08735314841,
-      "team": 0.18153922248174306,
+      "dps": 69159.30441552772,
+      "team": 0.18092167111276272,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -45,10 +45,10 @@
       "slots.d": "Daikokuten",
       "acl": [
         "`s1, fsc",
-        "`s4, dgauge >= 500 or dgauge <= 100",
-        "`dragon(s), buff(s3, 1) and cancel",
-        "`s2, buff(s3, 1) and cancel",
+        "`s2, cancel and buff(s3, 1)",
         "`s3, cancel",
+        "`s4, dgauge >= 500",
+        "`dragon, buff(s3, 1) and cancel",
         "`fs, x=2"
       ],
       "coabs": [
@@ -62,9 +62,9 @@
       ]
     },
     "buffer": {
-      "dps": 18225.035053675827,
-      "team": 0.4177021433605735,
-      "tdps": 192178.2633866439,
+      "dps": 18492.971516944963,
+      "team": 0.40751052215001204,
+      "tdps": 205899.55356485752,
       "slots.a": [
         "Jewels_of_the_Sun",
         "The_Bridal_Dragon",
@@ -95,9 +95,69 @@
   "120": {
     "pref": "base",
     "base": {
-      "dps": 58020.47344845044,
-      "team": 0.19343388711968523,
+      "dps": 60446.24284118627,
+      "team": 0.1578420484574253,
       "tdps": null,
+      "slots.a": [
+        "An_Ancient_Oath",
+        "Memory_of_a_Friend",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
+        "Such_High_Spirits"
+      ],
+      "slots.d": "Daikokuten",
+      "acl": [
+        "`s1, fsc",
+        "`s2, cancel and buff(s3, 1)",
+        "`s3, cancel",
+        "`s4, dgauge >= 500",
+        "`dragon(s), buff(s3, 1) and cancel",
+        "`fs, x=2"
+      ],
+      "coabs": [
+        "Blade",
+        "Dagger2",
+        "Peony"
+      ],
+      "share": [
+        "Weapon",
+        "Summer_Luca"
+      ]
+    },
+    "affliction": {
+      "dps": 64718.11159546375,
+      "team": 0.1578420484574253,
+      "tdps": null,
+      "slots.a": [
+        "An_Ancient_Oath",
+        "Spirit_of_the_Season",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
+        "Such_High_Spirits"
+      ],
+      "slots.d": "Daikokuten",
+      "acl": [
+        "`s1, fsc",
+        "`s2, cancel and buff(s3, 1)",
+        "`s3, cancel",
+        "`s4, dgauge >= 500",
+        "`dragon(s), buff(s3, 1) and cancel",
+        "`fs, x=2"
+      ],
+      "coabs": [
+        "Cleo",
+        "Dagger2",
+        "Peony"
+      ],
+      "share": [
+        "Weapon",
+        "Summer_Luca"
+      ]
+    },
+    "buffer": {
+      "dps": 58144.24312397446,
+      "team": 0.19343388711968532,
+      "tdps": 64677.74084548058,
       "slots.a": [
         "An_Ancient_Oath",
         "Memory_of_a_Friend",
@@ -123,42 +183,12 @@
         "Weapon",
         "Chitose"
       ]
-    },
-    "affliction": {
-      "dps": 64794.54923888504,
-      "team": 0.16049995755852028,
-      "tdps": null,
-      "slots.a": [
-        "An_Ancient_Oath",
-        "Spirit_of_the_Season",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
-        "Such_High_Spirits"
-      ],
-      "slots.d": "Daikokuten",
-      "acl": [
-        "`s1, fsc",
-        "`s4, dgauge >= 500 or dgauge <= 100",
-        "`dragon(s), buff(s3, 1) and cancel",
-        "`s2, buff(s3, 1) and cancel",
-        "`s3, cancel",
-        "`fs, x=2"
-      ],
-      "coabs": [
-        "Cleo",
-        "Dagger2",
-        "Peony"
-      ],
-      "share": [
-        "Weapon",
-        "Summer_Luca"
-      ]
     }
   },
   "60": {
     "base": {
-      "dps": 70832.2537273204,
-      "team": 0.1896346097423937,
+      "dps": 70983.35358120661,
+      "team": 0.18963460974239385,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",

@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 60890.695675768286,
+      "dps": 78287.45203406247,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -11,17 +11,17 @@
         "From_Whence_He_Comes",
         "Bellathorna"
       ],
-      "slots.d": "Dragonyule_Jeanne",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`s2, duration-now<2.9",
+        "`s2, duration-now < 2.9",
         "`s3, not buff(s3)",
         "`s4",
         "`s1"
       ],
       "coabs": [
+        "Blade",
         "Renee",
-        "Axe2",
-        "Tiki"
+        "Dagger2"
       ],
       "share": [
         "Weapon",
@@ -30,21 +30,20 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 25021.433799727023,
-      "team": 0.4343786742179842,
-      "tdps": 82576.01950790289,
+      "dps": 12514.529715525272,
+      "team": 0.7959094999250167,
+      "tdps": 82638.6948826892,
       "slots.a": [
-        "Memory_of_a_Friend",
-        "Once_in_a_Lifetime",
-        "The_Prince_of_Dragonyule",
+        "Gentle_Winds",
+        "Study_Rabbits",
+        "Warrior_Maiden",
         "From_Whence_He_Comes",
         "Bellathorna"
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`s3, not buff(s3) and xf=3",
-        "`s4",
-        "`s1, xf"
+        "`s3",
+        "`s4"
       ],
       "coabs": [
         "Renee",
@@ -52,24 +51,24 @@
         "Tobias"
       ],
       "share": [
-        "Weapon",
+        "Templar_Hope",
         "Gala_Elisanne"
       ]
     },
     "affliction": {
-      "dps": 67646.49635722257,
+      "dps": 86616.45089907138,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
-        "Proper_Maintenance",
+        "Moonlight_Party",
         "The_Prince_of_Dragonyule",
         "From_Whence_He_Comes",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`s2, duration-now<2.65",
+        "`s2, duration-now < 2.6",
         "`s3, not buff(s3)",
         "`s4",
         "`s1"
@@ -87,19 +86,21 @@
   },
   "120": {
     "affliction": {
-      "dps": 64494.232520092184,
+      "dps": 82834.12949977118,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
-        "Proper_Maintenance",
+        "Moonlight_Party",
         "The_Prince_of_Dragonyule",
         "From_Whence_He_Comes",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`s2, duration-now<2.65",
+        "queue duration-now < 2.6",
+        "`s2",
+        "end",
         "`s3, not buff(s3)",
         "`s4",
         "`s1"
@@ -118,7 +119,7 @@
   },
   "60": {
     "base": {
-      "dps": 51674.8230403027,
+      "dps": 55846.37374013142,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -147,7 +148,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 57665.40313798694,
+      "dps": 77198.0495684739,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -157,17 +158,19 @@
         "From_Whence_He_Comes",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`s2, duration-now<3",
-        "`s3, not buff(s3) and xf=3",
+        "queue duration-now < 2.6",
+        "`s2",
+        "end",
+        "`s3, not buff(s3)",
         "`s4",
         "`s1"
       ],
       "coabs": [
         "Blade",
         "Renee",
-        "Tiki"
+        "Dagger2"
       ],
       "share": [
         "Weapon",

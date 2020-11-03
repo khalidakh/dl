@@ -1,24 +1,24 @@
 {
   "180": {
     "base": {
-      "dps": 39817.56177167098,
-      "team": 0.3398997770594583,
+      "dps": 45905.35179516153,
+      "team": 0.29116954660337807,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
         "Memory_of_a_Friend",
         "The_Lurker_in_the_Woods",
-        "A_Passion_for_Produce",
+        "Dueling_Dancers",
         "The_Plaguebringer"
       ],
       "slots.d": "Ramiel",
       "acl": [
-        "`dragon",
+        "`dragon(c2-s-c3-c3-c3-c2-end), buff(s3) and s=1",
         "`s3, not buff(s3)",
         "`s1",
         "`s4",
-        "`s2, not c_fs(enhanced) and (s1.charged <= ((s1.sp/13)*9))",
-        "`fs, x=4"
+        "`s2, not c_fs(enhanced) and (s1.charged <= s1.sp* 3/4)",
+        "`fs, x=2 and buff(s4)"
       ],
       "coabs": [
         "Ieyasu",
@@ -27,14 +27,14 @@
       ],
       "share": [
         "Weapon",
-        "Kirsty"
+        "Hunter_Sarisse"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 32456.947133301757,
-      "team": 0.4169070533226029,
-      "tdps": 95583.36556687157,
+      "dps": 24651.44538618874,
+      "team": 0.39617802272480557,
+      "tdps": 202401.8173961085,
       "slots.a": [
         "Memory_of_a_Friend",
         "Sisters_Day_Out",
@@ -57,29 +57,29 @@
         "Grace"
       ],
       "share": [
-        "Weapon",
+        "Patia",
         "Verica"
       ]
     },
     "affliction": {
-      "dps": 39926.89549078611,
-      "team": 0.3398997770594583,
+      "dps": 46535.44507668426,
+      "team": 0.29116954660337807,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
         "Memory_of_a_Friend",
         "The_Lurker_in_the_Woods",
-        "A_Passion_for_Produce",
+        "Dueling_Dancers",
         "The_Plaguebringer"
       ],
       "slots.d": "Ramiel",
       "acl": [
-        "`dragon",
+        "`dragon(c2-s-c3-c3-c3-c2-end), buff(s3) and s=1",
         "`s3, not buff(s3)",
         "`s1",
         "`s4",
-        "`s2, not c_fs(enhanced) and (s1.charged <= ((s1.sp/13)*9))",
-        "`fs, x=4"
+        "`s2, not c_fs(enhanced) and (s1.charged <= s1.sp* 3/4)",
+        "`fs, x=2 and buff(s4)"
       ],
       "coabs": [
         "Ieyasu",
@@ -88,14 +88,14 @@
       ],
       "share": [
         "Weapon",
-        "Kirsty"
+        "Hunter_Sarisse"
       ]
     }
   },
   "120": {
     "base": {
-      "dps": 30581.29442614511,
-      "team": 0.28096374001185725,
+      "dps": 30742.74428673189,
+      "team": 0.28096374001185753,
       "tdps": null,
       "slots.a": [
         "Howling_to_the_Heavens",
@@ -125,41 +125,41 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 36530.01382250781,
-      "team": 0.3139568464800703,
+      "dps": 32579.51168634641,
+      "team": 0.20793174967712746,
       "tdps": null,
       "slots.a": [
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
         "The_Lurker_in_the_Woods",
-        "Twinfold_Bonds",
         "A_Passion_for_Produce",
         "The_Plaguebringer"
       ],
       "slots.d": "Ramiel",
       "acl": [
+        "`dragon(s)",
         "`s3, not buff(s3)",
         "`s1",
-        "`dragon",
         "`s4",
         "`s2, not c_fs(enhanced) and (s1.charged <= ((s1.sp/13)*9))",
-        "`fs, x=2"
+        "`fs, x=4"
       ],
       "coabs": [
         "Ieyasu",
-        "Forte",
-        "Grace"
+        "Bow",
+        "Forte"
       ],
       "share": [
         "Weapon",
-        "Karl"
+        "Hunter_Sarisse"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 35839.71362864308,
-      "team": 0.3810049617834538,
-      "tdps": null,
+      "dps": 31745.252109468427,
+      "team": 0.35301304423938307,
+      "tdps": -242611.44869707042,
       "slots.a": [
         "Memory_of_a_Friend",
         "Sisters_Day_Out",
@@ -186,11 +186,11 @@
         "Verica"
       ]
     },
-    "pref": "base",
+    "pref": "buffer",
     "buffer": {
-      "dps": 31813.174058852026,
-      "team": 0.44457636908381043,
-      "tdps": 63338.84588659196,
+      "dps": 26810.8005487988,
+      "team": 0.3326741377814653,
+      "tdps": -242611.44869707042,
       "slots.a": [
         "Memory_of_a_Friend",
         "Sisters_Day_Out",

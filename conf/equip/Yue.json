@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 48162.38118420431,
+      "dps": 46540.81245507118,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -31,7 +31,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 57340.15865899236,
+      "dps": 55384.696524363535,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -42,6 +42,35 @@
         "To_the_Extreme"
       ],
       "slots.d": "Gala_Mars",
+      "acl": [
+        "`dragon, s",
+        "`s3, not buff(s3)",
+        "`s2,x=5",
+        "`s4,cancel",
+        "`s1,cancel"
+      ],
+      "coabs": [
+        "Blade",
+        "Serena",
+        "Halloween_Mym"
+      ],
+      "share": [
+        "Weapon",
+        "Pinon"
+      ]
+    },
+    "buffer": {
+      "dps": 39330.76822606508,
+      "team": 0.005839190861687329,
+      "tdps": 1234767.692954403,
+      "slots.a": [
+        "Kung_Fu_Masters",
+        "Memory_of_a_Friend",
+        "Summer_Paladyns",
+        "Chariot_Drift",
+        "His_Clever_Brother"
+      ],
+      "slots.d": "Cerberus",
       "acl": [
         "`dragon, s",
         "`s3, not buff(s3)",

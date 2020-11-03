@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 45534.396078459875,
-      "team": 0.2743243991446749,
+      "dps": 42482.91756508315,
+      "team": 0.2739129756683531,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -31,9 +31,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 8410.072244696352,
-      "team": 0.6424013776129512,
-      "tdps": 100860.21676295405,
+      "dps": 8328.200471384993,
+      "team": 0.641040786609109,
+      "tdps": 93032.22495233346,
       "slots.a": [
         "Jewels_of_the_Sun",
         "Study_Rabbits",
@@ -59,8 +59,8 @@
       ]
     },
     "affliction": {
-      "dps": 50041.479935794145,
-      "team": 0.2743243991446749,
+      "dps": 48208.142170726656,
+      "team": 0.2717002989389795,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -80,7 +80,7 @@
       "coabs": [
         "Ieyasu",
         "Forte",
-        "Berserker"
+        "Dagger2"
       ],
       "share": [
         "Weapon",
@@ -90,8 +90,8 @@
   },
   "60": {
     "base": {
-      "dps": 38443.71930640243,
-      "team": 0.23005719822414622,
+      "dps": 30690.010548387996,
+      "team": 0.20226170643659816,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -121,33 +121,32 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 45082.11469722016,
-      "team": 0.23005719822414616,
+      "dps": 54986.97522480348,
+      "team": 0.2459298143553854,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "The_Bridal_Dragon",
+        "Dueling_Dancers",
         "The_Plaguebringer"
       ],
       "slots.d": "Ramiel",
       "acl": [
-        "`dragon",
+        "`dragon(s), buff(s3)",
         "`s3, not buff(s3)",
         "`s1",
-        "`s2, cancel",
-        "`s4, x=6",
-        "`fsf, x=6"
+        "`s4, cancel",
+        "`s2, cancel"
       ],
       "coabs": [
         "Ieyasu",
         "Forte",
-        "Berserker"
+        "Dagger2"
       ],
       "share": [
         "Weapon",
-        "Mikoto"
+        "Gala_Mym"
       ]
     }
   }

@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 28301.55821175004,
-      "team": 0.07832660998380644,
+      "dps": 27337.261709251074,
+      "team": 0.07832660998380661,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -32,9 +32,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 6506.3761019485755,
-      "team": 0.39237784840321194,
-      "tdps": 69400.08330963716,
+      "dps": 6463.650109847279,
+      "team": 0.5005604953211721,
+      "tdps": 49436.135573831896,
       "slots.a": [
         "Honest_Repose",
         "Sisters_Day_Out",
@@ -46,23 +46,23 @@
       "acl": [
         "`s2, prep or x=5 and mod(maxhp)<1.30",
         "`s1, x=5",
-        "`s3, x=5",
-        "`s4, x=5",
+        "`s3",
+        "`s4",
         "`fs, s=3 and self.fs_prep_c > 0"
       ],
       "coabs": [
-        "Yuya",
-        "Axe2",
+        "Bow",
+        "Dagger2",
         "Tobias"
       ],
       "share": [
-        "Karl",
+        "Emma",
         "Templar_Hope"
       ]
     },
     "affliction": {
-      "dps": 28301.55821175004,
-      "team": 0.07832660998380644,
+      "dps": 27337.261709251074,
+      "team": 0.07832660998380661,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",

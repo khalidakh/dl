@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 48931.14920716917,
-      "team": 0.49217659471872993,
+      "dps": 49028.81617165452,
+      "team": 0.49217659471872977,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -33,8 +33,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 55223.316496585845,
-      "team": 0.49655040163426306,
+      "dps": 55399.390911895935,
+      "team": 0.49647187467343834,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -56,7 +56,7 @@
       ],
       "coabs": [
         "Ieyasu",
-        "Delphi",
+        "Dagger",
         "Bow"
       ],
       "share": [
@@ -65,9 +65,9 @@
       ]
     },
     "buffer": {
-      "dps": 12894.805705148146,
-      "team": 1.0005020436559515,
-      "tdps": 70892.26710439895,
+      "dps": 12894.618711965191,
+      "team": 1.0005009020611486,
+      "tdps": 71084.92932121089,
       "slots.a": [
         "Jewels_of_the_Sun",
         "Sisters_Day_Out",
@@ -101,8 +101,8 @@
   },
   "60": {
     "base": {
-      "dps": 48800.194542237485,
-      "team": 0.41398902556427697,
+      "dps": 48962.75348474992,
+      "team": 0.41398902556427675,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -133,8 +133,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 54527.48929116447,
-      "team": 0.3426390639904763,
+      "dps": 54709.12649733087,
+      "team": 0.342639063990476,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -165,9 +165,9 @@
       ]
     },
     "buffer": {
-      "dps": 31854.123158228223,
-      "team": 0.5276026853074722,
-      "tdps": 149155.2285377747,
+      "dps": 31960.232828975164,
+      "team": 0.527602685307472,
+      "tdps": 149652.08139766045,
       "slots.a": [
         "Candy_Couriers",
         "Memory_of_a_Friend",
@@ -194,6 +194,72 @@
       "share": [
         "Weapon",
         "Patia"
+      ]
+    }
+  },
+  "120": {
+    "base": {
+      "dps": 47152.392241082096,
+      "team": 0.4782453139044048,
+      "tdps": null,
+      "slots.a": [
+        "Candy_Couriers",
+        "Memory_of_a_Friend",
+        "Moonlight_Party",
+        "The_Plaguebringer",
+        "The_Queen_of_the_Knife"
+      ],
+      "slots.d": "Gala_Cat_Sith",
+      "acl": [
+        "`s3, not buff(s3)",
+        "`fs, s1.charged>=s1.sp and c_fs(gleozone) > 0",
+        "if x=5 or x=4 or fsc or s",
+        "`s4",
+        "`s2",
+        "end",
+        "`s1, s or fsc"
+      ],
+      "coabs": [
+        "Ieyasu",
+        "Delphi",
+        "Bow"
+      ],
+      "share": [
+        "Weapon",
+        "Cassandra"
+      ]
+    },
+    "pref": "base",
+    "affliction": {
+      "dps": 54312.47934649574,
+      "team": 0.46031416835068545,
+      "tdps": null,
+      "slots.a": [
+        "Candy_Couriers",
+        "Memory_of_a_Friend",
+        "Moonlight_Party",
+        "The_Plaguebringer",
+        "The_Queen_of_the_Knife"
+      ],
+      "slots.d": "Gala_Cat_Sith",
+      "acl": [
+        "`dragon(c3-s-end), x=5",
+        "`s3, not buff(s3)",
+        "`fs, s1.charged>=s1.sp and c_fs(gleozone) > 0",
+        "if x=5 or x=4 or fsc or s",
+        "`s4",
+        "`s2",
+        "end",
+        "`s1, s or fsc"
+      ],
+      "coabs": [
+        "Ieyasu",
+        "Dagger",
+        "Bow"
+      ],
+      "share": [
+        "Weapon",
+        "Curran"
       ]
     }
   }

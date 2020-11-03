@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 73363.63288519134,
+      "dps": 72937.47167777251,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -31,7 +31,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 79903.27593091945,
+      "dps": 79430.21673105,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -43,7 +43,7 @@
       ],
       "slots.d": "Gala_Thor",
       "acl": [
-        "`dragon(s-end), energy()=5 and cancel",
+        "`dragon(s-end), energy()=5 and cancel and buff(s2)",
         "`s3, not buff(s3)",
         "`s2",
         "`s1",
@@ -60,9 +60,9 @@
       ]
     },
     "buffer": {
-      "dps": 53603.61790910951,
-      "team": 0.1410036617060222,
-      "tdps": 140138.3108566314,
+      "dps": 54171.08597772174,
+      "team": 0.14101524181428568,
+      "tdps": 133080.54830530827,
       "slots.a": [
         "Memory_of_a_Friend",
         "Spirit_of_the_Season",
@@ -92,7 +92,7 @@
   },
   "60": {
     "base": {
-      "dps": 70841.61622517694,
+      "dps": 70331.724878992,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -123,7 +123,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 77074.11293304681,
+      "dps": 76499.81259848617,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -153,9 +153,9 @@
       ]
     },
     "buffer": {
-      "dps": 58687.0893578641,
+      "dps": 58807.295048401356,
       "team": 0.03316961364863265,
-      "tdps": 366435.58758526243,
+      "tdps": 347439.3748648837,
       "slots.a": [
         "Memory_of_a_Friend",
         "Moonlight_Party",
@@ -184,7 +184,7 @@
   },
   "120": {
     "affliction": {
-      "dps": 77036.38900896892,
+      "dps": 77887.24555069803,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -192,7 +192,7 @@
         "Spirit_of_the_Season",
         "Valiant_Crown",
         "A_Small_Courage",
-        "His_Clever_Brother"
+        "The_Plaguebringer"
       ],
       "slots.d": "Gala_Thor",
       "acl": [
@@ -200,7 +200,7 @@
         "`s3, not buff(s3)",
         "`s2",
         "`s1",
-        "`s4"
+        "`s4, xf"
       ],
       "coabs": [
         "Lucretia",
@@ -209,13 +209,13 @@
       ],
       "share": [
         "Weapon",
-        "Jurota"
+        "Rodrigo"
       ]
     },
     "pref": "base",
     "base": {
-      "dps": 74067.61387345186,
-      "team": 0.02313925029511223,
+      "dps": 72556.81716723874,
+      "team": 0.021144119841349698,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -243,9 +243,9 @@
       ]
     },
     "buffer": {
-      "dps": 56567.96223829486,
-      "team": 0.1273793765871774,
-      "tdps": 167878.26586208853,
+      "dps": 56280.94863094701,
+      "team": 0.12480485964126109,
+      "tdps": 157010.92397862324,
       "slots.a": [
         "Memory_of_a_Friend",
         "Spirit_of_the_Season",

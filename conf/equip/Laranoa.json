@@ -1,72 +1,72 @@
 {
   "180": {
     "base": {
-      "dps": 42003.65447878001,
-      "team": 0.06663953697072669,
-      "tdps": 33636.10619027149,
-      "slots.a": [
-        "An_Ancient_Oath",
-        "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
-        "Such_High_Spirits"
-      ],
-      "slots.d": "Nimis",
-      "acl": [
-        "`dragon(c3-c3-c3-c3-c1-s-c3-c3-c2-end), cancel",
-        "`s3, not buff(s3) and x=5",
-        "`s4",
-        "`s2",
-        "`s1, buff(s3)",
-        "`dodge, fsc",
-        "`fs, x=5"
-      ],
-      "coabs": [
-        "Dragonyule_Cleo",
-        "Summer_Celliera",
-        "Tiki"
-      ],
-      "share": [
-        "Weapon",
-        "Gala_Mym"
-      ]
-    },
-    "pref": "buffer",
-    "affliction": {
-      "dps": 44634.89762245831,
-      "team": 0.06658483390579652,
+      "dps": 42364.29643715016,
+      "team": 0.11495816161573641,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
+        "Dear_Diary",
+        "Forest_Bonds",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
+        "From_Whence_He_Comes",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s-c3-c3-c2-end)",
-        "`s3, not buff(s3) and x=5",
+        "`dragon(c3-s-end), fsc",
+        "`s3, not buff(s3)",
         "`s4",
         "`s2",
-        "`s1, buff(s3)",
+        "`s1",
         "`dodge, fsc",
         "`fs, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Summer_Estelle",
+        "Renee"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Pinon"
+      ]
+    },
+    "pref": "base",
+    "affliction": {
+      "dps": 47640.86403387146,
+      "team": 0.11615471718620203,
+      "tdps": null,
+      "slots.a": [
+        "Dear_Diary",
+        "Forest_Bonds",
+        "Memory_of_a_Friend",
+        "From_Whence_He_Comes",
+        "His_Clever_Brother"
+      ],
+      "slots.d": "Gala_Reborn_Poseidon",
+      "acl": [
+        "`dragon(c3-s-end), fsc",
+        "`s3, not buff(s3)",
+        "`s4",
+        "`s2",
+        "`s1",
+        "`dodge, fsc",
+        "`fs, x=5"
+      ],
+      "coabs": [
+        "Blade",
+        "Summer_Estelle",
+        "Renee"
+      ],
+      "share": [
+        "Weapon",
+        "Summer_Julietta"
       ]
     },
     "buffer": {
-      "dps": 6520.7022322484645,
-      "team": 1.121546191320457,
-      "tdps": 33636.10619027149,
+      "dps": 7028.997506477189,
+      "team": 1.1215461913204572,
+      "tdps": 35104.03252166476,
       "slots.a": [
         "Sisters_Day_Out",
         "Study_Rabbits",
@@ -95,7 +95,7 @@
   },
   "60": {
     "base": {
-      "dps": 28048.2326393512,
+      "dps": 30477.73220480242,
       "team": 0.12807560171239207,
       "tdps": null,
       "slots.a": [
@@ -117,8 +117,8 @@
       ],
       "coabs": [
         "Summer_Estelle",
-        "Dragonyule_Cleo",
-        "Xander"
+        "Xander",
+        "Dagger"
       ],
       "share": [
         "Weapon",
@@ -127,19 +127,19 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 47981.78215546813,
-      "team": 0.049326528464695395,
+      "dps": 46779.56623065216,
+      "team": 0.05878480841134219,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
+        "Dear_Diary",
+        "Forest_Bonds",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
+        "Chariot_Drift",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s-c3-c3-c2-end)",
+        "`dragon(c3-s-end)",
         "`s3, not buff(s3) and x=5",
         "`s4",
         "`s2",
@@ -148,13 +148,13 @@
         "`fs, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Summer_Estelle",
+        "Renee"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Summer_Julietta"
       ]
     }
   }

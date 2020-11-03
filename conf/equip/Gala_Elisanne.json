@@ -1,9 +1,9 @@
 {
   "180": {
     "base": {
-      "dps": 30725.087693966765,
-      "team": 0.9087570374452284,
-      "tdps": 34969.880951189494,
+      "dps": 33801.08491880894,
+      "team": 0.906623008361687,
+      "tdps": 34229.12145781141,
       "slots.a": [
         "Kung_Fu_Masters",
         "Memory_of_a_Friend",
@@ -31,26 +31,26 @@
     },
     "pref": "buffer",
     "buffer": {
-      "dps": 11946.173419785397,
-      "team": 1.4457595597126829,
-      "tdps": 34969.880951189494,
+      "dps": 13534.044385883339,
+      "team": 1.498722357388376,
+      "tdps": 34229.12145781141,
       "slots.a": [
         "Gentle_Winds",
-        "Study_Rabbits",
+        "Once_in_a_Lifetime",
         "The_Chocolatiers",
         "From_Whence_He_Comes",
         "Bellathorna"
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(s-end)",
+        "`dragon(c1-s-end), s=3",
         "`s3, cancel",
         "`s1",
-        "`s4"
+        "`s4, s=1"
       ],
       "coabs": [
+        "Summer_Estelle",
         "Renee",
-        "Hunter_Sarisse",
         "Tobias"
       ],
       "share": [
@@ -59,8 +59,8 @@
       ]
     },
     "affliction": {
-      "dps": 36531.271424987346,
-      "team": 0.5875016771828521,
+      "dps": 39828.61574295425,
+      "team": 0.5875016771828516,
       "tdps": null,
       "slots.a": [
         "Kung_Fu_Masters",
@@ -91,9 +91,9 @@
   },
   "60": {
     "base": {
-      "dps": 27024.190145610886,
-      "team": 0.774500911791168,
-      "tdps": null,
+      "dps": 30732.16619707646,
+      "team": 0.761969197616789,
+      "tdps": 33405.05656484981,
       "slots.a": [
         "Gentle_Winds",
         "Memory_of_a_Friend",
@@ -119,10 +119,10 @@
         "Mikoto"
       ]
     },
-    "pref": "base",
+    "pref": "buffer",
     "affliction": {
-      "dps": 27024.190145610886,
-      "team": 0.774500911791168,
+      "dps": 30732.16619707646,
+      "team": 0.761969197616789,
       "tdps": null,
       "slots.a": [
         "Gentle_Winds",
@@ -150,12 +150,12 @@
       ]
     },
     "buffer": {
-      "dps": 11516.360066112056,
-      "team": 1.15366063154614,
-      "tdps": 40900.52099817091,
+      "dps": 14465.997735157422,
+      "team": 1.2489065099467727,
+      "tdps": 33405.05656484981,
       "slots.a": [
         "Gentle_Winds",
-        "Study_Rabbits",
+        "Once_in_a_Lifetime",
         "The_Chocolatiers",
         "From_Whence_He_Comes",
         "Bellathorna"
@@ -168,8 +168,8 @@
         "`s4"
       ],
       "coabs": [
+        "Summer_Estelle",
         "Renee",
-        "Hunter_Sarisse",
         "Tobias"
       ],
       "share": [
@@ -180,8 +180,8 @@
   },
   "120": {
     "base": {
-      "dps": 12119.058050592714,
-      "team": 1.4053003407487428,
+      "dps": 12758.407201237658,
+      "team": 1.408448742675533,
       "tdps": null,
       "slots.a": [
         "Gentle_Winds",
@@ -209,8 +209,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 33637.27209009101,
-      "team": 0.5898779715149398,
+      "dps": 37247.49827482736,
+      "team": 0.5898751600019566,
       "tdps": null,
       "slots.a": [
         "Kung_Fu_Masters",

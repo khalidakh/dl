@@ -1,9 +1,9 @@
 {
   "180": {
     "base": {
-      "dps": 25645.37113449654,
-      "team": 0.2733402033248325,
-      "tdps": 20951.36280130149,
+      "dps": 33619.86026191737,
+      "team": 0.21238418087163846,
+      "tdps": 28744.036729950414,
       "slots.a": [
         "Candy_Couriers",
         "Memory_of_a_Friend",
@@ -11,12 +11,12 @@
         "From_Whence_He_Comes",
         "His_Clever_Brother"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(s-end)",
-        "`s3",
-        "`s4",
+        "`dragon(s-end), x=5",
+        "`s3, not buff(s3)",
         "`s1",
+        "`s4, cancel",
         "`s2, x>2"
       ],
       "coabs": [
@@ -25,15 +25,15 @@
         "Hunter_Sarisse"
       ],
       "share": [
-        "Summer_Luca",
-        "Karina"
+        "Weapon",
+        "Jurota"
       ]
     },
     "pref": "buffer",
     "buffer": {
-      "dps": 10034.497874359204,
-      "team": 1.018440816024241,
-      "tdps": 20951.36280130149,
+      "dps": 10643.583187287946,
+      "team": 1.0117248333517002,
+      "tdps": 28744.036729950414,
       "slots.a": [
         "Once_in_a_Lifetime",
         "Study_Rabbits",
@@ -60,8 +60,8 @@
       ]
     },
     "affliction": {
-      "dps": 26410.87416392982,
-      "team": 0.2733402033248325,
+      "dps": 36725.7286065249,
+      "team": 0.21116126736990162,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -70,12 +70,12 @@
         "From_Whence_He_Comes",
         "His_Clever_Brother"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(s-end)",
-        "`s3",
-        "`s4",
+        "`dragon(s-end), x=5",
+        "`s3, not buff(s3)",
         "`s1",
+        "`s4, cancel",
         "`s2, x>2"
       ],
       "coabs": [
@@ -84,15 +84,15 @@
         "Hunter_Sarisse"
       ],
       "share": [
-        "Summer_Luca",
-        "Karina"
+        "Weapon",
+        "Summer_Julietta"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 22974.377489100276,
-      "team": 0.29257857409299654,
+      "dps": 26081.343519620947,
+      "team": 0.29257857409299687,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
@@ -121,23 +121,23 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 22974.377489100276,
-      "team": 0.29257857409299654,
+      "dps": 35367.587084070365,
+      "team": 0.14464192251346963,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
         "Memory_of_a_Friend",
         "The_Prince_of_Dragonyule",
         "From_Whence_He_Comes",
-        "Bellathorna"
+        "His_Clever_Brother"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(c3-s-end)",
+        "`dragon(s-end), x=5",
         "`s3, not buff(s3)",
         "`s1",
-        "`s2",
-        "`s4"
+        "`s4, cancel",
+        "`s2, x>2"
       ],
       "coabs": [
         "Blade",
@@ -146,7 +146,7 @@
       ],
       "share": [
         "Weapon",
-        "Summer_Luca"
+        "Summer_Julietta"
       ]
     }
   }

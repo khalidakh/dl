@@ -5,7 +5,7 @@ from core.log import *
 from core.acl import allow_acl
 import random
 
-AFFLICT_LIST = ['poison', 'paralysis', 'burn', 'blind', 'bog', 'stun', 'freeze', 'sleep', 'frostbite', 'flashburn']
+AFFLICT_LIST = ['poison', 'paralysis', 'burn', 'blind', 'bog', 'stun', 'freeze', 'sleep', 'frostbite', 'flashburn', 'shadowblight']
 
 class Dot(object):
     """
@@ -235,7 +235,7 @@ class AfflicCapped(AfflicBase):
 
         self.event.rate = total_p
         self.event()
-        
+
         self.start_rate = round(self.get(), 3)
         log('cc', self.name, self.start_rate or 'fail')
 
@@ -304,7 +304,7 @@ class Afflic_scc(AfflicCapped):
 class Afflic_bog(Afflic_scc):
     def __init__(self, name=None, duration=8, tolerance=0.2):
         super().__init__(name, duration, tolerance)
-        
+
     def on(self, name, rate, duration=None):
         self.event.source = name
         p = super().on(name, rate, duration)
@@ -320,29 +320,29 @@ class Afflic_bog(Afflic_scc):
 class Afflics(object):
     RESIST_PROFILES = {
         None: {
-            'poison': 0, 'burn': 0, 'paralysis': 0, 'frostbite': 0, 'flashburn': 0,
-            'blind': 99, 'bog': 99, 'freeze': 99, 'stun': 99, 'sleep': 99 
+            'poison': 0, 'burn': 0, 'paralysis': 0, 'frostbite': 0, 'flashburn': 0, 'shadowblight': 0,
+            'blind': 99, 'bog': 99, 'freeze': 99, 'stun': 99, 'sleep': 99
         },
-        # 'flame': { # Volk
-        #     'poison': 0, 'burn': 0, 'paralysis': 100, 'frostbite': 0, 'flashburn': 0,
-        #     'blind': 99, 'bog': 100, 'freeze': 100, 'stun': 99, 'sleep': 99 
-        # },
-        # 'shadow': { # Kai Yan
-        #     'poison': 0, 'burn': 0, 'paralysis': 100, 'frostbite': 0, 'flashburn': 0,
-        #     'blind': 100, 'bog': 99, 'freeze': 100, 'stun': 99, 'sleep': 99
-        # },
-        # 'wind': { # Ciella
-        #     'poison': 0, 'burn': 0, 'paralysis': 100, 'frostbite': 0, 'flashburn': 0,
-        #     'blind': 100, 'bog': 100, 'freeze': 100, 'stun': 100, 'sleep': 100
-        # },
-        # 'water': { # Ayaha & Otoha
-        #     'poison': 99, 'burn': 0, 'paralysis': 100, 'frostbite': 0, 'flashburn': 0,
-        #     'blind': 100, 'bog': 0, 'freeze': 100, 'stun': 100, 'sleep': 100
-        # },
-        # 'shadow': { # Tartarus
-        #     'poison': 0, 'burn': 0, 'paralysis': 0, 'frostbite': 0, 'flashburn': 0,
-        #     'blind': 100, 'bog': 99, 'freeze': 100, 'stun': 99, 'sleep': 99
-        # }
+        'flame': { # Volk
+            'poison': 0, 'burn': 0, 'paralysis': 100, 'frostbite': 0, 'flashburn': 0, 'shadowblight': 0,
+            'blind': 99, 'bog': 100, 'freeze': 100, 'stun': 99, 'sleep': 99
+        },
+        'shadow': { # Kai Yan
+            'poison': 0, 'burn': 0, 'paralysis': 100, 'frostbite': 0, 'flashburn': 0, 'shadowblight': 0,
+            'blind': 100, 'bog': 99, 'freeze': 100, 'stun': 99, 'sleep': 99
+        },
+        'wind': { # Ciella
+            'poison': 0, 'burn': 0, 'paralysis': 100, 'frostbite': 0, 'flashburn': 0, 'shadowblight': 0,
+            'blind': 100, 'bog': 100, 'freeze': 100, 'stun': 100, 'sleep': 100
+        },
+        'water': { # Ayaha & Otoha
+            'poison': 99, 'burn': 0, 'paralysis': 100, 'frostbite': 0, 'flashburn': 0, 'shadowblight': 0,
+            'blind': 100, 'bog': 70, 'freeze': 100, 'stun': 100, 'sleep': 100
+        }, # bog at 70 for ~2 bogs
+        'light': { # Tartarus
+            'poison': 0, 'burn': 0, 'paralysis': 0, 'frostbite': 0, 'flashburn': 0,
+            'blind': 100, 'bog': 99, 'freeze': 100, 'stun': 99, 'sleep': 99
+        }
     }
     def __init__(self):
         self.poison = Afflic_dot('poison', duration=15, iv=2.9)
@@ -350,13 +350,14 @@ class Afflics(object):
         self.paralysis = Afflic_dot('paralysis', duration=13, iv=3.9)
         self.frostbite = Afflic_dot('frostbite', duration=21, iv=2.9)
         self.flashburn = Afflic_dot('flashburn', duration=21, iv=2.9)
+        self.shadowblight = Afflic_dot('shadowblight', duration=21, iv=2.9)
 
         self.blind = Afflic_scc('blind', duration=8)
         self.bog = Afflic_bog('bog', duration=8)
         self.freeze = Afflic_cc('freeze', duration=4.5)
         self.stun = Afflic_cc('stun', duration=6.5)
         self.sleep = Afflic_cc('sleep', duration=6.5)
-        
+
         self.set_resist()
 
     def set_resist(self, profile=None):

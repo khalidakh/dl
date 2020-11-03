@@ -1,9 +1,9 @@
 {
   "180": {
     "base": {
-      "dps": 30493.969039524753,
-      "team": 0.18787199182564168,
-      "tdps": 27177.10256675516,
+      "dps": 31202.97182569752,
+      "team": 0.18787199182564215,
+      "tdps": 27933.59701985443,
       "slots.a": [
         "An_Ancient_Oath",
         "Candy_Couriers",
@@ -22,9 +22,9 @@
         "`dodge,fsc"
       ],
       "coabs": [
+        "Blade",
         "Meene",
-        "Ku_Hai",
-        "Axe2"
+        "Ku_Hai"
       ],
       "share": [
         "Weapon",
@@ -33,9 +33,9 @@
     },
     "pref": "buffer",
     "buffer": {
-      "dps": 5418.092141588553,
-      "team": 1.110555962140074,
-      "tdps": 27177.10256675516,
+      "dps": 5429.0896222548345,
+      "team": 1.1105559621400747,
+      "tdps": 27933.59701985443,
       "slots.a": [
         "Sisters_Day_Out",
         "Study_Rabbits",
@@ -62,8 +62,8 @@
       ]
     },
     "affliction": {
-      "dps": 30493.969039524753,
-      "team": 0.18787199182564168,
+      "dps": 31202.97182569752,
+      "team": 0.18787199182564215,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -83,9 +83,72 @@
         "`dodge,fsc"
       ],
       "coabs": [
+        "Blade",
         "Meene",
-        "Ku_Hai",
-        "Axe2"
+        "Ku_Hai"
+      ],
+      "share": [
+        "Weapon",
+        "Gala_Mym"
+      ]
+    }
+  },
+  "120": {
+    "base": {
+      "dps": 3801.023772469965,
+      "team": 0.9597272355460802,
+      "tdps": null,
+      "slots.a": [
+        "Gentle_Winds",
+        "Sisters_Day_Out",
+        "The_Chocolatiers",
+        "From_Whence_He_Comes",
+        "Bellathorna"
+      ],
+      "slots.d": "Freyja",
+      "acl": [
+        "`s1",
+        "`s4",
+        "`s3",
+        "`fs, x=5",
+        "`dodge,fsc"
+      ],
+      "coabs": [
+        "Bow",
+        "The_Prince",
+        "Tobias"
+      ],
+      "share": [
+        "Patia",
+        "Summer_Cleo"
+      ]
+    },
+    "pref": "base",
+    "affliction": {
+      "dps": 27758.807725311708,
+      "team": 0.1705869995321022,
+      "tdps": null,
+      "slots.a": [
+        "An_Ancient_Oath",
+        "Candy_Couriers",
+        "Memory_of_a_Friend",
+        "Dueling_Dancers",
+        "Entwined_Flames"
+      ],
+      "slots.d": "Midgardsormr_Zero",
+      "acl": [
+        "`dragon",
+        "`s1",
+        "`s2",
+        "`s4",
+        "`s3",
+        "`fs, x=5",
+        "`dodge,fsc"
+      ],
+      "coabs": [
+        "Blade",
+        "Meene",
+        "Ku_Hai"
       ],
       "share": [
         "Weapon",

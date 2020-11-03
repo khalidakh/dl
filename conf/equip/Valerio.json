@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 50856.77183761941,
-      "team": 0.0670768703216581,
+      "dps": 50615.44963129715,
+      "team": 0.07267617930435358,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -11,16 +11,17 @@
         "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Leviathan",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s)",
+        "`s2(entree), dgauge>=500",
+        "`dragon(c2-s-c2-c2-c2-c2-c2-c2-end), s=2",
         "`s3, not buff(s3)",
         "`s4",
-        "`s2(entree)",
+        "`s2(entree), dgauge<=400",
         "`s1(appetizer)"
       ],
       "coabs": [
-        "Xainfried",
+        "Yurius",
         "Summer_Celliera",
         "Tiki"
       ],
@@ -31,8 +32,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 53282.402814756955,
-      "team": 0.0670768703216581,
+      "dps": 51855.02179540447,
+      "team": 0.07267617930435358,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -41,16 +42,17 @@
         "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Leviathan",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s)",
+        "`s2(entree), dgauge>=500",
+        "`dragon(c2-s-c2-c2-c2-c2-c2-c2-end), s=2",
         "`s3, not buff(s3)",
         "`s4",
-        "`s2(entree)",
+        "`s2(entree), dgauge<=400",
         "`s1(appetizer)"
       ],
       "coabs": [
-        "Xainfried",
+        "Yurius",
         "Summer_Celliera",
         "Tiki"
       ],
@@ -60,40 +62,40 @@
       ]
     },
     "buffer": {
-      "dps": 6482.077227583685,
-      "team": 0.5212134810140361,
-      "tdps": 97712.21602764406,
+      "dps": 8606.379789196319,
+      "team": 0.6405756295317231,
+      "tdps": 73972.7249696785,
       "slots.a": [
-        "Memory_of_a_Friend",
-        "Moonlight_Party",
-        "Valiant_Crown",
+        "Once_in_a_Lifetime",
+        "Study_Rabbits",
+        "Warrior_Maiden",
         "From_Whence_He_Comes",
-        "His_Clever_Brother"
+        "Bellathorna"
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`s3",
-        "`s2(entree), self.inspiration()=0",
-        "`s2(dessert)",
+        "`dragon(s-end), s",
+        "`s2(entree), dgauge>=500",
+        "`s2(entree), dgauge<=400",
         "`s4",
-        "`dragon(c3-s-end)"
+        "`s3"
       ],
       "coabs": [
-        "Summer_Estelle",
         "Renee",
-        "Hunter_Sarisse"
+        "Hunter_Sarisse",
+        "Tobias"
       ],
       "share": [
-        "Templar_Hope",
-        "Gala_Elisanne"
+        "Gala_Elisanne",
+        "Yuya"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 31583.881339852116,
-      "team": 0.061423840764314154,
-      "tdps": -29259.532278572813,
+      "dps": 35433.975624529405,
+      "team": 0.061433562441510145,
+      "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
         "Moonlight_Party",
@@ -121,10 +123,10 @@
         "Summer_Julietta"
       ]
     },
-    "pref": "buffer",
+    "pref": "base",
     "affliction": {
-      "dps": 55210.35454825332,
-      "team": 0.045045135882100434,
+      "dps": 51558.76768416078,
+      "team": 0.0450430430968874,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -138,8 +140,8 @@
         "`dragon(c3-c3-c3-c1-s)",
         "`s3, not buff(s3)",
         "`s4",
-        "`s1(appetizer)",
-        "`s2(entree), x=3"
+        "`s2(entree)",
+        "`s1(appetizer)"
       ],
       "coabs": [
         "Xainfried",
@@ -152,9 +154,9 @@
       ]
     },
     "buffer": {
-      "dps": 31688.538969469704,
-      "team": 0.06500071371707254,
-      "tdps": -29259.532278572813,
+      "dps": 34181.32374949256,
+      "team": 0.06500071371707242,
+      "tdps": 351163.0929751899,
       "slots.a": [
         "Memory_of_a_Friend",
         "Moonlight_Party",

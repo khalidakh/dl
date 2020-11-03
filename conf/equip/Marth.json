@@ -1,14 +1,14 @@
 {
   "180": {
     "base": {
-      "dps": 66204.75067242494,
-      "team": 0.08831275011550582,
+      "dps": 65169.097255157976,
+      "team": 0.08891119408708614,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",
         "The_Shining_Overlord",
-        "His_Clever_Brother",
+        "The_Plaguebringer",
         "To_the_Extreme"
       ],
       "slots.d": "Gala_Mars",
@@ -31,18 +31,18 @@
       "coabs": [
         "Blade",
         "Wand",
-        "Dagger2"
+        "Halloween_Mym"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Valentines_Melody"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 11606.583334994324,
-      "team": 0.7204494191529921,
-      "tdps": 86370.82772078973,
+      "dps": 11631.484822518449,
+      "team": 0.7204494191529922,
+      "tdps": 84773.35228133254,
       "slots.a": [
         "Honest_Repose",
         "Jewels_of_the_Sun",
@@ -68,8 +68,8 @@
       ]
     },
     "affliction": {
-      "dps": 73237.98966907455,
-      "team": 0.08917727125885762,
+      "dps": 72097.66867496645,
+      "team": 0.08899518656588974,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
@@ -98,7 +98,7 @@
       "coabs": [
         "Blade",
         "Wand",
-        "Dagger2"
+        "Halloween_Mym"
       ],
       "share": [
         "Weapon",
@@ -108,8 +108,8 @@
   },
   "60": {
     "base": {
-      "dps": 75281.0300951925,
-      "team": 0.08790486110669808,
+      "dps": 76865.59338976853,
+      "team": 0.08827661791083811,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
@@ -123,7 +123,7 @@
         "queue not buff(s3)",
         "`s3;s1;s2;fs,x=2;s4,fsc",
         "end",
-        "`dragon,s=2",
+        "`dragon(s-s),s=2",
         "queue prep and aff(burn)",
         "`s2;s4",
         "end",
@@ -136,18 +136,18 @@
         "`fs, x=4"
       ],
       "coabs": [
-        "Blade",
         "Wand",
-        "Dagger"
+        "Dagger2",
+        "Blade"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Karina"
       ]
     },
     "affliction": {
-      "dps": 82057.13253746205,
-      "team": 0.088295445730557,
+      "dps": 83181.57653955712,
+      "team": 0.08828956117421796,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
@@ -161,7 +161,7 @@
         "queue not buff(s3)",
         "`s3;s1;s2;fs,x=2;s4,fsc",
         "end",
-        "`dragon,s=2",
+        "`dragon(s-s),s=2",
         "queue prep and aff(burn)",
         "`s2;s4",
         "end",
@@ -174,20 +174,20 @@
         "`fs, x=4"
       ],
       "coabs": [
-        "Blade",
         "Wand",
-        "Dagger"
+        "Dagger2",
+        "Blade"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Karina"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 11096.808782124066,
-      "team": 0.6609261777621224,
-      "tdps": 112010.18085626372,
+      "dps": 11120.616567539479,
+      "team": 0.6609261777621227,
+      "tdps": 114808.3949270874,
       "slots.a": [
         "Honest_Repose",
         "Jewels_of_the_Sun",
@@ -215,9 +215,9 @@
   },
   "120": {
     "base": {
-      "dps": 61254.47152625895,
-      "team": 0.09083370785396551,
-      "tdps": -10342476.019444654,
+      "dps": 59828.17924099746,
+      "team": 0.09078291143966952,
+      "tdps": -10499650.893940533,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",
@@ -254,8 +254,8 @@
     },
     "pref": "buffer",
     "affliction": {
-      "dps": 73602.24666735785,
-      "team": 0.08823046264668853,
+      "dps": 82103.22890299765,
+      "team": 0.08825764377104507,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
@@ -269,7 +269,7 @@
         "queue not buff(s3)",
         "`s3;s1;s2;fs,x=2;s4,fsc",
         "end",
-        "`dragon,s=2",
+        "`dragon(s-s),s=2",
         "queue prep and aff(burn)",
         "`s2;s4",
         "end",
@@ -284,7 +284,7 @@
       "coabs": [
         "Blade",
         "Wand",
-        "Dagger"
+        "Halloween_Mym"
       ],
       "share": [
         "Weapon",
@@ -292,9 +292,9 @@
       ]
     },
     "buffer": {
-      "dps": 53197.07885684244,
-      "team": 0.09005464946850075,
-      "tdps": -10342476.019444654,
+      "dps": 52181.68278439201,
+      "team": 0.09005464946850071,
+      "tdps": -10499650.893940533,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",

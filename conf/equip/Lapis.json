@@ -1,88 +1,90 @@
 {
   "180": {
     "base": {
-      "dps": 61277.13781226331,
-      "team": 0.0,
+      "dps": 69459.5975711961,
+      "team": 0.09464008234015836,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
-        "The_Prince_of_Dragonyule",
+        "Moonlight_Party",
         "Valiant_Crown",
-        "A_Small_Courage",
-        "His_Clever_Brother"
+        "Enter_the_Blue_Rose",
+        "From_Whence_He_Comes"
       ],
       "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`s2, not buff(s2) and x=2",
         "`s3, not buff(s3)",
+        "`s1, not s1_res_down.get()",
+        "`s2",
         "`s4",
-        "`s1, xf"
+        "`fs"
       ],
       "coabs": [
+        "Blade",
         "Summer_Estelle",
-        "Hunter_Sarisse",
-        "Xander"
+        "Hunter_Sarisse"
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Durant"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 8432.271431517034,
-      "team": 0.4879710100098985,
-      "tdps": 108295.09396403347,
+      "dps": 10050.327929658895,
+      "team": 0.8439508027348295,
+      "tdps": 79285.22577422301,
       "slots.a": [
-        "Once_in_a_Lifetime",
-        "Study_Rabbits",
-        "Warrior_Maiden",
-        "His_Clever_Brother",
-        "The_Queen_of_the_Knife"
+        "Dazzling_Duet",
+        "Gentle_Winds",
+        "Sisters_Day_Out",
+        "From_Whence_He_Comes",
+        "Bellathorna"
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(s-end)",
-        "`s4, xf",
         "`s3",
-        "`fsf, xf=5"
+        "`s4",
+        "`s1, not s1_res_down.get()",
+        "`fs"
       ],
       "coabs": [
         "Renee",
-        "Bow",
+        "Hunter_Sarisse",
         "Tobias"
       ],
       "share": [
-        "Yuya",
+        "Templar_Hope",
         "Gala_Elisanne"
       ]
     },
     "affliction": {
-      "dps": 63224.64360191777,
-      "team": 0.0,
+      "dps": 81847.93398678345,
+      "team": 0.08765924692748028,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
-        "The_Prince_of_Dragonyule",
+        "Moonlight_Party",
         "Valiant_Crown",
-        "A_Small_Courage",
+        "Enter_the_Blue_Rose",
         "His_Clever_Brother"
       ],
       "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`s2, not buff(s2) and x=2",
         "`s3, not buff(s3)",
+        "`s1, not s1_res_down.get()",
+        "`s2",
         "`s4",
-        "`s1, xf"
+        "`fs"
       ],
       "coabs": [
-        "Wand",
-        "Hunter_Sarisse",
-        "Xander"
+        "Blade",
+        "Summer_Estelle",
+        "Hunter_Sarisse"
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Durant"
       ]
     }
   }

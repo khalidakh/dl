@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 80536.64923726073,
+      "dps": 80835.63982632062,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -32,7 +32,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 82392.45524637385,
+      "dps": 82698.2639167235,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -62,14 +62,14 @@
       ]
     },
     "buffer": {
-      "dps": 51598.601611293394,
-      "team": 0.02844965431538935,
-      "tdps": 1017166.9330376994,
+      "dps": 59451.36213183698,
+      "team": 0.06355710928149144,
+      "tdps": 336457.6824879446,
       "slots.a": [
         "Candy_Couriers",
-        "Castle_Cheer_Corps",
-        "Jewels_of_the_Sun",
-        "Seaside_Memory",
+        "Howling_to_the_Heavens",
+        "Memory_of_a_Friend",
+        "Odd_Sparrows",
         "The_Plaguebringer"
       ],
       "slots.d": "Gala_Cat_Sith",
@@ -82,49 +82,19 @@
         "`fs, self.madness_status<5 and self.madness>0"
       ],
       "coabs": [
-        "Bow",
-        "Summer_Verica"
+        "Delphi",
+        "Gala_Alex",
+        "Grace"
       ],
       "share": [
         "Weapon",
-        "Durant"
+        "Patia"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 61175.29304534361,
-      "team": 0.017534096304626656,
-      "tdps": null,
-      "slots.a": [
-        "Candy_Couriers",
-        "Howling_to_the_Heavens",
-        "Memory_of_a_Friend",
-        "The_Plaguebringer",
-        "The_Queen_of_the_Knife"
-      ],
-      "slots.d": "Gala_Cat_Sith",
-      "acl": [
-        "`dragon(c3-s-end), x=5",
-        "`s3, not buff(s3)",
-        "`s1",
-        "`s2",
-        "`s4",
-        "`fs, self.madness_status<5 and self.madness>0"
-      ],
-      "coabs": [
-        "Ieyasu",
-        "Gala_Alex",
-        "Bow"
-      ],
-      "share": [
-        "Weapon",
-        "Curran"
-      ]
-    },
-    "pref": "base",
-    "affliction": {
-      "dps": 64552.039351645195,
+      "dps": 64642.390791139405,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -140,13 +110,42 @@
         "`s3, not buff(s3)",
         "`s1",
         "`s2",
-        "`s4",
-        "`fs, self.madness_status<5 and self.madness>0"
+        "`s4"
       ],
       "coabs": [
         "Ieyasu",
-        "Gala_Alex",
-        "Bow"
+        "Delphi",
+        "Gala_Alex"
+      ],
+      "share": [
+        "Weapon",
+        "Xander"
+      ]
+    },
+    "pref": "base",
+    "affliction": {
+      "dps": 65688.34153091541,
+      "team": 0.0,
+      "tdps": null,
+      "slots.a": [
+        "Candy_Couriers",
+        "Howling_to_the_Heavens",
+        "Memory_of_a_Friend",
+        "His_Clever_Brother",
+        "The_Plaguebringer"
+      ],
+      "slots.d": "Gala_Cat_Sith",
+      "acl": [
+        "`dragon(c3-s-end), x=5",
+        "`s3, not buff(s3)",
+        "`s1",
+        "`s2",
+        "`s4"
+      ],
+      "coabs": [
+        "Ieyasu",
+        "Delphi",
+        "Gala_Alex"
       ],
       "share": [
         "Weapon",
@@ -154,9 +153,9 @@
       ]
     },
     "buffer": {
-      "dps": 61175.29304534361,
-      "team": 0.017534096304626656,
-      "tdps": 99999999,
+      "dps": 61371.58550797344,
+      "team": 0.017526610992204962,
+      "tdps": 186619.38035942437,
       "slots.a": [
         "Candy_Couriers",
         "Howling_to_the_Heavens",

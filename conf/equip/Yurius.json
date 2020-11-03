@@ -1,17 +1,17 @@
 {
   "180": {
     "base": {
-      "dps": 49385.35337497922,
+      "dps": 55606.638005292814,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
-        "His_Clever_Brother",
-        "The_Queen_of_the_Knife"
+        "The_Prince_of_Dragonyule",
+        "Chariot_Drift",
+        "His_Clever_Brother"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
         "`s3, not buff(s3)",
         "if aff(frostbite)",
@@ -38,17 +38,17 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 55083.01313096418,
+      "dps": 66103.52680598569,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
-        "His_Clever_Brother",
-        "The_Queen_of_the_Knife"
+        "The_Prince_of_Dragonyule",
+        "Chariot_Drift",
+        "His_Clever_Brother"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
         "`s3, not buff(s3)",
         "if aff(frostbite)",
@@ -70,19 +70,19 @@
       ],
       "share": [
         "Weapon",
-        "Summer_Luca"
+        "Yue"
       ]
     },
     "buffer": {
-      "dps": 16875.341871656165,
-      "team": 0.05298825062966734,
-      "tdps": 613532.4551575435,
+      "dps": 43014.718036186576,
+      "team": 0.18681627332402828,
+      "tdps": 67402.69327215332,
       "slots.a": [
         "Candy_Couriers",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
-        "His_Clever_Brother",
-        "The_Queen_of_the_Knife"
+        "Proper_Maintenance",
+        "From_Whence_He_Comes",
+        "His_Clever_Brother"
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
@@ -106,23 +106,23 @@
       ],
       "share": [
         "Weapon",
-        "Summer_Cleo"
+        "Gala_Elisanne"
       ]
     }
   },
   "120": {
     "affliction": {
-      "dps": 56772.207751833776,
+      "dps": 67072.54740549042,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
-        "His_Clever_Brother",
-        "The_Queen_of_the_Knife"
+        "The_Prince_of_Dragonyule",
+        "Chariot_Drift",
+        "His_Clever_Brother"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
         "`s3, not buff(s3)",
         "if aff(frostbite)",
@@ -144,12 +144,12 @@
       ],
       "share": [
         "Weapon",
-        "Summer_Luca"
+        "Yue"
       ]
     },
     "pref": "base",
     "base": {
-      "dps": 51793.56785490769,
+      "dps": 55707.682593831174,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -184,7 +184,7 @@
   },
   "60": {
     "base": {
-      "dps": 48828.933692939565,
+      "dps": 52276.13907376473,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -221,17 +221,17 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 52631.461387610594,
+      "dps": 62149.624235649535,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Candy_Couriers",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
-        "His_Clever_Brother",
-        "The_Queen_of_the_Knife"
+        "The_Prince_of_Dragonyule",
+        "Chariot_Drift",
+        "His_Clever_Brother"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
         "`s3, not buff(s3)",
         "if aff(frostbite)",
@@ -253,7 +253,7 @@
       ],
       "share": [
         "Weapon",
-        "Summer_Luca"
+        "Yue"
       ]
     }
   }

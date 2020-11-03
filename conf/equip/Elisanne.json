@@ -1,9 +1,9 @@
 {
   "180": {
     "base": {
-      "dps": 43807.0547304337,
-      "team": 0.3095187437050495,
-      "tdps": 19715.09321590209,
+      "dps": 41488.60166298606,
+      "team": 0.3653253520279246,
+      "tdps": 17962.205860108294,
       "slots.a": [
         "An_Ancient_Oath",
         "Memory_of_a_Friend",
@@ -11,16 +11,16 @@
         "Dueling_Dancers",
         "Such_High_Spirits"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Leviathan",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s), s",
+        "`dragon(c2-s-c2-c2-c2-c2-c2-c2-c2-c2-c2)",
         "`s3, not buff(s3)",
         "`s4",
         "`s1",
         "`fs, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
+        "Yurius",
         "Summer_Celliera",
         "Tiki"
       ],
@@ -31,8 +31,8 @@
     },
     "pref": "buffer",
     "affliction": {
-      "dps": 47162.25997797763,
-      "team": 0.3157334803486492,
+      "dps": 46134.75701295155,
+      "team": 0.36518584373480567,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -41,16 +41,16 @@
         "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Leviathan",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s), s",
+        "`dragon(c2-s-c2-c2-c2-c2-c2-c2-c2-c2-c2)",
         "`s3, not buff(s3)",
         "`s4",
         "`s1",
         "`fs, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
+        "Yurius",
         "Summer_Celliera",
         "Tiki"
       ],
@@ -60,9 +60,9 @@
       ]
     },
     "buffer": {
-      "dps": 16164.801219562763,
-      "team": 1.7116046079795761,
-      "tdps": 19715.09321590209,
+      "dps": 17306.456522389064,
+      "team": 1.7116046079795766,
+      "tdps": 17962.205860108294,
       "slots.a": [
         "Once_in_a_Lifetime",
         "Sisters_Day_Out",
@@ -91,9 +91,9 @@
   },
   "120": {
     "base": {
-      "dps": 24894.847910737437,
-      "team": 0.3223733129969072,
-      "tdps": 7420.285383059023,
+      "dps": 28084.32207987761,
+      "team": 0.3223733129969073,
+      "tdps": 9059.839534671757,
       "slots.a": [
         "Dragon_and_Tamer",
         "Memory_of_a_Friend",
@@ -122,8 +122,8 @@
     },
     "pref": "buffer",
     "affliction": {
-      "dps": 44508.80923107289,
-      "team": 0.28584415021255505,
+      "dps": 46117.98488727128,
+      "team": 0.3277058710228048,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -132,16 +132,16 @@
         "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Leviathan",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s), s",
+        "`dragon(c2-s-c2-c2-c2-c2-c2-c2-c2-c2-c2)",
         "`s3, not buff(s3)",
         "`s4",
         "`s1",
         "`fs, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
+        "Yurius",
         "Summer_Celliera",
         "Tiki"
       ],
@@ -151,9 +151,9 @@
       ]
     },
     "buffer": {
-      "dps": 15374.10219590811,
-      "team": 1.605443332994492,
-      "tdps": 7420.285383059023,
+      "dps": 16459.913586951407,
+      "team": 1.6054433329944924,
+      "tdps": 9059.839534671757,
       "slots.a": [
         "Once_in_a_Lifetime",
         "Sisters_Day_Out",
@@ -182,8 +182,8 @@
   },
   "60": {
     "base": {
-      "dps": 12749.065398921075,
-      "team": 1.2981806439462198,
+      "dps": 13649.480932713246,
+      "team": 1.29818064394622,
       "tdps": null,
       "slots.a": [
         "Once_in_a_Lifetime",
@@ -212,8 +212,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 53000.50827737086,
-      "team": 0.2262109392710574,
+      "dps": 68673.438561083,
+      "team": 0.24559150412834335,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -222,16 +222,16 @@
         "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Leviathan",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s), s",
+        "`dragon(c2-s-c2-c2-c2-c2-c2-c2-c2-c2-c2)",
         "`s3, not buff(s3)",
         "`s4",
         "`s1",
         "`fs, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
+        "Yurius",
         "Summer_Celliera",
         "Tiki"
       ],

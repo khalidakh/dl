@@ -134,6 +134,10 @@
             "ele": "wind",
             "a": [["hp", 0.6]]
         },
+        "dodge": {
+            "recovery": 0.55556,
+            "backdash": true
+        },
         "dx1": {
             "startup": 0.27273,
             "recovery": 0.12121,
@@ -207,7 +211,7 @@
             "attr": [
                 {"dmg": 0.82, "iv": 0.33333, "msl": 1}, 4,
                 {"dmg": 0.82, "iv": 1.0, "msl": 1},
-                {"dmg": 7.7, "afflic": ["sleep", 120], "iv": 1.0, "msl": 1}
+                {"dmg": 7.7, "afflic": ["sleep", 120, 5.5], "iv": 1.0, "msl": 1}
             ]
         }
     },
@@ -219,6 +223,10 @@
             "hp": 356,
             "ele": "wind",
             "a": [["hp", 0.35], ["a", 0.35], ["dt", 0.2]]
+        },
+        "dodge": {
+            "recovery": 0.55556,
+            "backdash": true
         },
         "dx1": {
             "startup": 0.3,
@@ -261,6 +269,9 @@
             "ele": "wind",
             "a": [["a", 0.45], ["cd", 0.55]]
         },
+        "dodge": {
+            "recovery": 0.55556
+        },
         "dx1": {
             "startup": 0.2,
             "recovery": 0.33333,
@@ -270,14 +281,14 @@
         },
         "dx2": {
             "startup": 0.13333,
-            "recovery": 0.13334,
+            "recovery": 0.3,
             "attr": [
                 {"dmg": 3.36, "sp": 5}
             ]
         },
         "dx3": {
             "startup": 0.2,
-            "recovery": 0.3,
+            "recovery": 0.16667,
             "attr": [
                 {"dmg": 3.52, "sp": 5}
             ]
@@ -339,7 +350,7 @@
         },
         "dx3": {
             "startup": 0.73333,
-            "recovery": 0.6,
+            "recovery": 0.76667,
             "attr": [
                 {"dmg": 4.5, "sp": 5},
                 {"dmg": 4.5, "iv": 0.13334, "msl": 1}
@@ -381,6 +392,10 @@
             "hp": 369,
             "ele": "wind",
             "a": [["a", 0.5], ["k_poison", 0.2]]
+        },
+        "dodge": {
+            "recovery": 0.55556,
+            "backdash": true
         },
         "dx1": {
             "startup": 0.33333,
@@ -510,6 +525,10 @@
             "hp": 369,
             "ele": "wind",
             "a": [["a", 0.6]]
+        },
+        "dodge": {
+            "recovery": 0.55556,
+            "backdash": true
         },
         "dx1": {
             "startup": 0.36667,

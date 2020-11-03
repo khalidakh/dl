@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 62644.36808989666,
-      "team": 0.022211084683492848,
+      "dps": 62743.85711357825,
+      "team": 0.02220359102854469,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -32,9 +32,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 56170.25008654327,
-      "team": 0.13884367597682848,
-      "tdps": 55508.65269786154,
+      "dps": 56372.17454271309,
+      "team": 0.1375037439240173,
+      "tdps": 55261.70096792084,
       "slots.a": [
         "Memory_of_a_Friend",
         "Spirit_of_the_Season",
@@ -62,15 +62,15 @@
       ]
     },
     "affliction": {
-      "dps": 65846.6122778402,
-      "team": 0.022194476186695008,
+      "dps": 65875.31272168907,
+      "team": 0.020713141032455244,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
         "Spirit_of_the_Season",
         "Twinfold_Bonds",
         "A_Passion_for_Produce",
-        "The_Plaguebringer"
+        "His_Clever_Brother"
       ],
       "slots.d": "Daikokuten",
       "acl": [
@@ -88,14 +88,14 @@
       ],
       "share": [
         "Weapon",
-        "Rodrigo"
+        "Jurota"
       ]
     }
   },
   "60": {
     "affliction": {
-      "dps": 69603.2040289526,
-      "team": 0.03328206192257369,
+      "dps": 69853.81566131803,
+      "team": 0.03328206192257373,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -125,8 +125,8 @@
     },
     "pref": "base",
     "base": {
-      "dps": 69603.2040289526,
-      "team": 0.03328206192257369,
+      "dps": 69853.81566131803,
+      "team": 0.03328206192257373,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -155,9 +155,9 @@
       ]
     },
     "buffer": {
-      "dps": 57291.34140610143,
-      "team": 0.04222182189826318,
-      "tdps": 1377202.8171149658,
+      "dps": 55898.70527872315,
+      "team": 0.04383415008212413,
+      "tdps": 1322497.5162820735,
       "slots.a": [
         "Memory_of_a_Friend",
         "Spirit_of_the_Season",

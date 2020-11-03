@@ -151,7 +151,7 @@ ability_dict['bk'] = Broken_Punisher
 
 
 class Overdrive_Punisher(Ability):
-    EFFICIENCY = 0.35
+    EFFICIENCY = 0.45
     def __init__(self, name, value, cond=None):
         super().__init__(name, [('killer','passive',value*self.EFFICIENCY, cond)])
 ability_dict['od'] = Overdrive_Punisher
@@ -498,7 +498,7 @@ class Dragon_Prep(Ability):
         super().__init__(name)
 
     def oninit(self, adv, afrom=None):
-        adv.dragonform.dragon_gauge += self.value * 10
+        adv.dragonform.charge_gauge(self.value * 10, dhaste=False)
 
 ability_dict['dp'] = Dragon_Prep
 

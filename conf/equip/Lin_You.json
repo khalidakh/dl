@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 78413.15747417822,
+      "dps": 78795.69039312225,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -18,8 +18,8 @@
         "`s4",
         "`s2, s1.check()",
         "`s1",
-        "`fs, self.hits <= 44 and c_fs(enhanced) > 0 and x=3",
-        "`fsf, x=4 and not buff(s2)"
+        "`fs, self.hits <= 44 and c_fs(enhanced) > 0 and x=1",
+        "`dodge, fsc"
       ],
       "coabs": [
         "Blade",
@@ -33,7 +33,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 90108.9239365882,
+      "dps": 89549.26941351299,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -64,9 +64,9 @@
       ]
     },
     "buffer": {
-      "dps": 41430.77161569421,
-      "team": 0.11574205786596783,
-      "tdps": 319524.1776443143,
+      "dps": 41505.95168590062,
+      "team": 0.115742057865968,
+      "tdps": 322179.6760379361,
       "slots.a": [
         "Kung_Fu_Masters",
         "Memory_of_a_Friend",
@@ -96,7 +96,7 @@
   },
   "120": {
     "affliction": {
-      "dps": 88647.03424181158,
+      "dps": 88312.18570711715,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -127,7 +127,7 @@
     },
     "pref": "base",
     "base": {
-      "dps": 79700.94360238673,
+      "dps": 79882.11954361966,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

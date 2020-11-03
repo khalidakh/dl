@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 39402.67780879164,
-      "team": 0.1360656081052361,
+      "dps": 36495.831269970986,
+      "team": 0.1360656081052363,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -19,7 +19,7 @@
         "`s4"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
+        "Eugene",
         "Summer_Celliera",
         "Tiki"
       ],
@@ -30,9 +30,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 7401.946912209681,
-      "team": 0.725352311522747,
-      "tdps": 54304.17946136717,
+      "dps": 7910.253442614486,
+      "team": 0.7229916610126285,
+      "tdps": 48703.883028799304,
       "slots.a": [
         "Gentle_Winds",
         "Once_in_a_Lifetime",
@@ -59,25 +59,25 @@
       ]
     },
     "affliction": {
-      "dps": 39402.67780879164,
-      "team": 0.1360656081052361,
+      "dps": 43389.43688097466,
+      "team": 0.13701155214740915,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
         "Memory_of_a_Friend",
         "The_Bridal_Dragon",
         "Dueling_Dancers",
-        "Such_High_Spirits"
+        "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Leviathan",
       "acl": [
-        "`dragon",
-        "`s1, not buff(s1)",
+        "`dragon(c2-s-c2-c2-c2-c2-c2-c2-c2)",
         "`s3, not buff(s3)",
-        "`s4"
+        "`s4",
+        "`s1, not buff(s1)"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
+        "Eugene",
         "Summer_Celliera",
         "Tiki"
       ],

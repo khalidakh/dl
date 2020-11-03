@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 33923.735418676406,
-      "team": 0.08437677777475698,
+      "dps": 33988.27522446696,
+      "team": 0.08437677777475708,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -32,8 +32,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 40708.48250241169,
-      "team": 0.08437677777475698,
+      "dps": 40785.930269360375,
+      "team": 0.08437677777475708,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -60,12 +60,40 @@
         "Weapon",
         "Gala_Mym"
       ]
+    },
+    "buffer": {
+      "dps": 6121.071705386561,
+      "team": 0.3770205568090896,
+      "tdps": 95225.6822647546,
+      "slots.a": [
+        "Castle_Cheer_Corps",
+        "Jewels_of_the_Sun",
+        "Proper_Maintenance",
+        "A_Game_of_Cat_and_Boar",
+        "Seaside_Memory"
+      ],
+      "slots.d": "Tie_Shan_Gongzhu",
+      "acl": [
+        "`fs, fs_prep_c and x=3",
+        "`s3",
+        "`s4",
+        "`s2"
+      ],
+      "coabs": [
+        "Malora",
+        "Dagger2",
+        "Tobias"
+      ],
+      "share": [
+        "Mikoto",
+        "Patia"
+      ]
     }
   },
   "120": {
     "base": {
-      "dps": 27878.128209657243,
-      "team": 0.07051276175218563,
+      "dps": 27931.153655609967,
+      "team": 0.07051276175218556,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -95,8 +123,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 37038.28106302582,
-      "team": 0.07373199629979854,
+      "dps": 37108.74628264631,
+      "team": 0.07373199629979862,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",

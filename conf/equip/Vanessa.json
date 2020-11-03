@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 54025.10946315522,
+      "dps": 52727.6790296435,
       "team": 0.018514601319015514,
       "tdps": null,
       "slots.a": [
@@ -33,15 +33,15 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 62076.56047017217,
-      "team": 0.018330459928400357,
+      "dps": 61764.38066191145,
+      "team": 0.01852761700466706,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",
         "Summer_Paladyns",
-        "His_Clever_Brother",
-        "The_Warrioresses"
+        "The_Warrioresses",
+        "To_the_Extreme"
       ],
       "slots.d": "Gala_Mars",
       "acl": [
@@ -59,13 +59,13 @@
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Hunter_Sarisse"
       ]
     },
     "buffer": {
-      "dps": 29011.50975576727,
-      "team": 0.07420425028489254,
-      "tdps": 449160.66399906104,
+      "dps": 29071.925227978365,
+      "team": 0.07420425028489246,
+      "tdps": 424778.28898077394,
       "slots.a": [
         "Kung_Fu_Masters",
         "Memory_of_a_Friend",
@@ -95,7 +95,7 @@
   },
   "60": {
     "base": {
-      "dps": 57809.16075128801,
+      "dps": 55751.36204995734,
       "team": 0.017394412653739477,
       "tdps": null,
       "slots.a": [
@@ -126,19 +126,19 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 67067.81617967895,
-      "team": 0.017394412653739477,
+      "dps": 65261.387700920524,
+      "team": 0.017532045972145294,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",
         "Summer_Paladyns",
-        "His_Clever_Brother",
-        "The_Warrioresses"
+        "The_Warrioresses",
+        "To_the_Extreme"
       ],
       "slots.d": "Gala_Mars",
       "acl": [
-        "`dragon(s), s",
+        "`dragon(s)",
         "`s3, not buff(s3)",
         "`s4",
         "`s1, fsc or not buff(s1)",
@@ -146,13 +146,13 @@
         "`fs, buff(s1) and buff(s2) # alt fs and s2 def down"
       ],
       "coabs": [
-        "Marth",
         "Blade",
-        "Dagger"
+        "Yuya",
+        "Marth"
       ],
       "share": [
         "Weapon",
-        "Pinon"
+        "Hunter_Sarisse"
       ]
     }
   }

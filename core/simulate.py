@@ -464,8 +464,9 @@ def same_build_different_dps(a, b):
     return all([a[k] == b[k] for k in ('slots.a', 'slots.d', 'acl', 'coabs', 'share')]) and any([a[k] != b[k] for k in ('dps', 'team')])
 
 BANNED_PRINTS = ('Witchs_Kitchen', 'Berry_Lovable_Friends', 'Happier_Times', 'United_by_One_Vision', 'Second_Anniversary')
-ABNORMAL_COND = ('sim_buffbot', 'dragonbattle', 'classbane', 'hp', 'dumb', 'afflict_res')
-BUFFER_THRESHOLD = 35000
+ABNORMAL_COND = ('sim_buffbot', 'dragonbattle', 'classbane', 'hp', 'dumb', 'afflict_res', 'fleet')
+BUFFER_DPS_THRESHOLD = 35000
+BUFFER_TEAM_THRESHOLD = 1.5
 TDPS_WEIGHT = 15000
 def save_equip(adv, real_d, repair=False, etype=None):
     adv.duration = int(adv.duration)
@@ -563,7 +564,10 @@ def save_equip(adv, real_d, repair=False, etype=None):
             equip[dkey]['buffer']['tdps'] = 99999999
     except KeyError:
         pass
-    if 'buffer' in equip[dkey] and equip[dkey]['buffer']['tdps'] < BUFFER_THRESHOLD:
+    if 'buffer' in equip[dkey] and (
+            equip[dkey]['buffer']['tdps'] < BUFFER_DPS_THRESHOLD or \
+            equip[dkey]['buffer']['team'] > BUFFER_TEAM_THRESHOLD
+        ):
         equip[dkey]['pref'] = 'buffer'
         equip[dkey]['base']['tdps'] = equip[dkey]['buffer']['tdps']
     else:

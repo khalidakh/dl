@@ -1,70 +1,68 @@
 {
   "180": {
     "base": {
-      "dps": 41710.97152375519,
-      "team": 0.0664896711620334,
+      "dps": 40932.035342025054,
+      "team": 0.08319030608874846,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
+        "Candy_Couriers",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
+        "The_Red_Impulse",
         "Dueling_Dancers",
-        "Such_High_Spirits"
+        "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(c3-c3-c3-c3-c1-s)",
+        "`dragon(c3-s-end)",
         "`s3, not buff (s3)",
         "`s4",
-        "`s2",
         "`s1, cancel",
-        "`fs, x=5"
+        "`s2, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Hunter_Sarisse",
+        "Catherine"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Pinon"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 45267.71429258821,
-      "team": 0.06636681769726496,
+      "dps": 45568.04078172771,
+      "team": 0.07089338859901846,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
+        "Candy_Couriers",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
+        "The_Red_Impulse",
         "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon",
+        "`dragon(c3-s-end)",
         "`s3, not buff (s3)",
         "`s4",
-        "`s2",
-        "`s1, cancel",
-        "`fs, x=5"
+        "`s1",
+        "`s2, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Hunter_Sarisse",
+        "Catherine"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Summer_Julietta"
       ]
     },
     "buffer": {
-      "dps": 30832.70894698821,
-      "team": 0.1621293762377723,
-      "tdps": 113742.11754576494,
+      "dps": 35036.1955758675,
+      "team": 0.1621293762377721,
+      "tdps": 74688.48765291003,
       "slots.a": [
         "Candy_Couriers",
         "Memory_of_a_Friend",

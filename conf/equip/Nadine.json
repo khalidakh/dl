@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 70281.76009716114,
+      "dps": 69719.31864863032,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -32,7 +32,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 68147.56670280115,
+      "dps": 75677.7200305645,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -54,7 +54,7 @@
       "coabs": [
         "Blade",
         "Wand",
-        "Joe"
+        "Marth"
       ],
       "share": [
         "Weapon",
@@ -62,9 +62,9 @@
       ]
     },
     "buffer": {
-      "dps": 55201.02751250083,
+      "dps": 59313.72629160105,
       "team": 0.12219442902469799,
-      "tdps": 123415.8766895354,
+      "tdps": 85156.02912573112,
       "slots.a": [
         "Dragon_and_Tamer",
         "Me_and_My_Bestie",
@@ -94,7 +94,7 @@
   },
   "60": {
     "base": {
-      "dps": 83406.97904232086,
+      "dps": 76473.51069362143,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -125,7 +125,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 86498.78504725113,
+      "dps": 80288.70119571935,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -148,6 +148,69 @@
         "Blade",
         "Wand",
         "Serena"
+      ],
+      "share": [
+        "Weapon",
+        "Xander"
+      ]
+    }
+  },
+  "120": {
+    "base": {
+      "dps": 70287.18469454916,
+      "team": 0.0,
+      "tdps": null,
+      "slots.a": [
+        "Dragon_and_Tamer",
+        "Me_and_My_Bestie",
+        "Memory_of_a_Friend",
+        "His_Clever_Brother",
+        "To_the_Extreme"
+      ],
+      "slots.d": "Gala_Mars",
+      "acl": [
+        "`dragon(s), s=1",
+        "`s3, not buff(s3)",
+        "`s2",
+        "`s1",
+        "`s4",
+        "`fs, x=5"
+      ],
+      "coabs": [
+        "Blade",
+        "Wand",
+        "Joe"
+      ],
+      "share": [
+        "Weapon",
+        "Xander"
+      ]
+    },
+    "pref": "base",
+    "affliction": {
+      "dps": 80216.13483486605,
+      "team": 0.0,
+      "tdps": null,
+      "slots.a": [
+        "Dragon_and_Tamer",
+        "Me_and_My_Bestie",
+        "Memory_of_a_Friend",
+        "His_Clever_Brother",
+        "To_the_Extreme"
+      ],
+      "slots.d": "Gala_Mars",
+      "acl": [
+        "`dragon(s), s=1",
+        "`s3, not buff(s3)",
+        "`s2",
+        "`s1",
+        "`s4",
+        "`fs, x=5"
+      ],
+      "coabs": [
+        "Blade",
+        "Wand",
+        "Marth"
       ],
       "share": [
         "Weapon",

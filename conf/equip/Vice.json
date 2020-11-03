@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 65911.35594808437,
+      "dps": 71718.91695618718,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -20,9 +20,9 @@
         "`s1"
       ],
       "coabs": [
-        "Ieyasu",
         "Wand",
-        "Gala_Alex"
+        "Curran",
+        "Summer_Patia"
       ],
       "share": [
         "Weapon",
@@ -31,7 +31,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 70425.9599574163,
+      "dps": 76877.98114534545,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -50,9 +50,9 @@
         "`s1"
       ],
       "coabs": [
-        "Ieyasu",
         "Wand",
-        "Gala_Alex"
+        "Curran",
+        "Summer_Patia"
       ],
       "share": [
         "Weapon",
@@ -60,14 +60,14 @@
       ]
     },
     "buffer": {
-      "dps": 52558.67763477663,
-      "team": 0.049965610634660075,
-      "tdps": 267237.36873627384,
+      "dps": 48161.55455728386,
+      "team": 0.06249789777370348,
+      "tdps": 376930.47667301353,
       "slots.a": [
-        "Howling_to_the_Heavens",
+        "Crystalian_Envoy",
         "Memory_of_a_Friend",
         "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "FirstRate_Hospitality",
         "The_Plaguebringer"
       ],
       "slots.d": "Gala_Cat_Sith",
@@ -76,23 +76,22 @@
         "`s3, not buff(s3)",
         "`s4",
         "`s2",
-        "`s1",
-        "`fs, x=5"
+        "`s1"
       ],
       "coabs": [
         "Ieyasu",
         "Wand",
-        "Gala_Alex"
+        "Dagger2"
       ],
       "share": [
         "Weapon",
-        "Patia"
+        "Elisanne"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 63130.78351566748,
+      "dps": 63454.09859490602,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -123,7 +122,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 64654.93253476732,
+      "dps": 68675.01936480727,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -142,9 +141,9 @@
         "`s1"
       ],
       "coabs": [
-        "Ieyasu",
         "Wand",
-        "Gala_Alex"
+        "Curran",
+        "Summer_Patia"
       ],
       "share": [
         "Weapon",

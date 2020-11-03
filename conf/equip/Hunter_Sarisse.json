@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 79540.9137337417,
+      "dps": 98288.45448202707,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -11,18 +11,18 @@
         "Chariot_Drift",
         "From_Whence_He_Comes"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
         "`s3, not buff(s3)",
         "`s1, fsc",
         "`s2, not buff(s2) and fsc",
         "`s4, fsc",
-        "`dodge, fscf",
-        "fs4"
+        "`dodge, fsc",
+        "`fs4"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
-        "Xander",
+        "Catherine",
+        "Axe2",
         "Grace"
       ],
       "share": [
@@ -32,47 +32,17 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 91996.38227902079,
-      "team": 0.0,
+      "dps": 113462.05841122099,
+      "team": 0.026658059075591746,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
         "Memory_of_a_Friend",
         "The_Lurker_in_the_Woods",
-        "Chariot_Drift",
+        "From_Whence_He_Comes",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
-      "acl": [
-        "`s3, not buff(s3)",
-        "`s1, fsc",
-        "`s2, fsc",
-        "`s4, fsc",
-        "`dodge, fsc",
-        "`fs4"
-      ],
-      "coabs": [
-        "Dragonyule_Cleo",
-        "Xander",
-        "Grace"
-      ],
-      "share": [
-        "Weapon",
-        "Yue"
-      ]
-    },
-    "buffer": {
-      "dps": 64893.50692023117,
-      "team": 0.14194970657652753,
-      "tdps": 103187.29898616497,
-      "slots.a": [
-        "Dear_Diary",
-        "Memory_of_a_Friend",
-        "The_Lurker_in_the_Woods",
-        "Chariot_Drift",
-        "From_Whence_He_Comes"
-      ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
         "`s3, not buff(s3)",
         "`s1, fsc",
@@ -82,7 +52,37 @@
         "`fs4"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
+        "Blade",
+        "Xander",
+        "Grace"
+      ],
+      "share": [
+        "Weapon",
+        "Durant"
+      ]
+    },
+    "buffer": {
+      "dps": 68774.22366022808,
+      "team": 0.14739976714128367,
+      "tdps": 200232.54713495853,
+      "slots.a": [
+        "Dear_Diary",
+        "Memory_of_a_Friend",
+        "The_Lurker_in_the_Woods",
+        "Chariot_Drift",
+        "From_Whence_He_Comes"
+      ],
+      "slots.d": "Dragonyule_Jeanne",
+      "acl": [
+        "`s3, not buff(s3)",
+        "`s1, fsc",
+        "`s2, not buff(s2) and fsc",
+        "`s4, fsc",
+        "`dodge, fsc",
+        "`fs4"
+      ],
+      "coabs": [
+        "Summer_Estelle",
         "Renee",
         "Grace"
       ],
@@ -94,7 +94,7 @@
   },
   "60": {
     "base": {
-      "dps": 68160.14497236146,
+      "dps": 84624.34174984973,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -104,7 +104,7 @@
         "Chariot_Drift",
         "From_Whence_He_Comes"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
         "`s3, not buff(s3)",
         "`s1, fsc",
@@ -114,8 +114,8 @@
         "`fs4"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
         "Xander",
+        "Axe2",
         "Grace"
       ],
       "share": [
@@ -125,39 +125,39 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 79772.3589242578,
-      "team": 0.0,
+      "dps": 95343.60877104933,
+      "team": 0.015494141223502313,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
         "Memory_of_a_Friend",
         "The_Lurker_in_the_Woods",
-        "Chariot_Drift",
+        "From_Whence_He_Comes",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
         "`s3, not buff(s3)",
         "`s1, fsc",
-        "`s2, fsc",
+        "`s2, not buff(s2) and fsc",
         "`s4, fsc",
         "`dodge, fsc",
         "`fs4"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
+        "Blade",
         "Xander",
         "Grace"
       ],
       "share": [
         "Weapon",
-        "Yue"
+        "Durant"
       ]
     }
   },
   "120": {
     "base": {
-      "dps": 76350.98161394369,
+      "dps": 80766.1820248289,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -188,39 +188,39 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 89650.25264134313,
-      "team": 0.0,
+      "dps": 107513.49437819206,
+      "team": 0.020334309056453975,
       "tdps": null,
       "slots.a": [
         "Dear_Diary",
         "Memory_of_a_Friend",
         "The_Lurker_in_the_Woods",
-        "Chariot_Drift",
+        "From_Whence_He_Comes",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
         "`s3, not buff(s3)",
         "`s1, fsc",
-        "`s2, fsc",
+        "`s2, not buff(s2) and fsc",
         "`s4, fsc",
         "`dodge, fsc",
         "`fs4"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
+        "Blade",
         "Xander",
         "Grace"
       ],
       "share": [
         "Weapon",
-        "Yue"
+        "Durant"
       ]
     },
     "buffer": {
-      "dps": 65073.70438447108,
-      "team": 0.06708072126847803,
-      "tdps": 168115.0264371401,
+      "dps": 66778.86436542499,
+      "team": 0.14086918083852298,
+      "tdps": 99292.95802065777,
       "slots.a": [
         "Dear_Diary",
         "Memory_of_a_Friend",
@@ -234,17 +234,17 @@
         "`s1, fsc",
         "`s2, not buff(s2) and fsc",
         "`s4, fsc",
-        "`dodge, fscf",
-        "fs4"
+        "`dodge, fsc",
+        "`fs4"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
-        "Xander",
+        "Summer_Estelle",
+        "Renee",
         "Grace"
       ],
       "share": [
         "Weapon",
-        "Patia"
+        "Gala_Elisanne"
       ]
     }
   }

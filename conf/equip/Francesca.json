@@ -1,14 +1,14 @@
 {
   "180": {
     "base": {
-      "dps": 42114.20017662367,
-      "team": 0.023367537888220914,
+      "dps": 42842.58814458464,
+      "team": 0.023357455346319007,
       "tdps": null,
       "slots.a": [
+        "Levins_Champion",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
         "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "His_Clever_Brother",
         "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
@@ -27,19 +27,19 @@
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Pinon"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 45204.08974807937,
-      "team": 0.023367537888220914,
+      "dps": 46199.489540020164,
+      "team": 0.023357455346319007,
       "tdps": null,
       "slots.a": [
+        "Levins_Champion",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
         "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "His_Clever_Brother",
         "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
@@ -49,7 +49,7 @@
         "`s4",
         "`s2",
         "`s1",
-        "`fs, x=5"
+        "`fs, xf=5"
       ],
       "coabs": [
         "Blade",
@@ -58,13 +58,13 @@
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Pinon"
       ]
     },
     "buffer": {
-      "dps": 24438.421719343445,
-      "team": 0.07755888572022716,
-      "tdps": 326173.44215307815,
+      "dps": 24518.11841258147,
+      "team": 0.07755888572022715,
+      "tdps": 338080.9252743324,
       "slots.a": [
         "Crystalian_Envoy",
         "Seaside_Princess",

@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 56799.2009334941,
+      "dps": 56912.27167191512,
       "team": 0.11645178724103175,
       "tdps": null,
       "slots.a": [
@@ -32,8 +32,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 64301.12517462723,
-      "team": 0.09970745831729694,
+      "dps": 64429.15838847054,
+      "team": 0.09970745831729681,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -62,9 +62,9 @@
       ]
     },
     "buffer": {
-      "dps": 19756.637110540873,
-      "team": 0.2888337962907028,
-      "tdps": 214886.48396178972,
+      "dps": 19795.966845996496,
+      "team": 0.2888337962907029,
+      "tdps": 215314.26063855493,
       "slots.a": [
         "Dragon_and_Tamer",
         "Memory_of_a_Friend",
@@ -88,6 +88,69 @@
       "share": [
         "Weapon",
         "Tobias"
+      ]
+    }
+  },
+  "120": {
+    "base": {
+      "dps": 49734.364084440414,
+      "team": 0.09991683588693004,
+      "tdps": null,
+      "slots.a": [
+        "Dragon_and_Tamer",
+        "Memory_of_a_Friend",
+        "Moonlight_Party",
+        "The_Plaguebringer",
+        "The_Queen_of_the_Knife"
+      ],
+      "slots.d": "Midgardsormr_Zero",
+      "acl": [
+        "`dragon(c3-s-c3-end), x=5",
+        "`s3, not buff(s3)",
+        "`s2",
+        "`s4",
+        "`s1",
+        "`fs, x=5"
+      ],
+      "coabs": [
+        "Blade",
+        "Dragonyule_Xainfried",
+        "Eleonora"
+      ],
+      "share": [
+        "Weapon",
+        "Althemia"
+      ]
+    },
+    "pref": "base",
+    "affliction": {
+      "dps": 56665.43901624428,
+      "team": 0.09991683588693004,
+      "tdps": null,
+      "slots.a": [
+        "Dragon_and_Tamer",
+        "Memory_of_a_Friend",
+        "Moonlight_Party",
+        "The_Plaguebringer",
+        "The_Queen_of_the_Knife"
+      ],
+      "slots.d": "Midgardsormr_Zero",
+      "acl": [
+        "`dragon(c3-s-c3-end), x=5",
+        "`s3, not buff(s3)",
+        "`s2",
+        "`s4",
+        "`s1",
+        "`fs, x=5"
+      ],
+      "coabs": [
+        "Blade",
+        "Dragonyule_Xainfried",
+        "Eleonora"
+      ],
+      "share": [
+        "Weapon",
+        "Althemia"
       ]
     }
   }

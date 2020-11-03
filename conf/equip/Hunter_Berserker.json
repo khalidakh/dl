@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 58159.64676899499,
-      "team": 0.036990659791693734,
+      "dps": 56904.4565447661,
+      "team": 0.03699065979169388,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -33,19 +33,18 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 66956.67684715475,
-      "team": 0.038318060758731724,
+      "dps": 66557.41361088889,
+      "team": 0.046714376857789,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",
         "The_Lurker_in_the_Woods",
-        "Chariot_Drift",
+        "The_Plaguebringer",
         "To_the_Extreme"
       ],
-      "slots.d": "Gala_Mars",
+      "slots.d": "Dreadking_Rathalos",
       "acl": [
-        "`dragon(s),s and not s=2",
         "`s3, not buff(s3)",
         "`s4, fsc",
         "`s1, fsc",
@@ -55,18 +54,18 @@
       ],
       "coabs": [
         "Nobunaga",
-        "Grace",
-        "Halloween_Mym"
+        "Gala_Sarisse",
+        "Grace"
       ],
       "share": [
         "Weapon",
-        "Yue"
+        "Rodrigo"
       ]
     },
     "buffer": {
-      "dps": 32988.90072430667,
-      "team": 0.11597145738859449,
-      "tdps": 318694.503101296,
+      "dps": 33055.67987557045,
+      "team": 0.11597145738859477,
+      "tdps": 301956.645093838,
       "slots.a": [
         "Honest_Repose",
         "The_Lurker_in_the_Woods",
@@ -88,8 +87,8 @@
       ],
       "coabs": [
         "Blade",
-        "Grace",
-        "Dagger"
+        "Dagger",
+        "Grace"
       ],
       "share": [
         "Weapon",

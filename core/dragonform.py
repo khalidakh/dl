@@ -1,3 +1,4 @@
+import operator
 from core.advbase import Action, S
 from core.timeline import Event, Timer, now
 from core.log import log, g_logs
@@ -131,6 +132,7 @@ class DragonForm(Action):
             self.skill_sp = self.conf.ds.sp+15
         self.skill_spc = self.skill_sp
         self.skill_use = -1
+        self.skill_use_final = -1
 
     def end_silence(self, t):
         self.shift_silence = False
@@ -143,7 +145,7 @@ class DragonForm(Action):
         return combo > dodge
 
     def auto_gauge(self, t):
-        self.charge_gauge(self.dragon_gauge_val)
+        self.charge_gauge(self.dragon_gauge_val, auto=True)
 
     def pause_auto_gauge(self):
         if self.dragon_gauge_pause_timer is None:
@@ -173,10 +175,10 @@ class DragonForm(Action):
             if add_time != 0:
                 log('drive_time' if not skill_pause else 'skill_pause', f'{add_time:+2.4}', f'{duration:2.4}', f'{int(self.dragon_gauge)}/{int(self.max_gauge)}')
 
-    def charge_gauge(self, value, utp=False, dhaste=True):
+    def charge_gauge(self, value, utp=False, dhaste=True, auto=False):
         # if dhaste is None:
         #     dhaste = not utp
-        dh = self.adv.mod('dh') if dhaste else 1
+        dh = self.dhaste() if dhaste else 1
         value = self.adv.sp_convert(dh, value)
         delta = min(self.dragon_gauge+value, self.max_gauge) - self.dragon_gauge
         if self.is_dragondrive and self.dragondrive_buff.get():
@@ -186,7 +188,8 @@ class DragonForm(Action):
             if utp:
                 log('dragon_gauge', '{:+} utp'.format(int(delta)), f'{int(self.dragon_gauge)}/{int(self.max_gauge)}', value)
             else:
-                log('dragon_gauge', '{:+.2f}%'.format(delta/self.max_gauge*100), '{:.2f}%'.format(self.dragon_gauge/self.max_gauge*100))
+                log('auto_gauge' if auto else 'dragon_gauge', '{:+.2f}%'.format(delta/self.max_gauge*100), '{:.2f}%'.format(self.dragon_gauge/self.max_gauge*100))
+        return value
 
     @allow_acl
     def dtime(self):
@@ -195,12 +198,18 @@ class DragonForm(Action):
     def dstime(self):
         return (self.conf.ds.startup + self.conf.ds.recovery) / self.speed()
 
+    def dhaste(self):
+        return self.adv.mod('dh', operator=operator.add)
+    
+    def chain_dhaste(self):
+        return self.adv.sub_mod('dh', 'chain') + 1
+
     @allow_acl
     def ddamage(self):
         return self.conf.dracolith + self.adv.mod('da') - 1
 
     def ds_check(self):
-        return self.skill_use != 0 and self.skill_spc >= self.skill_sp
+        return self.skill_use != 0 and self.skill_spc >= self.skill_sp and self.shift_end_timer.elapsed() >= 1.9
 
     def ds_charge(self, value):
         if self.skill_use != 0 and self.skill_spc < self.skill_sp:
@@ -211,6 +220,7 @@ class DragonForm(Action):
 
     def ds_reset(self):
         self.skill_use = self.conf.ds.uses
+        self.skill_use_final = 1 if self.conf['ds_final'] else 0
         self.skill_sp = self.conf.ds.sp
         self.skill_spc = self.skill_sp
 
@@ -218,6 +228,11 @@ class DragonForm(Action):
         if self.action_timer is not None:
             self.action_timer.off()
             self.action_timer = None
+        if not self.is_dragondrive and self.prev_act != 'ds' and self.skill_use_final > 0:
+            self.skill_use_final -= 1
+            self.d_act_start('ds_final')
+            self.act_list = ['end']
+            return False
         duration = now()-self.shift_start_time
         shift_dmg = g_logs.shift_dmg
         g_logs.log_shift_dmg(False)
@@ -241,6 +256,7 @@ class DragonForm(Action):
         self._static.doing = self.nop
         self.end_event()
         self.idle_event()
+        return True
 
     def d_dragondrive_end(self, t):
         self.dragon_gauge = 0
@@ -268,45 +284,47 @@ class DragonForm(Action):
 
     def d_act_start(self, name):
         if name in self.conf and self._static.doing == self and self.action_timer is None:
+            log('d_act', name)
             self.prev_act = self.c_act_name
             self.prev_conf = self.c_act_conf
             self.c_act_name = name
             self.c_act_conf = self.conf[name]
             self.act_timer(self.d_act_do, self.c_act_conf.startup)
 
-    def d_act_do(self, t):
-        if self.c_act_name == 'end':
-            self.d_shift_end(None)
-            self.shift_end_timer.off()
-            return
-        
-        actconf = self.conf[self.c_act_name]
+    def d_act_do_hitattr(self, act_name):
+        actconf = self.conf[act_name]
         e = self.act_event
-        e.name = self.c_act_name 
-        e.base = self.c_act_name
+        e.name = act_name
+        e.base = act_name
         e.group = 'dragon'
         self.adv.actmod_on(e)
-        
         try:
-            getattr(self.adv, f'{self.c_act_name}_before')(e)
+            getattr(self.adv, f'{act_name}_before')(e)
         except AttributeError:
             pass
 
-        final_mt = self.adv.schedule_hits(e, self.conf[self.c_act_name])
+        final_mt = self.adv.schedule_hits(e, self.conf[act_name])
         if final_mt:
             final_mt.actmod = True
             final_mt.actmod = True
             try:
-                final_mt.proc = getattr(self.adv, f'{self.c_act_name}_proc')
+                final_mt.proc = getattr(self.adv, f'{act_name}_proc')
             except AttributeError:
                 pass
         else:
             self.adv.actmod_off(e)
             try:
-                getattr(self.adv, f'{self.c_act_name}_proc')(e)
+                getattr(self.adv, f'{act_name}_proc')(e)
             except AttributeError:
                 pass
-        if self.c_act_name == 'ds':
+
+    def d_act_do(self, t):
+        if self.c_act_name == 'end':
+            if self.d_shift_end(None):
+                self.shift_end_timer.off()
+            return
+        self.d_act_do_hitattr(self.c_act_name)
+        if self.c_act_name in ('ds', 'ds_final'):
             self.skill_use -= 1
             self.skill_spc = 0
             self.act_sum.append('s')
@@ -352,7 +370,7 @@ class DragonForm(Action):
             if count > 0:
                 log('cancel', self.c_act_name, f'by {nact}', f'lost {count} hit{"s" if count > 1 else ""}')
             return self.act_timer(self.d_act_start_t, self.conf.latency, nact)
-        if nact in ('ds', 'dsf', 'dodge') or (nact == 'end' and self.c_act_name != 'ds'): # cancel
+        if nact in ('ds', 'dsf', 'dodge') or (nact == 'end' and self.c_act_name not in ('ds', 'ds_final', 'dshift')): # cancel
             if nact == 'dsf':
                 nact = 'ds'
             self.act_timer(self.d_act_start_t, self.max_delayed+self.conf.latency, nact)

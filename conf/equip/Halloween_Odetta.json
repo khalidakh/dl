@@ -1,39 +1,39 @@
 {
   "180": {
     "base": {
-      "dps": 31405.676891313415,
-      "team": 0.6042284270714605,
-      "tdps": 15984.789392902647,
+      "dps": 42422.532487536635,
+      "team": 0.3236087659324852,
+      "tdps": 23525.334214213068,
       "slots.a": [
         "Brothers_in_Arms",
-        "Felyne_Hospitality",
+        "Memory_of_a_Friend",
         "The_Shining_Overlord",
-        "From_Whence_He_Comes",
-        "His_Clever_Brother"
+        "His_Clever_Brother",
+        "The_Queen_of_the_Knife"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(c3-s-end), fsc",
+        "`dragon(c3-s-end), s=2",
         "`s3, not buff(s3)",
-        "`s2",
+        "`s2, fsc",
         "`s4",
-        "`s1, fsc",
-        "`fs, x=3"
+        "`s1",
+        "`fs, x=2"
       ],
       "coabs": [
         "Blade",
         "Summer_Estelle",
-        "Tobias"
+        "Renee"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Pinon"
       ]
     },
     "pref": "buffer",
     "affliction": {
-      "dps": 36138.48004182575,
-      "team": 0.5431634405698219,
+      "dps": 45236.95461144268,
+      "team": 0.32435145443742974,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
@@ -42,19 +42,19 @@
         "His_Clever_Brother",
         "The_Queen_of_the_Knife"
       ],
-      "slots.d": "Gaibhne_and_Creidhne",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(c3-s-end), fsc",
+        "`dragon(c3-s-end), s=2",
         "`s3, not buff(s3)",
-        "`s2",
+        "`s2, fsc",
         "`s4",
-        "`s1, fsc",
-        "`fs, x=3"
+        "`s1",
+        "`fs, x=2"
       ],
       "coabs": [
         "Blade",
         "Summer_Estelle",
-        "Tobias"
+        "Renee"
       ],
       "share": [
         "Weapon",
@@ -62,9 +62,9 @@
       ]
     },
     "buffer": {
-      "dps": 16549.941529462063,
-      "team": 1.5335954019311604,
-      "tdps": 15984.789392902647,
+      "dps": 11693.914135606956,
+      "team": 1.6298014037129371,
+      "tdps": 23525.334214213068,
       "slots.a": [
         "Jewels_of_the_Sun",
         "Once_in_a_Lifetime",
@@ -74,20 +74,21 @@
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(c3-s-end)",
+        "`dragon(s-end)",
+        "#`s1, not buff(s1) and fsc",
         "`s2",
-        "`s3",
+        "`s3, fsc",
         "`s4, fsc",
-        "`fs, x=4"
+        "`fs, x=2"
       ],
       "coabs": [
         "Renee",
-        "Hunter_Sarisse",
+        "Bow",
         "Tobias"
       ],
       "share": [
-        "Patia",
-        "Mikoto"
+        "Templar_Hope",
+        "Gala_Elisanne"
       ]
     }
   }

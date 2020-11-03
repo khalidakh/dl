@@ -1,39 +1,39 @@
 {
   "180": {
     "base": {
-      "dps": 41407.056217129924,
-      "team": 0.030486697100830074,
+      "dps": 47688.13963230408,
+      "team": 0.04712004526453671,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
-        "Such_High_Spirits"
+        "Moonlight_Party",
+        "Twinfold_Bonds",
+        "A_Passion_for_Produce",
+        "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s)",
+        "`dragon(c3-s-end), x=5",
         "`s3, not buff(s3)",
         "`s4",
-        "`s1, x=4 or fscf",
-        "`fs, x=4"
+        "`s1",
+        "`s2, x=5"
       ],
       "coabs": [
         "Blade",
-        "Summer_Celliera",
-        "Tiki"
+        "Wand",
+        "Xander"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Jurota"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 18518.80605677274,
+      "dps": 20564.488161375444,
       "team": 0.5022248515489197,
-      "tdps": 48518.97168914672,
+      "tdps": 59598.69264483176,
       "slots.a": [
         "Study_Rabbits",
         "Twinfold_Bonds",
@@ -68,33 +68,32 @@
       ]
     },
     "affliction": {
-      "dps": 46836.8807840617,
-      "team": 0.035237347005654646,
+      "dps": 51960.55982290703,
+      "team": 0.04668113346821326,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
         "Memory_of_a_Friend",
+        "Moonlight_Party",
         "Twinfold_Bonds",
         "A_Passion_for_Produce",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon",
+        "`dragon(c3-s-end), x=5",
         "`s3, not buff(s3)",
         "`s4",
-        "`s1, cancel",
-        "`s2",
-        "`fs, x=4"
+        "`s1",
+        "`s2, x=5"
       ],
       "coabs": [
-        "Blade",
-        "Eugene",
-        "Tiki"
+        "Summer_Estelle",
+        "Xander",
+        "Axe2"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Summer_Julietta"
       ]
     }
   }

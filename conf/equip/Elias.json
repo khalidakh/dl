@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 36949.55807037738,
-      "team": 0.09011367974067498,
+      "dps": 36803.23682327174,
+      "team": 0.08959797742367567,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -32,8 +32,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 37556.798754247306,
-      "team": 0.08973951451019198,
+      "dps": 37521.41519979743,
+      "team": 0.08950000814662148,
       "tdps": null,
       "slots.a": [
         "An_Ancient_Oath",
@@ -59,6 +59,33 @@
       "share": [
         "Weapon",
         "Karina"
+      ]
+    },
+    "buffer": {
+      "dps": 10384.617086380447,
+      "team": 0.14106098003111053,
+      "tdps": 513351.6973040861,
+      "slots.a": [
+        "Dear_Diary",
+        "Memory_of_a_Friend",
+        "The_Petal_Queen",
+        "A_Game_of_Cat_and_Boar",
+        "The_Queen_of_the_Knife"
+      ],
+      "slots.d": "Gala_Thor",
+      "acl": [
+        "`s4",
+        "`s2",
+        "`s3, not buff(s3)"
+      ],
+      "coabs": [
+        "Blade",
+        "Dagger2",
+        "Peony"
+      ],
+      "share": [
+        "Weapon",
+        "Mikoto"
       ]
     }
   }

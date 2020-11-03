@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 59009.60037438335,
+      "dps": 58067.273291723366,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -32,9 +32,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 28344.63744422261,
+      "dps": 28444.354726348265,
       "team": 0.12632091099947657,
-      "tdps": 242754.4472845656,
+      "tdps": 234505.2638632241,
       "slots.a": [
         "A_Dogs_Day",
         "Memory_of_a_Friend",
@@ -62,12 +62,12 @@
       ]
     },
     "affliction": {
-      "dps": 64887.79325973162,
+      "dps": 65576.39769882057,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
+        "Levins_Champion",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
         "Twinfold_Bonds",
         "His_Clever_Brother",
         "The_Plaguebringer"
@@ -84,7 +84,7 @@
       "coabs": [
         "Blade",
         "Dragonyule_Xainfried",
-        "Akasha"
+        "Lin_You"
       ],
       "share": [
         "Weapon",
@@ -94,14 +94,14 @@
   },
   "120": {
     "affliction": {
-      "dps": 62194.6978895058,
+      "dps": 62835.01300420429,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
+        "Levins_Champion",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
         "Twinfold_Bonds",
-        "A_Passion_for_Produce",
+        "His_Clever_Brother",
         "The_Plaguebringer"
       ],
       "slots.d": "Midgardsormr_Zero",
@@ -116,18 +116,18 @@
       "coabs": [
         "Blade",
         "Dragonyule_Xainfried",
-        "Akasha"
+        "Lin_You"
       ],
       "share": [
         "Weapon",
-        "Summer_Julietta"
+        "Jurota"
       ]
     },
     "pref": "base"
   },
   "60": {
     "base": {
-      "dps": 49005.137416263366,
+      "dps": 49177.46317421067,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -158,7 +158,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 61223.84402271785,
+      "dps": 59921.26161423598,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

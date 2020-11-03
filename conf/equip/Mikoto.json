@@ -1,78 +1,82 @@
 {
   "180": {
     "base": {
-      "dps": 75043.35068295474,
+      "dps": 80028.74351458931,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
+        "An_Ancient_Oath",
         "Memory_of_a_Friend",
-        "Moonlight_Party",
         "Valiant_Crown",
-        "His_Clever_Brother",
-        "To_the_Extreme"
+        "Dueling_Dancers",
+        "Entwined_Flames"
       ],
       "slots.d": "Gala_Mars",
       "acl": [
-        "`dragon(s), s=1",
+        "#Shapeshift after S1, try to end shapeshift to use S1 again before Ruin stance ends",
+        "`dragon(s-s-c3-c2-end), s=1 and self.dragonform.shift_count=2",
+        "`dragon(s-s-c3-c3-end), s=1",
         "`s3, not buff(s3)",
-        "`s2, x=5",
-        "`s4",
         "`s1",
-        "`fs, x=5 and charged_in(fs, s1)"
+        "`s4, xf>1",
+        "`s2, xf>2",
+        "`fs, xf>2 and charged_in(fs, s1)"
       ],
       "coabs": [
-        "Gala_Sarisse",
+        "Yuya",
         "Serena",
-        "Axe2"
+        "Halloween_Mym"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Gala_Mym"
       ]
     },
     "pref": "base",
     "affliction": {
-      "dps": 88536.66652816228,
+      "dps": 94969.65421961826,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",
         "Valiant_Crown",
-        "His_Clever_Brother",
-        "To_the_Extreme"
+        "Dueling_Dancers",
+        "Entwined_Flames"
       ],
       "slots.d": "Gala_Mars",
       "acl": [
-        "`dragon(s), s=1",
+        "#Shapeshift after S1, try to end shapeshift to use S1 again before Ruin stance ends",
+        "`dragon(s-s-c3-c2-end), s=1 and self.dragonform.shift_count=2",
+        "`dragon(s-s-c3-c3-end), s=1",
         "`s3, not buff(s3)",
-        "`s2, x=5",
-        "`s4",
         "`s1",
-        "`fs, x=5 and charged_in(fs, s1)"
+        "`s4, xf>1",
+        "`s2, xf>2",
+        "`fs, xf>2 and charged_in(fs, s1)"
       ],
       "coabs": [
-        "Gala_Sarisse",
+        "Yuya",
         "Serena",
-        "Axe2"
+        "Halloween_Mym"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Gala_Mym"
       ]
     },
     "buffer": {
-      "dps": 61242.50719073629,
-      "team": 0.1227564565542577,
-      "tdps": 112424.5834362167,
+      "dps": 34555.31453695424,
+      "team": 0.1552464129207571,
+      "tdps": 292911.3022459734,
       "slots.a": [
         "Memory_of_a_Friend",
-        "Moonlight_Party",
+        "Seaside_Princess",
         "Valiant_Crown",
-        "His_Clever_Brother",
+        "Kicking_Back",
         "To_the_Extreme"
       ],
-      "slots.d": "Gala_Mars",
+      "slots.d": "Horus",
       "acl": [
         "`dragon(s), s=1",
         "`s3, not buff(s3)",
@@ -82,19 +86,19 @@
         "`fs, x=5 and charged_in(fs, s1)"
       ],
       "coabs": [
-        "Gala_Sarisse",
+        "Halloween_Lowen",
         "Serena",
-        "Axe2"
+        "Halloween_Mym"
       ],
       "share": [
-        "Weapon",
-        "Verica"
+        "Cleo",
+        "Chelle"
       ]
     }
   },
   "120": {
     "base": {
-      "dps": 70190.98830319944,
+      "dps": 67313.78079280414,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -125,39 +129,39 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 87103.52815544605,
+      "dps": 90065.72977397568,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",
         "Valiant_Crown",
-        "His_Clever_Brother",
-        "To_the_Extreme"
+        "Dueling_Dancers",
+        "Entwined_Flames"
       ],
       "slots.d": "Gala_Mars",
       "acl": [
-        "`dragon(s), s=1",
+        "`dragon(s-s-c3-c3-c3-end), s=1",
         "`s3, not buff(s3)",
-        "`s2, x=5",
-        "`s4",
         "`s1",
-        "`fs, x=5 and charged_in(fs, s1)"
+        "`s4",
+        "`s2, xf>2",
+        "`fs, xf>2 and charged_in(fs, s1)"
       ],
       "coabs": [
-        "Gala_Sarisse",
+        "Yuya",
         "Serena",
-        "The_Prince"
+        "Halloween_Mym"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Gala_Mym"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 68637.54485841621,
+      "dps": 65837.76790127557,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -187,17 +191,47 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 83088.65660049241,
+      "dps": 86302.5193661194,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Me_and_My_Bestie",
         "Memory_of_a_Friend",
         "Valiant_Crown",
-        "His_Clever_Brother",
-        "To_the_Extreme"
+        "Dueling_Dancers",
+        "Entwined_Flames"
       ],
       "slots.d": "Gala_Mars",
+      "acl": [
+        "`dragon(s-s-c3-c3-c3-end), s=1",
+        "`s3, not buff(s3)",
+        "`s1",
+        "`s4",
+        "`s2, xf>2",
+        "`fs, xf>2 and charged_in(fs, s1)"
+      ],
+      "coabs": [
+        "Yuya",
+        "Serena",
+        "Halloween_Mym"
+      ],
+      "share": [
+        "Weapon",
+        "Gala_Mym"
+      ]
+    },
+    "buffer": {
+      "dps": 49316.474781904726,
+      "team": 0.03568765422270496,
+      "tdps": 462941.4143129581,
+      "slots.a": [
+        "Me_and_My_Bestie",
+        "Seaside_Princess",
+        "Valiant_Crown",
+        "Kicking_Back",
+        "To_the_Extreme"
+      ],
+      "slots.d": "Apollo",
       "acl": [
         "`dragon(s), s=1",
         "`s3, not buff(s3)",
@@ -207,13 +241,13 @@
         "`fs, x=5 and charged_in(fs, s1)"
       ],
       "coabs": [
-        "Gala_Sarisse",
+        "Marth",
         "Serena",
-        "Axe2"
+        "Halloween_Mym"
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Chelle"
       ]
     }
   }

@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 65470.323863685226,
-      "team": 0.12332356188985195,
+      "dps": 72612.95663730314,
+      "team": 0.1319509281877454,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
@@ -13,9 +13,9 @@
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(s-end)",
-        "`s3",
+        "`dragon(c3-s-end)",
         "`s4",
+        "`s3",
         "`s2",
         "`s1"
       ],
@@ -31,37 +31,37 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 50930.6798772769,
-      "team": 0.3750437936767571,
-      "tdps": 57761.12584671748,
+      "dps": 48115.01427897557,
+      "team": 0.4318158152753071,
+      "tdps": 81696.60208056997,
       "slots.a": [
         "Brothers_in_Arms",
         "Felyne_Hospitality",
         "Summer_Paladyns",
         "From_Whence_He_Comes",
-        "His_Clever_Brother"
+        "Bellathorna"
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
         "`dragon(c3-s-end)",
-        "`s3",
         "`s4",
+        "`s3",
         "`s2",
         "`s1"
       ],
       "coabs": [
-        "Pipple",
+        "Summer_Estelle",
         "Renee",
         "Tobias"
       ],
       "share": [
-        "Patia",
-        "Templar_Hope"
+        "Templar_Hope",
+        "Patia"
       ]
     },
     "affliction": {
-      "dps": 67945.03342817508,
-      "team": 0.12332356188985195,
+      "dps": 74579.13436699893,
+      "team": 0.1319509281877454,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
@@ -72,9 +72,9 @@
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(s-end)",
-        "`s3",
+        "`dragon(c3-s-end)",
         "`s4",
+        "`s3",
         "`s2",
         "`s1"
       ],
@@ -91,7 +91,7 @@
   },
   "60": {
     "base": {
-      "dps": 67147.57608192411,
+      "dps": 71911.32187716229,
       "team": 0.15809676941573886,
       "tdps": null,
       "slots.a": [
@@ -121,21 +121,21 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 59583.34852580046,
-      "team": 0.3612320840650502,
-      "tdps": 37237.383215136084,
+      "dps": 44111.41956179388,
+      "team": 0.4928592249932376,
+      "tdps": 83043.66828535416,
       "slots.a": [
         "Brothers_in_Arms",
         "Felyne_Hospitality",
         "Summer_Paladyns",
         "From_Whence_He_Comes",
-        "His_Clever_Brother"
+        "Bellathorna"
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
         "`dragon(c3-s-end)",
-        "`s3",
         "`s4",
+        "`s3",
         "`s2",
         "`s1"
       ],
@@ -146,12 +146,12 @@
       ],
       "share": [
         "Patia",
-        "Summer_Cleo"
+        "Templar_Hope"
       ]
     },
     "affliction": {
-      "dps": 71086.79654712806,
-      "team": 0.16250160988917134,
+      "dps": 73828.43245561882,
+      "team": 0.15809676941573886,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
@@ -162,7 +162,7 @@
       ],
       "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
-        "`dragon(s-end)",
+        "`dragon(c3-s-end)",
         "`s3",
         "`s4",
         "`s2",
@@ -181,9 +181,9 @@
   },
   "120": {
     "base": {
-      "dps": 44310.67848748662,
-      "team": 0.05696309162480916,
-      "tdps": -43501.04569703584,
+      "dps": 69867.80399199614,
+      "team": 0.13386609256761312,
+      "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",
         "Felyne_Hospitality",
@@ -191,29 +191,29 @@
         "From_Whence_He_Comes",
         "His_Clever_Brother"
       ],
-      "slots.d": "Siren",
+      "slots.d": "Gaibhne_and_Creidhne",
       "acl": [
         "`dragon(c3-s-end)",
-        "`s3",
         "`s4",
+        "`s3",
         "`s2",
         "`s1"
       ],
       "coabs": [
         "Summer_Estelle",
         "Renee",
-        "Bow"
+        "Tobias"
       ],
       "share": [
-        "Mikoto",
+        "Summer_Luca",
         "Summer_Cleo"
       ]
     },
-    "pref": "buffer",
+    "pref": "base",
     "buffer": {
-      "dps": 56113.238487123526,
-      "team": 0.32827978782186473,
-      "tdps": -43501.04569703584,
+      "dps": 60094.159608894166,
+      "team": 0.3282797878218646,
+      "tdps": 50272.40684006414,
       "slots.a": [
         "Brothers_in_Arms",
         "Felyne_Hospitality",
@@ -240,8 +240,8 @@
       ]
     },
     "affliction": {
-      "dps": 68550.2330738986,
-      "team": 0.11999024701455792,
+      "dps": 73256.45906858321,
+      "team": 0.13426102666795617,
       "tdps": null,
       "slots.a": [
         "Brothers_in_Arms",

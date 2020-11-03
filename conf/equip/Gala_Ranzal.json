@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 68193.22497886559,
+      "dps": 68433.23572374346,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -23,7 +23,7 @@
       "coabs": [
         "Blade",
         "Dragonyule_Xainfried",
-        "Lin_You"
+        "Bow"
       ],
       "share": [
         "Weapon",
@@ -32,9 +32,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 34550.159584552945,
-      "team": 0.16870406661022622,
-      "tdps": 199420.59530812356,
+      "dps": 34123.616518076524,
+      "team": 0.167415897572031,
+      "tdps": 204936.44691601142,
       "slots.a": [
         "Brothers_in_Arms",
         "Memory_of_a_Friend",
@@ -62,7 +62,7 @@
       ]
     },
     "affliction": {
-      "dps": 78653.55951539335,
+      "dps": 78130.02613410521,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -94,7 +94,7 @@
   },
   "60": {
     "base": {
-      "dps": 66599.63450764219,
+      "dps": 65109.23969097608,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -125,7 +125,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 78516.3577021978,
+      "dps": 75805.41993212183,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

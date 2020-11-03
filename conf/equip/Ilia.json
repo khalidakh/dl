@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 64130.5924500917,
-      "team": 0.022220181668872248,
+      "dps": 65022.4109511976,
+      "team": 0.022209215847371094,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -16,9 +16,9 @@
         "`s3, not buff(s3)",
         "`fs, c_fs(cartridge3)",
         "`dragon(c3-s), fscf",
-        "if ((alchemy>70 or cartridge>0) and xf=1) or x=1",
+        "if ((alchemy>=70 or cartridge>0) and xf=1) or x=1",
         "`s1",
-        "`s2, alchemy=100",
+        "`s2",
         "`s4",
         "`dodge",
         "end"
@@ -35,8 +35,8 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 67948.28206043865,
-      "team": 0.022220181668872248,
+      "dps": 68244.78365488419,
+      "team": 0.022220181668872224,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -68,9 +68,9 @@
       ]
     },
     "buffer": {
-      "dps": 33174.754783562974,
-      "team": 0.14231032606170987,
-      "tdps": 257771.67496165476,
+      "dps": 33319.65786196729,
+      "team": 0.14231032606170985,
+      "tdps": 263967.1942470133,
       "slots.a": [
         "Memory_of_a_Friend",
         "Moonlight_Party",
@@ -100,8 +100,8 @@
   },
   "60": {
     "affliction": {
-      "dps": 66140.41119915133,
-      "team": 0.03303058326477416,
+      "dps": 66429.02390256581,
+      "team": 0.03303058326477413,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -134,8 +134,8 @@
     },
     "pref": "base",
     "base": {
-      "dps": 52146.101146176836,
-      "team": 0.0,
+      "dps": 62256.21499485548,
+      "team": 0.03303058326477413,
       "tdps": null,
       "slots.a": [
         "Memory_of_a_Friend",
@@ -144,7 +144,7 @@
         "His_Clever_Brother",
         "The_Warrioresses"
       ],
-      "slots.d": "Gala_Thor",
+      "slots.d": "Daikokuten",
       "acl": [
         "`s3, not buff(s3)",
         "`fs, c_fs(cartridge3)",
@@ -167,9 +167,9 @@
       ]
     },
     "buffer": {
-      "dps": 41043.18037651321,
-      "team": 0.03331487411683311,
-      "tdps": 333272.1813904023,
+      "dps": 40534.15133399352,
+      "team": 0.03331487411683307,
+      "tdps": 76407888.27196659,
       "slots.a": [
         "An_Ancient_Oath",
         "Memory_of_a_Friend",
@@ -200,7 +200,7 @@
   },
   "120": {
     "base": {
-      "dps": 54798.171697140824,
+      "dps": 55037.29099181924,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -234,7 +234,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 64478.3678960524,
+      "dps": 64760.0695033653,
       "team": 0.02225720011254825,
       "tdps": null,
       "slots.a": [
@@ -267,9 +267,9 @@
       ]
     },
     "buffer": {
-      "dps": 38982.57896792494,
-      "team": 0.06796041229552549,
-      "tdps": 232717.72779190715,
+      "dps": 39152.72601482664,
+      "team": 0.06796041229552548,
+      "tdps": 233732.61639318272,
       "slots.a": [
         "An_Ancient_Oath",
         "Memory_of_a_Friend",

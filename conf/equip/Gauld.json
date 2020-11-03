@@ -1,40 +1,40 @@
 {
   "180": {
     "base": {
-      "dps": 52035.5615608375,
+      "dps": 52388.64150328556,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
+        "Dragon_and_Tamer",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
+        "The_Prince_of_Dragonyule",
+        "Chariot_Drift",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s), s=1 and not s2.check()",
+        "`dragon(c3-s-c3-c3-c3-end), s=1 and not s2.check()",
         "`s3, not buff(s3)",
-        "`s4",
+        "`s4, s1.check() and s2.check()",
         "`s1, cancel",
         "`s2, s=1",
         "`fs, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Summer_Estelle",
+        "Renee"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Summer_Julietta"
       ]
     },
     "pref": "base",
     "buffer": {
-      "dps": 29813.38431589317,
-      "team": 0.14448964385193314,
-      "tdps": 153797.71624128768,
+      "dps": 31343.510030269856,
+      "team": 0.14448964385193316,
+      "tdps": 145651.4869299689,
       "slots.a": [
         "Dragon_and_Tamer",
         "Memory_of_a_Friend",
@@ -63,39 +63,39 @@
       ]
     },
     "affliction": {
-      "dps": 54406.41610575547,
+      "dps": 53777.363791798016,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
+        "Dragon_and_Tamer",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
-        "Dueling_Dancers",
+        "The_Prince_of_Dragonyule",
+        "Chariot_Drift",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Gala_Reborn_Poseidon",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s), s=1 and not s2.check()",
+        "`dragon(c3-s-c3-c3-c3-end), s=1 and not s2.check()",
         "`s3, not buff(s3)",
-        "`s4",
+        "`s4, s1.check() and s2.check()",
         "`s1, cancel",
         "`s2, s=1",
         "`fs, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Summer_Estelle",
+        "Renee"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Summer_Julietta"
       ]
     }
   },
   "60": {
     "base": {
-      "dps": 44695.69902102176,
+      "dps": 51089.6275446329,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -126,32 +126,33 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 46443.126073776504,
+      "dps": 52587.95633509875,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
-        "An_Ancient_Oath",
+        "Dragon_and_Tamer",
         "Memory_of_a_Friend",
-        "The_Bridal_Dragon",
+        "The_Red_Impulse",
         "Dueling_Dancers",
         "His_Clever_Brother"
       ],
-      "slots.d": "Nimis",
+      "slots.d": "Siren",
       "acl": [
-        "`dragon(c3-c3-c3-c1-s), s=1 and not s2.check()",
+        "`dragon(c3-s-c3-end), s and (not s2.check() or not s=2)",
         "`s3, not buff(s3)",
-        "`s4",
         "`s1, cancel",
-        "`s2, s=1"
+        "`s2, s=1",
+        "`s4",
+        "`fs, x=5"
       ],
       "coabs": [
-        "Dragonyule_Cleo",
-        "Summer_Celliera",
-        "Tiki"
+        "Blade",
+        "Summer_Estelle",
+        "Xander"
       ],
       "share": [
         "Weapon",
-        "Gala_Mym"
+        "Summer_Julietta"
       ]
     }
   }

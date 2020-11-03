@@ -52,7 +52,7 @@ class CharaBase(SlotBase):
     FAC_ELEMENT_ATT = {
         'all': {'altar1': 0.115, 'altar2': 0.115, 'slime': 0.04},
         'flame': {'tree': 0.26, 'arctos': 0.085},
-        'water': {'tree': 0.16, 'yuletree': 0.085, 'dragonata': 0.085},
+        'water': {'tree': 0.26, 'yuletree': 0.085, 'dragonata': 0.085},
         'wind': {'tree': 0.26, 'shrine': 0.085},
         'light': {'tree': 0.16, 'retreat': 0.085, 'circus': 0.085},
         'shadow': {'tree': 0.26, 'library': 0.085}
@@ -67,10 +67,10 @@ class CharaBase(SlotBase):
     FAC_ELEMENT_HP['shadow']['library'] = 0.095
 
     FAC_WEAPON_ATT = {
-        'all': {'dojo1': 0.15, 'dojo2': 0.15, 'weap': 0.195},
-        'dagger': 0.06, 'bow': 0.06, 'blade': 0.05, 'wand': 0.05,
+        'all': {'dojo1': 0.15, 'dojo2': 0.15, 'weap': 0.21},
+        'dagger': 0.06, 'bow': 0.11, 'blade': 0.05, 'wand': 0.05,
         'sword': 0.05, 'lance': 0.05, 'staff': 0.05, 'axe': 0.05,
-        'gun': -0.15 # i am the fucking smart
+        'gun': -0.135 # opera - diff in weap
     }
     FAC_WEAPON_HP = FAC_WEAPON_ATT.copy()
 
@@ -189,8 +189,8 @@ class DragonBase(EquipBase):
         'dshift.recovery': 0.63333,
         'dshift.attr': [{'dmg': 2.0}],
 
-        'dodge.startup': 0.66667,
-        'dodge.recovery': 0,
+        'dodge.startup': 0.0,
+        'dodge.recovery': 0.66667,
 
         'end.startup': 0,
         'end.recovery': 0,
@@ -255,7 +255,7 @@ class Nimis(DragonBase):
     def oninit(self, adv):
         super().oninit(adv)
         def add_gauge_and_time(t):
-            adv.dragonform.dragon_gauge += 200
+            adv.dragonform.charge_gauge(200, dhaste=False)
             adv.dragonform.set_shift_end(5, percent=False)
         adv.Event('ds').listener(add_gauge_and_time)
 
@@ -280,6 +280,22 @@ class Styx(DragonBase):
             adv.styx_spirit = 0
         adv.Event('ds').listener(reset_spirit)
         adv.Event('dragon_end').listener(reset_spirit)
+
+class Gala_Reborn_Poseidon(DragonBase):
+    def oninit(self, adv):
+        super().oninit(adv)
+        charge_gauge_o = adv.dragonform.charge_gauge
+        self.agauge = 0
+        self.acount = 0
+        adv.gposeidon_buff = adv.Selfbuff('gposeidon_buff', 0.3, 45, 'water', 'ele').no_bufftime()
+        def charge_gauge(value, **kwargs):
+            delta = charge_gauge_o(value, **kwargs)
+            self.agauge += delta
+            n_acount = self.agauge // 100
+            if n_acount > self.acount:
+                self.acount = n_acount
+                adv.gposeidon_buff.on()
+        adv.dragonform.charge_gauge = charge_gauge
 ### WATER DRAGONS ###
 
 ### WIND DRAGONS ###
@@ -408,7 +424,7 @@ class WeaponBase(EquipBase):
         },
         'water': {
             's3': {'sp' : 3000, 'startup' : 0.25, 'recovery' : 0.90},
-            's3_phase1': {'attr': [{'buff': [['self', 0.20, -1, 'att', 'buff'], ['self', 0.12, -1, 'crit', 'chance'], '-replace']}]},
+            's3_phase1': {'attr': [{'buff': [['self', 0.20, -1, 'att', 'buff'], ['self', 0.12, -1, 'crit', 'chance'], ['self', 1.00, -1, 'ctime', 'passive'], '-replace']}]},
             's3_phase2': {'attr': [{'buff': ['self', 0.35, -1, 'defense', 'buff', '-replace']}]}
         },
         'wind': {
@@ -744,7 +760,7 @@ class Slots:
 
     DEFAULT_DRAGON = {
         'flame': 'Gala_Mars',
-        'water': 'Gaibhne_and_Creidhne',
+        'water': 'Gala_Reborn_Poseidon',
         'wind': 'Midgardsormr_Zero',
         'light': 'Daikokuten',
         'shadow': 'Gala_Cat_Sith'

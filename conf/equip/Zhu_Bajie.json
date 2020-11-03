@@ -1,7 +1,7 @@
 {
   "180": {
     "base": {
-      "dps": 57202.754265050695,
+      "dps": 56910.86818274159,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -33,14 +33,14 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 60488.956446828335,
+      "dps": 60752.123099231314,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
         "Spirit_of_the_Season",
         "Summer_Paladyns",
         "The_Synthetic_Dragon",
-        "Hanetsuki_Rally",
+        "His_Clever_Brother",
         "The_Warrioresses"
       ],
       "slots.d": "Gala_Thor",
@@ -60,13 +60,13 @@
       ],
       "share": [
         "Weapon",
-        "Xander"
+        "Karina"
       ]
     },
     "buffer": {
-      "dps": 50201.624585029065,
-      "team": 0.022185946146019188,
-      "tdps": 315565.97288855485,
+      "dps": 50305.22802948338,
+      "team": 0.022185946146019212,
+      "tdps": 297739.844394396,
       "slots.a": [
         "Spirit_of_the_Season",
         "Summer_Paladyns",
@@ -97,7 +97,7 @@
   },
   "60": {
     "base": {
-      "dps": 43078.96205199246,
+      "dps": 43167.88651494383,
       "team": 0.0,
       "tdps": null,
       "slots.a": [
@@ -129,7 +129,7 @@
     },
     "pref": "base",
     "affliction": {
-      "dps": 53361.82499845455,
+      "dps": 53187.638180890506,
       "team": 0.0,
       "tdps": null,
       "slots.a": [

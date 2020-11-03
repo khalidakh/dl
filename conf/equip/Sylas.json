@@ -1,8 +1,8 @@
 {
   "180": {
     "base": {
-      "dps": 66671.01150383671,
-      "team": 0.019927265569537014,
+      "dps": 65831.43533149779,
+      "team": 0.019928648036993405,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -32,9 +32,9 @@
     },
     "pref": "base",
     "buffer": {
-      "dps": 20086.011744223408,
-      "team": 0.4495922927725547,
-      "tdps": 108421.66992940244,
+      "dps": 20160.290761134223,
+      "team": 0.3156431013815145,
+      "tdps": 154443.39650573168,
       "slots.a": [
         "A_Dogs_Day",
         "Jewels_of_the_Sun",
@@ -62,8 +62,8 @@
       ]
     },
     "affliction": {
-      "dps": 68551.44082716611,
-      "team": 0.05470222794320448,
+      "dps": 68061.79085318494,
+      "team": 0.019928648036993415,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -94,8 +94,8 @@
   },
   "60": {
     "base": {
-      "dps": 64815.83778738373,
-      "team": 0.031208316092472516,
+      "dps": 60412.92137299356,
+      "team": 0.013483510872485676,
       "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
@@ -124,10 +124,10 @@
       ]
     },
     "pref": "base",
-    "buffer": {
-      "dps": 46061.338486700246,
-      "team": 0.03122563879746487,
-      "tdps": 1082654199.1543868,
+    "affliction": {
+      "dps": 61605.110946802844,
+      "team": 0.013483510872485676,
+      "tdps": null,
       "slots.a": [
         "Dragon_and_Tamer",
         "Levins_Champion",
@@ -135,7 +135,7 @@
         "His_Clever_Brother",
         "The_Plaguebringer"
       ],
-      "slots.d": "Long_Long",
+      "slots.d": "Midgardsormr_Zero",
       "acl": [
         "`dragon(s-end)",
         "`s3, not buff(s3)",
@@ -154,10 +154,10 @@
         "Pinon"
       ]
     },
-    "affliction": {
-      "dps": 66006.75829066672,
-      "team": 0.031208316092472516,
-      "tdps": null,
+    "buffer": {
+      "dps": 44202.048197792166,
+      "team": 0.013499024392030235,
+      "tdps": 1044951348.9598559,
       "slots.a": [
         "Dragon_and_Tamer",
         "Levins_Champion",
@@ -165,7 +165,7 @@
         "His_Clever_Brother",
         "The_Plaguebringer"
       ],
-      "slots.d": "Midgardsormr_Zero",
+      "slots.d": "Long_Long",
       "acl": [
         "`dragon(s-end)",
         "`s3, not buff(s3)",
